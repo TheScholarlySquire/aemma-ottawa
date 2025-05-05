@@ -1,4 +1,39 @@
 {
-  "heading": "À propos de AEMMA Ottawa",
-  "intro": "Nous sommes un groupe d'artistes martiaux dédiés à l'étude et à la pratique historique des traditions martiales européennes."
+  "aemma": {
+      "title": "À propos de AEMMA Ottawa",
+      "intro": "Nous sommes un groupe d'artistes martiaux dédiés à l'étude et à la pratique historique des traditions martiales européennes.",
+      "history": "Notre programme est enraciné dans les enseignements de maîtres d'armes renommés, mettant en valeur des techniques et des philosophies qui ont traversé les siècles.",
+      "beginnerClass": "Cours débutants : les lundis et mercredis, 18:00-19:30",
+      "advancedClass": "Cours avancés : les lundis et mercredis, 19:30-21:30"
+  },
+  "gio": {
+      "title": "Giovanni Dall'Agocchie",
+      "text": "Giovanni Dall'Agocchie était un maître d'escrime italien du XVIe siècle originaire de Bologne. En 1572, il a publié 'Dell'Arte di Scrimia' ('L'Art de l'Escrime'), un manuel complet détaillant les techniques et principes de l'escrime. Son œuvre est une pierre angulaire de l'école bolonaise d'escrime et continue d'influencer les pratiquants modernes de HEMA."
+  },
+  "cards": [
+      {
+          "name": "Beau",
+          "role": "Instructeur, érudit libre",
+          "bio": "[texte de remplissage]",
+          "image": ""
+      },
+      {
+          "name": "Cass",
+          "role": "érudit",
+          "bio": "[texte de remplissage]",
+          "image": ""
+      },
+      {
+          "name": "Shane",
+          "role": "érudit",
+          "bio": "[texte de remplissage]",
+          "image": ""
+      },
+      {
+          "name": "Max",
+          "role": "étudiant",
+          "bio": "[texte de remplissage]",
+          "image": ""
+      }
+  ]
 }

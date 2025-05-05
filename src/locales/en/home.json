@@ -1,4 +1,26 @@
 {
-  "heading": "Welcome to AEMMA Ottawa",
-  "intro": "We study historical European martial arts with a focus on Dall'Aggochie's Bolognese sidesword."
+    "hero": {
+        "title": "Welcome to AEMMA Ottawa",
+        "subtitle": "Anima, Forza, Ingenio",
+        "ctaButton": "Join a class today"
+    },
+    "about": {
+        "heading": "About us",
+        "p1": "We are a martial arts group studying the rich traditions of Historical European Martial Arts (HEMA), with a focus on Bolognese sidesword from the 16th century.",
+        "p2": "As part of AEMMA, our Ottawa chapter is committed to training, scholarship, and preserving martial heritage."
+    },
+    "cards": {
+        "training": {
+            "title": "Training",
+            "text": "We study and apply historical techniques from authentic manuscripts."
+        },
+        "history": {
+            "title": "Rich history",
+            "text": "Our methods are rooted in the martial traditions of the 15th and 16th centuries."
+        },
+        "community": {
+            "title": "Supportive, inclusive community",
+            "text": "We welcome martial artists of all levels and backgrounds."
+        }
+    }
 }

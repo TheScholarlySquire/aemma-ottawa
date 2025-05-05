@@ -1,4 +1,26 @@
 {
-  "heading": "Bienvenue à AAMME Ottawa",
-  "intro": "Nous étudions les arts martiaux européens historiques en mettant l'accent sur l'épée de Bologne de Dall'Aggochie."
+    "hero": {
+        "title": "Bienvenue à AAMME Ottawa",
+        "subtitle": "Anima, Forza, Ingenio",
+        "ctaButton": "Rejoignez un cours aujord'hui"
+    },
+    "about": {
+        "heading": "À propos de nous",
+        "paragraph1": "Nous sommes un groupe d'arts martiaux étudiant les riches traditions des arts martiaux historiques européens (HEMA), avec un accent sur l'épée italienne de la Renaissance.",
+        "paragraph2": "En tant que chapitre d'AEMMA, notre groupe à Ottawa s'engage à l'entraînement, à la recherche et à la préservation du patrimoine martial."
+    },
+    "cards": {
+        "training": {
+            "title": "Entraînement",
+            "text": "Nous étudions et appliquons des techniques historiques issues de manuscrits authentiques."
+        },
+        "history": {
+            "title": "Histoire riche",
+            "text": "Nos méthodes sont enracinées dans les traditions martiales des XVe et XVIe siècles."
+        },
+        "community": {
+            "title": "Communauté solidaire et inclusive",
+            "text": "Nous accueillons des artistes martiaux de tous niveaux et horizons."
+        }
+    }
 }

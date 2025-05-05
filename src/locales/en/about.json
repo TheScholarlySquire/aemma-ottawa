@@ -1,4 +1,39 @@
 {
-  "heading": "About AEMMA Ottawa",
-  "intro": "We are a group of martial artists dedicated to the historical study and practice of European martial traditions."
+    "aemma": {
+        "title": "About AEMMA Ottawa",
+        "intro": "We are a group of martial artists dedicated to the historical study and practice of European martial traditions.",
+        "history": "Our curriculum is rooted in the teachings of renowned fencing masters, emphasizing the techniques and philosophies that have stood the test of time.",
+        "beginnerClass": "Beginner classes: Mondays and Wednesdays, 18:00-19:30",
+        "advancedClass": "Advanced classes: Mondats and Wednesdays, 19:30-21:30"
+    },
+    "gio": {
+        "title": "Giovanni Dall'Agocchie",
+        "text": "Giovanni Dall'Agocchie was a 16th-century Italian fencing master from Bologna. In 1572, he published 'Dell'Arte di Scrimia' ('The Art of Fencing'), a comprehensive manual detailing swordsmanship techniques and principles. His work is a cornerstone of the Bolognese school of fencing and continues to influence modern HEMA practitioners."
+    },
+    "cards": [
+        {
+            "name": "Beau",
+            "title": "Instructor, Free Scholar",
+            "bio": "[filler text]",
+            "image": ""
+        },
+        {
+            "name": "Cass",
+            "title": "Scholar",
+            "bio": "[filler text]",
+            "image": ""
+        },
+        {
+            "name": "Shane",
+            "title": "Scholar",
+            "bio": "[filler text]",
+            "image": ""
+        },
+        {
+            "name": "Max",
+            "title": "Student",
+            "bio": "[filler text]",
+            "image": ""
+        }
+    ]
 }
