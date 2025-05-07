@@ -5,9 +5,13 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
+const basename = import.meta.env.PROD ? '/aemma-ottawa' : '/';
+console.log('Running in:', import.meta.env.PROD ? 'production' : 'development');
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/aemma-ottawa">
+        <BrowserRouter basename={basename}>
         <App />
     </BrowserRouter>
   </StrictMode>,
