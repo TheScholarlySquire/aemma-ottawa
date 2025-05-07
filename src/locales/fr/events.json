@@ -1,0 +1,46 @@
+{
+    "title": "Événements",
+    "titleUpcoming": "Événements à venir",
+    "titleToday": "Aujord'hui !",
+    "eventTodayBanner": "Événement d'aujourd'hui : {eventTitle}",
+    "eventSoonBanner": "Ne manquez pas l'événement à venir dans {count, plural, one {1 jour} other {{count} jours}}: {eventTitle}!",
+    "titlePast": "Événements passés",
+    "eventList": [
+        {
+            "name": "Public Demonstration",
+            "date": "2025-06-15",
+            "location": "Major's Hill Park, Ottawa",
+            "description": "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
+        },
+        {
+            "name": "Testful evenement",
+            "date": "2025-05-07",
+            "location": "en ligne",
+            "description": "TESTY EVENEMENT."
+        },
+        {
+            "name": "Test de site web",
+            "date": "2025-05-09",
+            "location": "En ligne",
+            "description": "TESTING THE TODAY EVENTS WOO!"
+        },
+        {
+            "name": "Contrôlez la lame, contrôlez le combat",
+            "date": "2023-11-11",
+            "location": "St. Mark's Anglican Church, Ottawa",
+            "description": "Dans cet atelier, le Maestro Jared Kirby a démontré différentes manières de contrôler la lame de l'adversaire pour produire le résultat souhaité."
+        },
+        {
+            "name": "Some older event",
+            "date": "1995-11-11",
+            "location": "St. Mark's Anglican Church, Ottawa",
+            "description": "Lorem ipsum etc etc."
+        },
+        {
+            "name": "Some straight up ancient event",
+            "date": "1555-11-11",
+            "location": "Probably a field, or perhaps a forest",
+            "description": "Just a bunch of wildlife, probably"
+        }
+    ]
+}

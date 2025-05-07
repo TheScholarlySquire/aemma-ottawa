@@ -1,0 +1,46 @@
+{
+    "title": "Events",
+    "titleUpcoming": "Upcoming events",
+    "titleToday": "Today!",
+    "eventTodayBanner": "Happening today: {eventTitle}",
+    "eventSoonBanner": "Don't miss the upcoming event in {count, plural, one {1 day} other {{count} days}}: {eventTitle}!",
+    "titlePast": "Past events",
+    "eventList": [
+        {
+            "name": "Public Demonstration",
+            "date": "2025-06-15",
+            "location": "Major's Hill Park, Ottawa",
+            "description": "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
+        },
+        {
+            "name": "Testful event",
+            "date": "2025-05-07",
+            "location": "Online",
+            "description": "TESTY EVENT."
+        },
+        {
+            "name": "Site test",
+            "date": "2025-05-09",
+            "location": "Online",
+            "description": "TESTING THE TODAY EVENTS WOO!"
+        },
+        {
+            "name": "Control the Blade, Control the Bout",
+            "date": "2023-11-11",
+            "location": "St. Mark's Anglican Church, Ottawa",
+            "description": "In this workshop, Maestro Jared Kirby demonstrated various ways to control the adversary's blade to produce the desired outcome."
+        },
+        {
+            "name": "Some older event",
+            "date": "1995-11-11",
+            "location": "St. Mark's Anglican Church, Ottawa",
+            "description": "Lorem ipsum etc etc."
+        },
+        {
+            "name": "Some straight up ancient event",
+            "date": "1555-11-11",
+            "location": "Probably a field, or perhaps a forest",
+            "description": "Just a bunch of wildlife, probably"
+        }
+    ]
+}

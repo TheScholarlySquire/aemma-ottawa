@@ -8,13 +8,13 @@ export default function About() {
     return (
         <div className="max-w-4xl mx-auto px-4 py-12">
             <div>
-                <div>
+                <div className="mt-10">
                     <h1 className="text-3xl font-bold mb-6">{t('aemma.title')}</h1>
                     <p className="mb-4">{t('aemma.intro')}</p>
                     <p className="mb-8">{t('aemma.history')}</p>
                 </div>
 
-                <div>
+                <div className="mt-10">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
                         {members.map((card, index) => (
                             <ProfileCards
@@ -28,7 +28,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div>
+                <div className="mt-10">
                     <h2 className="text-2xl font-semibold mb-4">Classes</h2>
                     <p>{t('aemma.beginnerClass')}</p>
                     <p>{t('aemma.advancedClass')}</p>

@@ -16,6 +16,7 @@ export default function Layout() {
                     <Link to="/" className="text-xl font-bold text-blue-700">{t('title')}</Link>
                     <div className="space-x-4">
                         <Link to="/" className="text-blue-600 hover:underline">{t('home')}</Link>
+                        <Link to="/events" className="text-blue-600 hover:underline">{t('events')}</Link>
                         <Link to="/about" className="text-blue-600 hover:underline">{t('about')}</Link>
                         <Link to="/contact" className="text-blue-600 hover:underline">{t('contact')}</Link>
 

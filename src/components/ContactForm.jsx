@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -6,6 +7,8 @@ export default function ContactForm() {
         email: '',
         message: ''
     });
+
+    const [status, setStatus] = useState({submitted: false, error: false, message: ''});
 
     const [submitted, setSubmitted] = useState(false);
 
@@ -16,10 +19,22 @@ export default function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        //temporarily simulate success
-        console.log('Form submitted:', formData);
-        setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
+
+        emailjs.send(
+            "service_nbp8fpd", //EmailJS service ID
+            "template_h7ne5tb", //Template ID
+            formData,
+            'gynnxssIw1L6xhHTT', //EmailJS public key
+        )
+        .then(() => {
+            setSubmitted(true);
+            setFormData({ name: '', email: '', message: '' });
+            setStatus({ submitted: true, error: false, message: 'Thank you! Your message has been sent.' });
+        })
+        .catch((error) => {
+            console.error('Email sending failed:', error);
+            setStatus({ submitted: false, error: true, message: 'Oops! Something went wrong. Please try again later.' });
+        });
     };
 
     return (
@@ -63,7 +78,12 @@ export default function ContactForm() {
             >
                 Send Message
             </button>
-            {submitted && <p className="text-green-600">Thanks! Your message has been sent.</p>}
+
+            {status.message && (
+                <p className={`mt-2 text-sm ${status.error ? 'text-red-600' : 'text-green-600'}`}>
+                    {status.message}
+                </p>
+            )}
         </form>
     );
 }

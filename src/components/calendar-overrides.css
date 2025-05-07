@@ -1,0 +1,16 @@
+/* calendar-overrides.css */
+.react-calendar {
+  @apply w-full bg-white rounded-lg shadow-md p-4;
+}
+
+.react-calendar__tile--now {
+  @apply bg-yellow-200;
+}
+
+.react-calendar__tile--active {
+  @apply bg-blue-500 text-white;
+}
+
+.react-calendar__tile--hasActive {
+  @apply bg-blue-100;
+}
