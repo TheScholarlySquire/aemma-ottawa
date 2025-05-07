@@ -1,9 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import EventCard from '../components/EventCard'
 import CalendarView from '../components/CalendarView'
+import { useParams } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
 
 export default function Events() {
     const { t } = useTranslation('events');
+    const { eventId } = useParams();
+    const eventRef = useRef(null);
 
     // Get localized events list
     const rawEvents = t('eventList', { returnObjects: true }) || [];
@@ -23,6 +27,12 @@ export default function Events() {
         .filter(e => new Date(e.date) < now)
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
+    useEffect(() => {
+        if (eventRef.current) {
+            eventRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [eventId]);
+
     return (
         <div className="max-w-4xl mx-auto px-4 py-12">
             <h1 className="text-3xl font-bold mb-8">{t('title')}</h1>
@@ -38,7 +48,12 @@ export default function Events() {
                         {t('titleToday')}
                     </h2>
                     {todayEvents.map((event, index) => (
-                        <EventCard key={index} {...event} highlight />
+                        <EventCard
+                            key={event.id}
+                            {...event}
+                            highlight={event.id === eventId}
+                            ref={event.id === eventId ? eventRef : null}
+                        />
                     ))}
                 </div>
             )}
@@ -48,7 +63,12 @@ export default function Events() {
                 <h2 className="text-2xl font-bold mb-8">{t('titleUpcoming')}</h2>
                 {upcomingEvents.length > 0 ? (
                     upcomingEvents.map((event, index) => (
-                        <EventCard key={index} {...event} />
+                        <EventCard
+                            key={event.id}
+                            {...event}
+                            highlight={event.id === eventId}
+                            ref={event.id === eventId ? eventRef : null}
+                        />
                     ))
                 ) : (
                     <p>No upcoming events at this time.</p>

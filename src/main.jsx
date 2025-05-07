@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
-const basename = import.meta.env.PROD ? '/aemma-ottawa' : '/';
+const basename = import.meta.env.PROD ? '/aemma-ottawa/' : '/';
 console.log('Running in:', import.meta.env.PROD ? 'production' : 'development');
 
 

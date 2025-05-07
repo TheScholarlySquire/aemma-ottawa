@@ -24,12 +24,7 @@ export default function CalendarView({ events = [] }) {
             <Calendar
                 onChange={setValue}
                 value={value}
-                className="w-full bg-white rounded-lg shadow-md p-4
-                    [&_.react-calendar__tile--now]:bg-yellow-200
-                    [&_.react-calendar__tile--active]:bg-blue-500
-                    [&_.react-calendar__tile--active]:text-white
-                    [&_.react-calendar__tile--hasActive]:bg-blue-100
-                    [&_.react-calendar__tile--weekend]:!text-black"
+                className="w-full bg-white rounded-lg shadow-md p-4[&_.react-calendar__tile--now]:bg-yellow-200[&_.react-calendar__tile--active]:bg-blue-500[&_.react-calendar__tile--active]:text-white[&_.react-calendar__tile--hasActive]:bg-blue-100[&_.react-calendar__tile--weekend]:!text-black"
                 tileClassName={({ date, view }) =>
                     view === 'month' && isEventDate(date)
                         ? 'bg-blue-500 text-white rounded-full'
