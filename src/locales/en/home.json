@@ -1,26 +1,47 @@
 {
+    "mapSectionTitle": "Where to find us",
     "hero": {
-        "title": "Welcome to AEMMA Ottawa",
+        "title": "Academy of European Mediæval Martial Arts Ottawa",
         "subtitle": "Anima, Forza, Ingenio",
         "ctaButton": "Join a class today"
     },
-    "about": {
-        "heading": "About us",
-        "p1": "We are a martial arts group studying the rich traditions of Historical European Martial Arts (HEMA), with a focus on Bolognese sidesword from the 16th century.",
-        "p2": "As part of AEMMA, our Ottawa chapter is committed to training, scholarship, and preserving martial heritage."
-    },
-    "cards": {
-        "training": {
+    "aboutCards": [
+        {
+            "heading": "What is AEMMA",
+            "p1": "The Academy of European Mediæval Martial Arts (AEMMA) is a Historical European Medieval Martial Arts School with locations across Canada. We have been teaching medieval swordfighting for 25 years."
+        },
+        {
+            "heading": "What classes does AEMMA Ottawa offer?",
+            "p1": "Our Ottawa chapter is committed to training, scholarship, and preserving the martial heritage and rich traditions of Historical European Martial Arts (HEMA), with a focus on Bolognese sidesword from the 16th century."
+        },
+        {
+            "heading": "What historical sources does AEMMA use?",
+            "p1": "AEMMA Ottawa bases its classes on manuscripts from real fighting masters such as Fiore dei Liberi, Giovanni Dall’Agocchie, Marozzo, et al."
+        },
+        {
+            "heading": "Where is AEMMA Ottawa located?",
+            "p1": "AEMMA Ottawa is located at  1606 Fisher Ave in Nepean, just West of Mooney's Bay."
+        },
+        {
+            "heading": "How can I join AEMMA Ottawa?",
+            "p1": "Register for an intake class today!"
+        }
+    ],
+    "cards": [
+        {
+            "icon": "⚔️",
             "title": "Training",
             "text": "We study and apply historical techniques from authentic manuscripts."
         },
-        "history": {
+        {
+            "icon": "📜",
             "title": "Rich history",
             "text": "Our methods are rooted in the martial traditions of the 15th and 16th centuries."
         },
-        "community": {
+        {
+            "icon": "🤝",
             "title": "Supportive, inclusive community",
             "text": "We welcome martial artists of all levels and backgrounds."
         }
-    }
+    ]
 }

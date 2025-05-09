@@ -5,46 +5,47 @@
     "eventTodayBanner": "Happening today: {eventTitle}",
     "eventSoonBanner": "Don't miss the upcoming event in {count, plural, one {1 day} other {{count} days}}: {eventTitle}!",
     "titlePast": "Past events",
+    "googleCalendar": "Add to Google Calendar",
     "eventList": [
         {
             "id":           "public-demo",
             "name":         "Public Demonstration",
-            "date":         "2025-06-15",
+            "datetime":     "2025-06-15T18:00:00Z",
             "location":     "Major's Hill Park, Ottawa",
             "description":  "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
         },
         {
             "id":           "test1",
             "name":         "Testful event",
-            "date":         "2025-05-07",
+            "datetime":     "2025-05-08T18:00:00Z",
             "location":     "Online",
             "description":  "TESTY EVENT."
         },
         {
             "id":           "test2",
             "name":         "Site test",
-            "date":         "2025-05-09",
+            "datetime":     "2025-05-09T18:00:00Z",
             "location":     "Online",
             "description":  "TESTING THE TODAY EVENTS WOO!"
         },
         {
             "id":           "test3",
             "name":         "Control the Blade, Control the Bout",
-            "date":         "2023-11-11",
+            "datetime":     "2023-11-11T18:00:00Z",
             "location":     "St. Mark's Anglican Church, Ottawa",
             "description":  "In this workshop, Maestro Jared Kirby demonstrated various ways to control the adversary's blade to produce the desired outcome."
         },
         {
             "id":           "test4",
             "name":         "Some older event",
-            "date":         "1995-11-11",
+            "datetime":     "1995-11-11T18:00:00Z",
             "location":     "St. Mark's Anglican Church, Ottawa",
             "description":  "Lorem ipsum etc etc."
         },
         {
             "id":           "test5",
             "name":         "Some straight up ancient event",
-            "date":         "1555-11-11",
+            "datetime":     "1555-11-11T18:00:00Z",
             "location":     "Probably a field, or perhaps a forest",
             "description":  "Just a bunch of wildlife, probably"
         }

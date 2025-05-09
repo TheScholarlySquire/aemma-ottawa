@@ -1,26 +1,47 @@
 {
+    "mapSectionTitle": "Où nous trouver",
     "hero": {
-        "title": "Bienvenue à AAMME Ottawa",
+        "title": "Académie des arts martiaux médiévaux européens",
         "subtitle": "Anima, Forza, Ingenio",
         "ctaButton": "Rejoignez un cours aujord'hui"
     },
-    "about": {
-        "heading": "À propos de nous",
-        "paragraph1": "Nous sommes un groupe d'arts martiaux étudiant les riches traditions des arts martiaux historiques européens (HEMA), avec un accent sur l'épée italienne de la Renaissance.",
-        "paragraph2": "En tant que chapitre d'AEMMA, notre groupe à Ottawa s'engage à l'entraînement, à la recherche et à la préservation du patrimoine martial."
-    },
-    "cards": {
-        "training": {
+    "aboutCards": [
+        {
+            "heading": "Qu'est-ce que l'AAMME?",
+            "p1": "L'Académie des arts martiaux médiévaux européens (AAMME) est une école d'arts martiaux médiévaux européens historiques présente partout au Canada. Nous enseignons l'escrime médiévale depuis 25 ans."
+        },
+        {
+            "heading": "Quels cours l'AAMME d'Ottawa offre-t-elle ?",
+            "p1": "Notre section d'Ottawa s'engage à promouvoir la formation, l'enseignement et la préservation du patrimoine martial et des riches traditions des arts martiaux européens historiques (AMHE), en mettant l'accent sur l'épée de côté bolognaise du XVIe siècle."
+        },
+        {
+            "heading": "Quelles sources historiques AAMME utilise-t-elle ?",
+            "p1": "AAMME Ottawa base ses cours sur des manuscrits de véritables maîtres du combat tels que Fiore dei Liberi, Giovanni Dall’Agocchie, Marozzo, et al.."
+        },
+        {
+            "heading": "Où se trouve AAMME Ottawa ?",
+            "p1": "AAMME Ottawa est située au 1606, avenue Fisher, à Nepean, juste à l'ouest de Mooney's Bay."
+        },
+        {
+            "heading": "Comment puis-je m'inscrire à AAMME Ottawa ?",
+            "p1": "Inscrivez-vous à un cours d'admission dès aujourd'hui !"
+        }
+    ],
+    "cards": [
+        {
+            "icon": "⚔️",
             "title": "Entraînement",
             "text": "Nous étudions et appliquons des techniques historiques issues de manuscrits authentiques."
         },
-        "history": {
+        {
+            "icon": "📜",
             "title": "Histoire riche",
             "text": "Nos méthodes sont enracinées dans les traditions martiales des XVe et XVIe siècles."
         },
-        "community": {
+        {
+            "icon": "🤝",
             "title": "Communauté solidaire et inclusive",
             "text": "Nous accueillons des artistes martiaux de tous niveaux et horizons."
         }
-    }
+    ]
 }

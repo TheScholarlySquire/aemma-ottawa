@@ -1,16 +1,25 @@
 {
     "aemma": {
-        "title": "About AEMMA Ottawa",
-        "intro": "We are a group of martial artists dedicated to the historical study and practice of European martial traditions.",
-        "history": "Our curriculum is rooted in the teachings of renowned fencing masters, emphasizing the techniques and philosophies that have stood the test of time.",
-        "beginnerClass": "Beginner classes: Mondays and Wednesdays, 18:00-19:30",
-        "advancedClass": "Advanced classes: Mondats and Wednesdays, 19:30-21:30"
+        "title": "Studying Historical European Medieval Martial Arts since 1998",
+        "intro1": "AEMMA’s not &quot;just another HEMA club.&quot; We’ve been studying, teaching and fighting since May 1998. We do things &quot;by the book&quot; – tying everything we do to historical manuscripts. Our goal is to figure out how it was really done.",
+        "intro2": "Our curriculum is rooted in the teachings of renowned fencing masters, emphasizing the techniques and philosophies that have stood the test of time.",
+        "classesTitle": "Classes",
+        "mission": "Our Mission",
+        "missionDesc": "The mission of AEMMA is to resurrect, research, study, practice and instruct in the combat skills, philosophies and principles of accomplished European Mediaeval martial artists and to achieve a state which would be consistent with that of a mediaeval combatant in both technology and ideal.",
+        "rankingTitle": "Ranking system",
+        "rankingRecruit": "Recruit is the rank of all students after having completed the intake class. These students learn abrazare (wrestling), daga (dagger) and spada (sword, usually longsword).",
+        "rankingScholar": "Scholar is awarded after an oral examination and physical demonstration of the foundations of armizare, including free fencing. It typically takes 1-2 years for a student to achieve this rank.",
+        "rankingFreeScholar": "Free Scholar requires a thorough understanding and demonstration of Fiore’s entire system, from unarmoured wrestling through to fighting in a fully 15th century suit of armour. This rank also permits the Free Scholar to open their own Chapter.",
+        "rankingProvost": "Provost is the rank achieved when a Free Scholar has been the principal instructor of a student from Recruit to Free Scholar.",
+        "ourTeam": "Our team",
+        "cocTitle": "Code of Conduct",
+        "cocDesc": "Studying a martial art can be a dangerous activity and involves coming into contact with others in a very different way than our day-to-day lives. This requires trust, respect, consent and a willingness to check your ego at the door. All members of AEMMA are required to read, understand and comply with the Code of Conduct."
     },
     "gio": {
         "title": "Giovanni Dall'Agocchie",
         "text": "Giovanni Dall'Agocchie was a 16th-century Italian fencing master from Bologna. In 1572, he published 'Dell'Arte di Scrimia' ('The Art of Fencing'), a comprehensive manual detailing swordsmanship techniques and principles. His work is a cornerstone of the Bolognese school of fencing and continues to influence modern HEMA practitioners."
     },
-    "cards": [
+    "team": [
         {
             "name": "Beau",
             "title": "Instructor, Free Scholar",
@@ -34,6 +43,23 @@
             "title": "Student",
             "bio": "[filler text]",
             "image": ""
+        }
+    ],
+    "classes": [
+        {
+            "type": "Intro",
+            "time": "18:00 - 19:30",
+            "description": "Free class to try it out!"
+        },
+        {
+            "type": "Beginner",
+            "time": "18:00 - 19:30",
+            "description": "Beginner classes diving into footwork, guards, movement, and the other essentials."
+        },
+        {
+            "type": "Advanced",
+            "time": "19:30 - 21:30",
+            "description": "Advanced classes expanding into the theory and deeper practice of the martial art"
         }
     ]
 }

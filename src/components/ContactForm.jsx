@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import emailjs from '@emailjs/browser'
 
 export default function ContactForm() {
+    const { t } = useTranslation('contact');
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -40,7 +43,7 @@ export default function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className="space-y-6 max-w-xl mx-auto">
             <div>
-                <label className="block text-sm font-medium text-gray-700">Name</label>
+                <label className="block text-sm font-medium text-gray-700">{t('name')}</label>
                 <input
                     type="text"
                     name="name"
@@ -51,7 +54,7 @@ export default function ContactForm() {
                 />
             </div>
             <div>
-                <label className="block text-sm font-medium text-gray-700">Email</label>
+                <label className="block text-sm font-medium text-gray-700">{t('email')}</label>
                 <input
                     type="email"
                     name="email"
@@ -76,7 +79,7 @@ export default function ContactForm() {
                 type="submit"
                 className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
             >
-                Send Message
+                {t('sentMsg')}
             </button>
 
             {status.message && (

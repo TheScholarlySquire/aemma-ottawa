@@ -9,7 +9,7 @@ export default function EventBanner({ events }) {
     // Add parsed date objects
     const parsedEvents = events.map((e) => ({
         ...e,
-        dateObj: parseISO(e.date),
+        dateObj: parseISO(e.datetime),
     }));
 
     // Separate events into today and soon
@@ -25,11 +25,11 @@ export default function EventBanner({ events }) {
     if (eventsToday.length === 0 && eventsSoon.length === 0) return null;
 
     return (
-        <div className="space-y-4 mb-8">
+        <div className="mb-8 flex align-center justify-evenly gap-2">
             {/* Render today's events */}
             {eventsToday.map((event) => (
                 <Link key={event.id} to={`/events/${event.id}`}>
-                    <div className="rounded-lg px-6 py-4 shadow-md bg-yellow-200 border-yellow-400 border-2">
+                    <div className="rounded-lg p-4 shadow-md bg-yellow-200 border-yellow-400 border-2">
                         <div className="flex items-center gap-3">
                             <span role="img" aria-label="celebration" className="text-3xl">🎉</span>
                             <div>
@@ -37,7 +37,10 @@ export default function EventBanner({ events }) {
                                     {t('eventTodayBanner', { eventTitle: event.name })}
                                 </p>
                                 <p className="text-sm">
-                                    {event.date} — {event.location}
+                                    {new Date(event.datetime).toLocaleString(undefined, {
+                                        dateStyle: 'medium',
+                                        timeStyle: 'short',
+                                    })} — {event.location}
                                 </p>
                             </div>
                         </div>
@@ -61,7 +64,10 @@ export default function EventBanner({ events }) {
                                         })}
                                     </p>
                                     <p className="text-sm">
-                                        {event.date} — {event.location}
+                                        {new Date(event.datetime).toLocaleString(undefined, {
+                                            dateStyle: 'medium',
+                                            timeStyle: 'short',
+                                        })} — {event.location}
                                     </p>
                                 </div>
                             </div>

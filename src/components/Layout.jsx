@@ -16,12 +16,22 @@ export default function Layout() {
                     <Link to="/" className="text-xl font-bold text-blue-700">{t('title')}</Link>
                     <div className="space-x-4">
                         <Link to="/" className="text-blue-600 hover:underline">{t('home')}</Link>
-                        <Link to="/events" className="text-blue-600 hover:underline">{t('events')}</Link>
                         <Link to="/about" className="text-blue-600 hover:underline">{t('about')}</Link>
+                        <Link to="/events" className="text-blue-600 hover:underline">{t('events')}</Link>
                         <Link to="/contact" className="text-blue-600 hover:underline">{t('contact')}</Link>
 
-                        <button onClick={() => changeLanguage('en')} className="ml-4 text-sm">EN</button>
-                        <button onClick={() => changeLanguage('fr')} className="ml-2 text-sm">FR</button>
+                        <div className="inline-flex rounded-full border overflow-hidden">
+                            <button
+                                onClick={() => i18n.changeLanguage('en')}
+                                className={`px-3 py-1 text-sm ${i18n.language === 'en' ? 'bg-blue-100 text-blue-800' : 'text-gray-600 hover:bg-gray-100'} hover:cursor-pointer `}>
+                                EN
+                            </button>
+                            <button
+                                onClick={() => i18n.changeLanguage('fr')}
+                                className={`px-3 py-1 text-sm ${i18n.language === 'fr' ? 'bg-blue-100 text-blue-800' : 'text-gray-600 hover:bg-gray-100'} hover:cursor-pointer`}>
+                                FR
+                            </button>
+                        </div>
                     </div>
                 </nav>
             </header>
