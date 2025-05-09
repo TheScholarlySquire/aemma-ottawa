@@ -1,6 +1,6 @@
 export default function ProfileCards({ name, title, bio, image}) {
     return (
-        <div className="bg-white shadow-lg rounded-2xl p-4 max-w-xs text-center">
+        <div className="bg-white shadow-lg rounded-2xl p-4 w-full text-center">
             {image && (
                 <img
                     src={image || './img/placeholder-profile.png'}

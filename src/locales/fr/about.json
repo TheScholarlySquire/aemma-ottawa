@@ -13,12 +13,29 @@
         "rankingProvost": "Le grade de prévôt est celui obtenu lorsqu'un érudit libre a été l'instructeur principal d'un élève, du niveau de recrue à celui d'érudit libre.",
         "ourTeam": "Notre equipe",
         "cocTitle": "Code de conduite",
-        "cocDesc": "L'étude d'un art martial peut être une activité dangereuse et implique d'entrer en contact avec les autres d'une manière très différente de notre vie quotidienne. Cela exige confiance, respect, consentement et une volonté de laisser son ego à la porte. Tous les membres de l'AEMMA sont tenus de lire, de comprendre et de respecter le Code de conduite."
+        "cocDesc": "L'étude d'un art martial peut être une activité dangereuse et implique d'entrer en contact avec les autres d'une manière très différente de notre vie quotidienne. Cela exige confiance, respect, consentement et une volonté de laisser son ego à la porte. Tous les membres de l'AAMME sont tenus de lire, de comprendre et de respecter le <1>Code de conduite</1>."
     },
     "gio": {
         "title": "Giovanni Dall'Agocchie",
         "text": "Giovanni Dall'Agocchie était un maître d'escrime italien du XVIe siècle originaire de Bologne. En 1572, il a publié 'Dell'Arte di Scrimia' ('L'Art de l'Escrime'), un manuel complet détaillant les techniques et principes de l'escrime. Son œuvre est une pierre angulaire de l'école bolonaise d'escrime et continue d'influencer les pratiquants modernes de HEMA."
     },
+    "ranks": [
+        {
+            "name": "Recrue",
+            "desc": "Le grade de recrue est attribué à tous les étudiants qui poursuivent leurs études après avoir terminé la classe d'admission. Ces étudiants apprennent l'abrazare (lutte), le daga (poignard) et le spada (épée de côté)."
+        },
+        {
+            "name": "Érudit",
+            "desc": "Le grade d'Érudit est décerné après un examen oral et une démonstration physique des bases de l'armizare, y compris l'escrime libre. Il faut généralement un à deux ans pour atteindre ce grade."
+        },
+        {
+            "name": "Érudit libre",
+            "desc": "L'Érudit libre exige une compréhension et une démonstration approfondies de l'ensemble du système de Dall'Agocchie, de la lutte sans armure au combat en armure complète du XVe siècle. Ce grade permet également à l'Érudit libre d'ouvrir son propre chapitre." },
+        {
+            "name": "Provost",
+            "desc": "Provost est le rang atteint lorsqu'un Érudit Libre a été l'instructeur principal d'un étudiant, du statut de Recrue à celui d'Érudit Libre."
+        }
+    ],
     "team": [
         {
             "name": "Beau",

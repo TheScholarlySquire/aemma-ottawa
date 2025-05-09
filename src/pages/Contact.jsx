@@ -10,8 +10,10 @@ export default function Contact() {
 
     return (
         <div>
-            <h1 className="text-2xl font-semibold text-black mb-4">{t('heading')}</h1>
-            <p className="text-gray-700">{t('intro')}</p>
+            <div className="mb-5">
+                <h1 className="text-2xl font-semibold text-black mb-4">{t('heading')}</h1>
+                <p className="text-gray-700">{t('intro')}</p>
+            </div>
 
             <ContactForm />
             <EmbeddedMap />

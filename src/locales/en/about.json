@@ -7,18 +7,32 @@
         "mission": "Our Mission",
         "missionDesc": "The mission of AEMMA is to resurrect, research, study, practice and instruct in the combat skills, philosophies and principles of accomplished European Mediaeval martial artists and to achieve a state which would be consistent with that of a mediaeval combatant in both technology and ideal.",
         "rankingTitle": "Ranking system",
-        "rankingRecruit": "Recruit is the rank of all students after having completed the intake class. These students learn abrazare (wrestling), daga (dagger) and spada (sword, usually longsword).",
-        "rankingScholar": "Scholar is awarded after an oral examination and physical demonstration of the foundations of armizare, including free fencing. It typically takes 1-2 years for a student to achieve this rank.",
-        "rankingFreeScholar": "Free Scholar requires a thorough understanding and demonstration of Fiore’s entire system, from unarmoured wrestling through to fighting in a fully 15th century suit of armour. This rank also permits the Free Scholar to open their own Chapter.",
-        "rankingProvost": "Provost is the rank achieved when a Free Scholar has been the principal instructor of a student from Recruit to Free Scholar.",
         "ourTeam": "Our team",
         "cocTitle": "Code of Conduct",
-        "cocDesc": "Studying a martial art can be a dangerous activity and involves coming into contact with others in a very different way than our day-to-day lives. This requires trust, respect, consent and a willingness to check your ego at the door. All members of AEMMA are required to read, understand and comply with the Code of Conduct."
+        "cocDesc": "Studying a martial art can be a dangerous activity and involves coming into contact with others in a very different way than our day-to-day lives. This requires trust, respect, consent and a willingness to check your ego at the door. All members of AEMMA are required to read, understand and comply with the <1>Code of Conduct</1>."
     },
     "gio": {
         "title": "Giovanni Dall'Agocchie",
         "text": "Giovanni Dall'Agocchie was a 16th-century Italian fencing master from Bologna. In 1572, he published 'Dell'Arte di Scrimia' ('The Art of Fencing'), a comprehensive manual detailing swordsmanship techniques and principles. His work is a cornerstone of the Bolognese school of fencing and continues to influence modern HEMA practitioners."
     },
+    "ranks": [
+        {
+            "name": "Recruit",
+            "desc": "Recruit is the rank of all continuing students after having completed the intake class. These students learn abrazare (wrestling), daga (dagger) and spada (sidesword)."
+        },
+        {
+            "name": "Scholar",
+            "desc": "Scholar is awarded after an oral examination and physical demonstration of the foundations of armizare, including free fencing. It typically takes 1-2 years for a student to achieve this rank."
+        },
+        {
+            "name": "Free Scholar",
+            "desc": "Free Scholar requires a thorough understanding and demonstration of Dall'Agocchie's entire system, from unarmoured wrestling through to fighting in a fully 15th century suit of armour. This rank also permits the Free Scholar to open their own Chapter."
+        },
+        {
+            "name": "Provost",
+            "desc": "Provost is the rank achieved when a Free Scholar has been the principal instructor of a student from Recruit to Free Scholar."
+        }
+    ],
     "team": [
         {
             "name": "Beau",

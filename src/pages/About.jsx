@@ -1,9 +1,10 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation, Trans } from 'react-i18next'
 import ProfileCards from '../components/ProfileCards'
 import ClassCards from '../components/ClassCards'
 
 export default function About() {
     const { t } = useTranslation('about');
+    const ranks = t('ranks', { returnObjects: true });
     const members = t('team', { returnObjects: true });
     const classes = t('classes', { returnObjects: true });
 
@@ -18,28 +19,32 @@ export default function About() {
 
                 <div className="mt-10">
                     <h2 className="text-2xl font-semibold mb-6">{t('aemma.mission')}</h2>
-                    <p className="py-15 border-y-4 border-black">{t('aemma.missionDesc')}</p>
+                    <p className="py-10 border-y-4 border-black"><em>{t('aemma.missionDesc')}</em></p>
                 </div>
 
                 <div className="mt-10">
                     <h2 className="text-2xl font-semibold mb-6">{t('aemma.cocTitle')}</h2>
-                    <p>{t('aemma.cocDesc')}</p>
+                    <Trans i18nKey="aemma.cocDesc" t={t}>
+                        Studying a martial art... <a className="underline" href="https://drive.google.com/file/d/1Hz3CQHkULfceY009M7E7RWXZgiUsAJ0j/view" target="_blank" rel="noopener noreferrer">Code of Conduct</a>
+                    </Trans>
                 </div>
 
                 <div>
                     <div className="mt-10">
                         <h2 className="text-2xl font-semibold mb-6">{t('aemma.rankingTitle')}</h2>
-                        <ol className="list-decimal ml-15">
-                            <li className="my-2">{t('aemma.rankingRecruit')}</li>
-                            <li className="my-2">{t('aemma.rankingScholar')}</li>
-                            <li className="my-2">{t('aemma.rankingFreeScholar')}</li>
-                            <li className="my-2">{t('aemma.rankingProvost')}</li>
-                        </ol>
+                        <div className="grid gap-6 md:grid-cols-2 sm:grid-cols-1 justify-items-center">
+                            {ranks.map((ranks, index) => (
+                                <div className="bg-white shadow-lg rounded-2xl p-4 sm:w-full text-center">
+                                    <h3 className="text-xl font-semibold">{ranks.name}</h3>
+                                    <p className="text-gray-600 text-left my-5 font-medium mb-2">{ranks.desc}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="mt-10">
                         <h2 className="text-2xl font-semibold mb-6">{t('aemma.ourTeam')}</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
+                        <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6 mt-12 justify-items-center">
                             {members.map((team, index) => (
                                 <ProfileCards
                                     key={index}
