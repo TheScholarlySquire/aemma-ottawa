@@ -3,16 +3,12 @@
         "title": "Étudie les arts martiaux médiévaux historiques européens depuis 1998",
         "intro1": "L'AAMME n'est pas « un simple club AMHE ». Nous étudions, enseignons et combattons depuis mai 1998. Nous suivons les règles, en nous basant sur des manuscrits historiques. Notre objectif est de comprendre comment cela se faisait réellement.",
         "intro2": "Notre programme est enraciné dans les enseignements de maîtres d'armes renommés, mettant en valeur des techniques et des philosophies qui ont traversé les siècles.",
-        "classesTitle": "Courses",
         "mission": "Notre mission",
         "missionDesc": "La mission de l'AAMME est de ressusciter, de rechercher, d'étudier, de pratiquer et d'instruire les techniques de combat, les philosophies et les principes des artistes martiaux médiévaux européens accomplis, et d'atteindre un état compatible avec celui d'un combattant médiéval, tant sur le plan technologique qu'idéal.",
         "rankingTitle": "Système de classement",
-        "rankingRecruit": "Le grade de recrue est attribué à tous les élèves après avoir terminé la classe d'admission. Ces élèves apprennent l'abrazare (lutte), le daga (poignard) et la spada (épée, généralement l'épée longue).",
-        "rankingScholar": "Le grade d'érudit est décerné après un examen oral et une démonstration physique des bases de l'armizare, y compris l'escrime libre. Il faut généralement un à deux ans pour atteindre ce grade.",
-        "rankingFreeScholar": "Le grade d'érudit libre exige une compréhension et une démonstration approfondies de l'ensemble du système de Fiore, de la lutte sans armure au combat en armure complète du XVe siècle. Ce grade permet également à l'érudit libre d'ouvrir son propre chapitre.",
-        "rankingProvost": "Le grade de prévôt est celui obtenu lorsqu'un érudit libre a été l'instructeur principal d'un élève, du niveau de recrue à celui d'érudit libre.",
         "ourTeam": "Notre equipe",
         "cocTitle": "Code de conduite",
+        "cocLink": "https://drive.google.com/file/d/1Hz3CQHkULfceY009M7E7RWXZgiUsAJ0j/view",
         "cocDesc": "L'étude d'un art martial peut être une activité dangereuse et implique d'entrer en contact avec les autres d'une manière très différente de notre vie quotidienne. Cela exige confiance, respect, consentement et une volonté de laisser son ego à la porte. Tous les membres de l'AAMME sont tenus de lire, de comprendre et de respecter le <1>Code de conduite</1>."
     },
     "gio": {
@@ -39,7 +35,7 @@
     "team": [
         {
             "name": "Beau",
-            "title": "Instructeur, érudit libre",
+            "title": "Provost",
             "bio": "[texte de remplissage]",
             "image": ""
         },
@@ -60,23 +56,6 @@
             "title": "étudiant",
             "bio": "[texte de remplissage]",
             "image": ""
-        }
-    ],
-    "classes": [
-        {
-            "type": "intro",
-            "time": "",
-            "description": "Cours gratuit pour essayer"
-        },
-        {
-            "type": "Débutant",
-            "time": "18:00 - 19:30",
-            "description": "Cours pour débutants couvrant le jeu de jambes, les gardes, le mouvement, et les bases."
-        },
-        {
-            "type": "Avancé",
-            "time": "19:30 - 21:30",
-            "description": "Cours avancés explorant la théorie et la pratique approfondie de l’art martial."
         }
     ]
 }
