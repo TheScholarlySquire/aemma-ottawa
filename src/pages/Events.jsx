@@ -41,7 +41,7 @@ export default function Events() {
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-12">
-            <h1 className="text-3xl font-bold mb-8">{t('title')}</h1>
+            <h1 className="text-3xl font-bold mb-6">{t('title')}</h1>
 
             {/*
                 To add Calendar View component, add < CalendarView events=upcomingEvents / >

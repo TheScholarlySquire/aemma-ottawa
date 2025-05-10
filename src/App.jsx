@@ -4,8 +4,9 @@ import Layout from './components/Layout'
 
 import Home from './pages/Home'
 import About from './pages/About'
-import Contact from './pages/Contact'
 import Events from './pages/Events'
+import Classes from './pages/Classes'
+import Contact from './pages/Contact'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/events" element={<Events />} /> {/* List of events */}
                 <Route path="/events/:eventId" element={<Events />} /> {/* Specific event details */}
                 <Route path="about" element={<About />} />
+                <Route path="classes" element={<Classes />} />
                 <Route path="contact" element={<Contact />} />
             </Route>
         </Routes>

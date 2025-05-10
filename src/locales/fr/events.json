@@ -15,39 +15,18 @@
             "description":  "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
         },
         {
-            "id":           "test1",
-            "name":         "Testful evenement",
-            "datetime":     "2025-05-08T18:00:00Z",
-            "location":     "en ligne",
-            "description":  "TESTY EVENEMENT."
+            "id":           "surviving-duel-1",
+            "name":         "Survivre à un duel en 30 jours",
+            "datetime":     "2024-08-17T15:00:00Z",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "Ce cours d'introduction de quatre heures commence par des exercices de jeu de jambes de plus en plus complexes, les bases du système bolognais, avant d'aborder trois gardes : la longue ligne droite, la porta di ferro droite et la garde d'alicorne, ainsi que les angles d'attaque. Il continue ensuite par la défense contre toutes les attaques pour vous permettre de sortir indemne d'un duel."
         },
         {
-            "id":           "test2",
-            "name":         "Test de site web",
-            "datetime":     "2025-05-09T18:00:00Z",
-            "location":     "En ligne",
-            "description":  "TESTING THE TODAY EVENTS WOO!"
-        },
-        {
-            "id":           "test3",
+            "id":           "kirby-1",
             "name":         "Contrôlez la lame, contrôlez le combat",
             "datetime":     "2023-11-11T18:00:00Z",
             "location":     "St. Mark's Anglican Church, Ottawa",
             "description":  "Dans cet atelier, le Maestro Jared Kirby a démontré différentes manières de contrôler la lame de l'adversaire pour produire le résultat souhaité."
-        },
-        {
-            "id":           "test4",
-            "name":         "Some older event",
-            "datetime":     "1995-11-11T18:00:00Z",
-            "location":     "St. Mark's Anglican Church, Ottawa",
-            "description":  "Lorem ipsum etc etc."
-        },
-        {
-            "id":           "test5",
-            "name":         "Some straight up ancient event",
-            "datetime":     "1555-11-11T18:00:00Z",
-            "location":     "Probably a field, or perhaps a forest",
-            "description":  "Just a bunch of wildlife, probably"
         }
     ]
 }

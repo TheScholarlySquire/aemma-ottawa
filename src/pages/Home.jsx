@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { differenceInCalendarDays } from 'date-fns'; //compares only calendar days (not time of day) to account for fringe cases on EventBanner
+import { Link } from 'react-router-dom'
 import HeroBanner from '../components/HeroBanner';
 import AboutSection from '../components/AboutSection';
 import ImageCarousel from '../components/ImageCarousel';
@@ -15,14 +17,14 @@ export default function Home() {
     const hasRelevantEvents = allEvents.some((event) => {
         const eventDate = new Date(event.datetime);
         const today = new Date();
-        const diffInDays = Math.floor((eventDate - today) / (1000 * 60 * 60 * 24));
+        const diffInDays = differenceInCalendarDays(eventDate, today); //removes need for manual math each time (protects against daylight savings and timezone offsets)
         return diffInDays >= 0 && diffInDays <= 3;
     });
 
     return (
         <div>
             <HeroBanner />
-            {hasRelevantEvents > 0 && <EventBanner events={allEvents} />}
+            {hasRelevantEvents && <EventBanner events={allEvents} />}
             <AboutSection />
             <section className="relative w-full h[400px] my-8 py-8">
                 {/* Background image */}
@@ -36,14 +38,14 @@ export default function Home() {
 
                 {/* Content */}
                 <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-                    <h1 className="text-4xl font-bold mb-4">Join AEMMA Ottawa with our $20 intake class</h1>
-                    <a
-                        href="/your-target-page"
+                    <h1 className="text-4xl font-bold mb-4">{tHome('classSections.intakeHeader')}</h1>
+                    <Link
+                        to="/classes"
                         className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
                     >
-                        Join now
-                    </a>
-                    <p className="text-lg mt-4">Next Ottawa intake: [mm-dd-yyyy]</p>
+                        {tHome('classSections.intakeBtn')}
+                    </Link>
+                    <p className="text-lg mt-4">{tHome('classSections.nextIntake')} [mm-dd-yyyy]</p>
                 </div>
             </section>
             <InfoCards />

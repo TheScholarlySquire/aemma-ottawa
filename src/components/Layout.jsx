@@ -18,6 +18,7 @@ export default function Layout() {
                         <Link to="/" className="text-blue-600 hover:underline">{t('home')}</Link>
                         <Link to="/about" className="text-blue-600 hover:underline">{t('about')}</Link>
                         <Link to="/events" className="text-blue-600 hover:underline">{t('events')}</Link>
+                        <Link to="/classes" className="text-blue-600 hover:underline">{t('classes')}</Link>
                         <Link to="/contact" className="text-blue-600 hover:underline">{t('contact')}</Link>
 
                         <div className="inline-flex rounded-full border overflow-hidden">

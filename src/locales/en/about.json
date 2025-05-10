@@ -1,7 +1,7 @@
 {
     "aemma": {
         "title": "Studying Historical European Medieval Martial Arts since 1998",
-        "intro1": "AEMMA’s not &quot;just another HEMA club.&quot; We’ve been studying, teaching and fighting since May 1998. We do things &quot;by the book&quot; – tying everything we do to historical manuscripts. Our goal is to figure out how it was really done.",
+        "intro1": "AEMMA’s not \"just another HEMA club.\" We’ve been studying, teaching and fighting since May 1998. We do things \"by the book\" – tying everything we do to historical manuscripts. Our goal is to figure out how it was really done.",
         "intro2": "Our curriculum is rooted in the teachings of renowned fencing masters, emphasizing the techniques and philosophies that have stood the test of time.",
         "classesTitle": "Classes",
         "mission": "Our Mission",
@@ -9,6 +9,7 @@
         "rankingTitle": "Ranking system",
         "ourTeam": "Our team",
         "cocTitle": "Code of Conduct",
+        "cocLink": "https://drive.google.com/file/d/1Hz3CQHkULfceY009M7E7RWXZgiUsAJ0j/view",
         "cocDesc": "Studying a martial art can be a dangerous activity and involves coming into contact with others in a very different way than our day-to-day lives. This requires trust, respect, consent and a willingness to check your ego at the door. All members of AEMMA are required to read, understand and comply with the <1>Code of Conduct</1>."
     },
     "gio": {
@@ -36,7 +37,7 @@
     "team": [
         {
             "name": "Beau",
-            "title": "Instructor, Free Scholar",
+            "title": "Provost",
             "bio": "[filler text]",
             "image": ""
         },
@@ -57,23 +58,6 @@
             "title": "Student",
             "bio": "[filler text]",
             "image": ""
-        }
-    ],
-    "classes": [
-        {
-            "type": "Intro",
-            "time": "18:00 - 19:30",
-            "description": "Free class to try it out!"
-        },
-        {
-            "type": "Beginner",
-            "time": "18:00 - 19:30",
-            "description": "Beginner classes diving into footwork, guards, movement, and the other essentials."
-        },
-        {
-            "type": "Advanced",
-            "time": "19:30 - 21:30",
-            "description": "Advanced classes expanding into the theory and deeper practice of the martial art"
         }
     ]
 }

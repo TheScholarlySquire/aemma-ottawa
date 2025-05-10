@@ -1,0 +1,46 @@
+{
+    "classesPageTitle": "Class Info",
+    "classesPageIntro": "Here is some intro text that will go over the basic curriculum and what students can expect at each class level. It doesn't have to be long, but should probably give a low-level overview of what people can expect, especially non-HEMAists and other normies.",
+    "classesTitle": "Classes",
+    "internalEvents": "Group developments",
+    "courseList": [
+        {
+            "lvl": 0,
+            "type": "Intake",
+            "time": "18:00 - 19:30",
+            "description": "$20 and we provide loaner equipment!",
+            "signupUrl": "",
+            "signupBtn": "Sign up"
+        },
+        {
+            "lvl": 1,
+            "type": "Beginner",
+            "time": "18:00 - 19:30",
+            "description": "Beginner classes diving into footwork, guards, movement, and the other essentials.",
+            "signupUrl": "",
+            "signupBtn": "Sign up"
+        },
+        {
+            "lvl": 2,
+            "type": "Advanced",
+            "time": "19:30 - 21:30",
+            "description": "Advanced classes expanding into the theory and deeper practice of the martial art"
+        }
+    ],
+    "scholars": [
+        {
+            "id":           "cass-scholar",
+            "name":         "Scholar test - Cass (Ottawa)",
+            "datetime":     "2024-09-21T15:00:00Z",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Cass successfully passed their scholar tests in front of 3 Scholars, 2 Free Scholars, and 1 Provost. Their tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. They demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
+        },
+        {
+            "id":           "shane-scholar",
+            "name":         "Scholar test - Shane (Ottawa)",
+            "datetime":     "2024-09-21T17:00:00Z",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Shane successfully passed his scholar tests in front of 3 Scholars, 2 Free Scholars, and 1 Provost. His tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. He demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
+        }
+    ]
+}

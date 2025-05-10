@@ -39,7 +39,7 @@ export default function Contact() {
                 </div>
 
                 {/* Tab content */}
-                <div className="bg-gray-50 p-6 rounded-br-xl rounded-bl-xl shadow flex justify-between">
+                <div className="bg-gray-50 p-6 rounded-br-xl rounded-bl-xl shadow sm:block md:flex justify-between">
                     <div>
                         <h3 className="text-xl font-semibold mb-2">{chapters[activeIndex].name}</h3>
                         <ul>
@@ -48,7 +48,7 @@ export default function Contact() {
                             <li className="text-gray-700"><strong>{t('email')}:</strong> {chapters[activeIndex].contact}</li>
                         </ul>
                     </div>
-                    <figure className="relative aspect-square w-90 h-60 rounded-xl overflow-hidden shadow-lg group">
+                    <figure className="relative sm:w-100 md:aspect-square md:w-90 h-60 rounded-xl overflow-hidden shadow-lg group">
                         <iframe
                             title={`Map location of ${chapters[activeIndex].name}`}
                             src={chapters[activeIndex].mapUrl}

@@ -15,39 +15,18 @@
             "description":  "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
         },
         {
-            "id":           "test1",
-            "name":         "Testful event",
-            "datetime":     "2025-05-08T18:00:00Z",
-            "location":     "Online",
-            "description":  "TESTY EVENT."
+            "id":           "surviving-duel-1",
+            "name":         "Surviving a Duel in 30 days",
+            "datetime":     "2024-08-17T15:00:00Z",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "This four-hour introductory course works from the ground up, starting with increasingly complex footwork drills, the building blocks of the Bolognese system, before going through three guards - code lunga stretta, porta di ferro stretta, and guardia d'alicorno - and the angles of attack. From there it continues through how to defend against all attacks so you can make it through a duel in one piece."
         },
         {
-            "id":           "test2",
-            "name":         "Site test",
-            "datetime":     "2025-05-09T18:00:00Z",
-            "location":     "Online",
-            "description":  "TESTING THE TODAY EVENTS WOO!"
-        },
-        {
-            "id":           "test3",
+            "id":           "kirby-1",
             "name":         "Control the Blade, Control the Bout",
             "datetime":     "2023-11-11T18:00:00Z",
             "location":     "St. Mark's Anglican Church, Ottawa",
             "description":  "In this workshop, Maestro Jared Kirby demonstrated various ways to control the adversary's blade to produce the desired outcome."
-        },
-        {
-            "id":           "test4",
-            "name":         "Some older event",
-            "datetime":     "1995-11-11T18:00:00Z",
-            "location":     "St. Mark's Anglican Church, Ottawa",
-            "description":  "Lorem ipsum etc etc."
-        },
-        {
-            "id":           "test5",
-            "name":         "Some straight up ancient event",
-            "datetime":     "1555-11-11T18:00:00Z",
-            "location":     "Probably a field, or perhaps a forest",
-            "description":  "Just a bunch of wildlife, probably"
         }
     ]
 }

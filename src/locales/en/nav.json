@@ -1,8 +1,9 @@
 {
     "title": "AEMMA Ottawa",
     "home": "Home",
-    "events": "Events",
     "about": "About",
+    "events": "Events",
+    "classes": "Classes",
     "contact": "Contact",
     "footer": "All rights reserved."
 }

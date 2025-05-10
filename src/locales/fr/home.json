@@ -5,6 +5,11 @@
         "subtitle": "Anima, Forza, Ingenio",
         "ctaButton": "Rejoignez un cours aujord'hui"
     },
+    "classSections": {
+        "intakeHeader": "Rejoignez AEMMA Ottawa avec notre cours d'admission à 20 $",
+        "intakeBtn": "Rejoignez-nous maintenant",
+        "nextIntake": "Prochain cours d'admission Ottawa :"
+    },
     "aboutCards": [
         {
             "heading": "Qu'est-ce que l'AAMME?",

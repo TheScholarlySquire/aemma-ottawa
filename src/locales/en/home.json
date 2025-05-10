@@ -1,9 +1,17 @@
 {
+    "intakeBannerTitle": "Join AEMMA Ottawa with our $20 intake class",
+    "intakeBannerButton": "Join Now",
+    "intakeBannerDate": "Next Ottawa intake: [dd-mm-yyyy]",
     "mapSectionTitle": "Where to find us",
     "hero": {
         "title": "Academy of European Mediæval Martial Arts Ottawa",
         "subtitle": "Anima, Forza, Ingenio",
         "ctaButton": "Join a class today"
+    },
+    "classSections": {
+        "intakeHeader": "Join AEMMA Ottawa with our $20 intake class",
+        "intakeBtn": "Join Now",
+        "nextIntake": "Next Ottawa intake:"
     },
     "aboutCards": [
         {

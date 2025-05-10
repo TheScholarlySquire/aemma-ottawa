@@ -1,5 +1,8 @@
 {
+    "classesPageTitle": "Informations sur les courses",
+    "classesPageIntro": "Voici une introduction qui présente le programme de base et ce à quoi les étudiants peuvent s'attendre à chaque niveau de cours. Elle n'a pas besoin d'être longue, mais devrait probablement donner un aperçu de ce à quoi les élèves peuvent s'attendre, en particulier les non-HEMAistes et les autres normies.",
     "classesTitle": "Courses",
+    "internalEvents": "Développements du groupe",
     "courseList": [
         {
             "lvl": 0,
@@ -22,6 +25,22 @@
             "type": "Avancé",
             "time": "19:30 - 21:30",
             "description": "Cours avancés explorant la théorie et la pratique approfondie de l’art martial."
+        }
+    ],
+    "scholars": [
+        {
+            "id":           "cass-scholar",
+            "name":         "Test d'érudit - Cass (Ottawa)",
+            "datetime":     "2024-09-21T15:00:00Z",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille ses deux premiers érudits. Cass a réussi ses tests d'érudit devant trois érudits, deux érudits libres et un prévôt. Leurs tests portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Ils ont démontré leur connaissance de la théorie, leur exécution des principes et des jeux, et ont pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
+        },
+        {
+            "id":           "shane-scholar",
+            "name":         "Test d'érudit - Shane (Ottawa)",
+            "datetime":     "2024-09-21T17:00:00Z",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille ses deux premiers érudits. Shane a réussi ses tests d'érudit devant trois érudits, deux érudits libres et un prévôt. Ses tests portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Il a démontré sa connaissance de la théorie, son exécution des principes et des jeux, et a pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
         }
     ]
 }

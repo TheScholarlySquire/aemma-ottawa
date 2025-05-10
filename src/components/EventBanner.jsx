@@ -25,12 +25,12 @@ export default function EventBanner({ events }) {
     if (eventsToday.length === 0 && eventsSoon.length === 0) return null;
 
     return (
-        <div className="mb-8 flex align-center justify-evenly gap-2">
+        <div className="mb-8">
             {/* Render today's events */}
             {eventsToday.map((event) => (
                 <Link key={event.id} to={`/events/${event.id}`}>
                     <div className="rounded-lg p-4 shadow-md bg-yellow-200 border-yellow-400 border-2">
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center gap-3">
                             <span role="img" aria-label="celebration" className="text-3xl">🎉</span>
                             <div>
                                 <p className="font-bold text-lg">
