@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import Layout from './components/Layout'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
         <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
                 <Route path="/events" element={<Events />} /> {/* List of events */}
                 <Route path="/events/:eventId" element={<Events />} /> {/* Specific event details */}
@@ -23,7 +23,7 @@ function App() {
             </Route>
         </Routes>
     </>
-  )
+);
 }
 
 export default App
