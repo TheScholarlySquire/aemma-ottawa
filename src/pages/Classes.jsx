@@ -1,13 +1,17 @@
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 import ClassCards from '../components/ClassCards'
-import ScholarCard from '../components/ScholarCard';
+import ScholarCard from '../components/ScholarCard'
+import SignUpModal from '../components/SignUpModal'
 
 export default function Classes() {
     const { t } = useTranslation('classes');
     const courses = t('courseList', { returnObjects: true });
     const scholars = t('scholars', { returnObjects: true });
+    const [modalOpen, setModalOpen] = useState(false);
 
     return (
+    <>
         <div className="max-w-4xl mx-auto px-4 py-12">
             <div id="classesIntro">
                 <h1 className="text-3xl font-bold mb-6">{t('classesPageTitle')}</h1>
@@ -16,11 +20,16 @@ export default function Classes() {
 
             <div id="classes" className="my-5 rounded-md p-5">
                 <h2 className="text-2xl font-semibold mb-4">{t('classesTitle')}</h2>
-                <div className="flex flex-wrap md:justify-apart sm:justify-center gap-4">
-                    {courses.map((classes, index) => (
+                <div className="flex flex-wrap md:justify-between sm:justify-center gap-4">
+                    {courses.map((course, index) => (
                         <ClassCards
-                            key={classes.type}
-                            {...classes}
+                            key={index}
+                            {...course}
+                            onSignupClick={
+                                course.lvl === 0 || course.lvl === 1
+                                    ? () => setModalOpen(true)
+                                    : undefined
+                            }
                         />
                     ))}
                 </div>
@@ -29,7 +38,7 @@ export default function Classes() {
             <div className="my-5 rounded-md p-5">
                 <h2 className="text-2xl font-semibold mb-4">{t('internalEvents')}</h2>
                 <div id="scholars">
-                    <div className="">
+                    <div>
                         {scholars.map((scholar, index) => (
                             <ScholarCard
                                 key={scholar.id}
@@ -41,11 +50,11 @@ export default function Classes() {
                         ))}
                     </div>
                 </div>
-
-                <div id="freescholars" className="my-5 p-5">
-
-                </div>
             </div>
         </div>
-    );
+
+        <SignUpModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+    </>
+);
+
 }

@@ -1,4 +1,4 @@
-export default function ClassCards({ lvl, type, time, description, signupUrl, signupBtn }) {
+export default function ClassCards({ lvl, type, time, description, signupUrl, signupBtn, onSignupClick }) {
     return (
         <div className="bg-white shadow-lg md:w-[30%] sm:w-100 rounded-2xl p-4 flex flex-col justify-between">
             <div className="text-center">
@@ -8,12 +8,21 @@ export default function ClassCards({ lvl, type, time, description, signupUrl, si
             </div>
             {( lvl === 0 || lvl === 1 ) && (
                 <div className="text-center mt-5">
-                    <a
-                        href={signupUrl || '#'}
-                        className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
-                    >
-                        {signupBtn}
-                    </a>
+                    {onSignupClick ? (
+                        <button
+                            onClick={onSignupClick}
+                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+                        >
+                            {signupBtn}
+                        </button>
+                    ) : (
+                        <a
+                            href={signupUrl || '#'}
+                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+                        >
+                            {signupBtn}
+                        </a>
+                    )}
                 </div>
             )}
         </div>
