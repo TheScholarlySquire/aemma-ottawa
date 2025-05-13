@@ -9,6 +9,7 @@ export default function Classes() {
     const courses = t('courseList', { returnObjects: true });
     const scholars = t('scholars', { returnObjects: true });
     const [modalOpen, setModalOpen] = useState(false);
+    const [selectedCourseIndex, setSelectedCourseIndex] = useState(null);
 
     return (
     <>
@@ -27,8 +28,11 @@ export default function Classes() {
                             {...course}
                             onSignupClick={
                                 course.lvl === 0 || course.lvl === 1
-                                    ? () => setModalOpen(true)
-                                    : undefined
+                                ? () => {
+                                    setSelectedCourseIndex(index);
+                                    setModalOpen(true);
+                                }
+                                : undefined
                             }
                         />
                     ))}
@@ -53,7 +57,11 @@ export default function Classes() {
             </div>
         </div>
 
-        <SignUpModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+        <SignUpModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            selectedCourseIndex={selectedCourseIndex}
+        />
     </>
 );
 

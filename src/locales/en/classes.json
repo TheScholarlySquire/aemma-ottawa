@@ -3,21 +3,30 @@
     "classesPageIntro": "Here is some intro text that will go over the basic curriculum and what students can expect at each class level. It doesn't have to be long, but should probably give a low-level overview of what people can expect, especially non-HEMAists and other normies.",
     "classesTitle": "Classes",
     "internalEvents": "Group developments",
+    "modal": {
+        "nameTitle": "Name",
+        "emailTitle": "Email",
+        "textTitle": "Do you have fencing experience?",
+        "textField": "Please describe your experience",
+        "textYes": "Yes",
+        "textNo": "No",
+        "submitBtn": "Submit"
+    },
     "courseList": [
         {
             "lvl": 0,
             "type": "Intake",
+            "modalTitle": "Class Sign-Up - Intake",
             "time": "18:00 - 19:30",
             "description": "$20 and we provide loaner equipment!",
-            "signupUrl": "",
             "signupBtn": "Sign up"
         },
         {
             "lvl": 1,
             "type": "Beginner",
+            "modalTitle": "Class Sign-Up - Beginner",
             "time": "18:00 - 19:30",
             "description": "Beginner classes diving into footwork, guards, movement, and the other essentials.",
-            "signupUrl": "",
             "signupBtn": "Sign up"
         },
         {

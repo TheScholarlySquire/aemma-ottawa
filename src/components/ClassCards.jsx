@@ -11,14 +11,14 @@ export default function ClassCards({ lvl, type, time, description, signupUrl, si
                     {onSignupClick ? (
                         <button
                             onClick={onSignupClick}
-                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition hover:cursor-pointer"
                         >
                             {signupBtn}
                         </button>
                     ) : (
                         <a
                             href={signupUrl || '#'}
-                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition hover:cursor-pointer"
                         >
                             {signupBtn}
                         </a>

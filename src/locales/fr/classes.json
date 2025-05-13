@@ -3,21 +3,30 @@
     "classesPageIntro": "Voici une introduction qui présente le programme de base et ce à quoi les étudiants peuvent s'attendre à chaque niveau de cours. Elle n'a pas besoin d'être longue, mais devrait probablement donner un aperçu de ce à quoi les élèves peuvent s'attendre, en particulier les non-HEMAistes et les autres normies.",
     "classesTitle": "Courses",
     "internalEvents": "Développements du groupe",
+    "modal": {
+        "nameTitle": "Nom",
+        "emailTitle": "Courriel",
+        "textTitle": "Avez-vous de l'expérience en escrime ?",
+        "textField": "Veuillez décrire votre expérience",
+        "textYes": "Oui",
+        "textNo": "Non",
+        "submitBtn": "Soummetre"
+    },
     "courseList": [
         {
             "lvl": 0,
             "type": "Recrue",
+            "modalTitle": "Inscrivez - Recrue",
             "time": "18:00 - 19:30",
             "description": "20 $ et nous fournissons du matériel de prêt",
-            "signupUrl": "",
             "signupBtn": "Inscrivez"
         },
         {
             "lvl": 1,
             "type": "Débutant",
+            "modalTitle": "Inscrivez - Débutant",
             "time": "18:00 - 19:30",
             "description": "Cours pour débutants couvrant le jeu de jambes, les gardes, le mouvement, et les bases.",
-            "signupUrl": "",
             "signupBtn": "Inscrivez"
         },
         {
