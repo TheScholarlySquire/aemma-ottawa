@@ -64,12 +64,12 @@
 #pastEvents > div {
     background-color: #f1f1f1;
 }
-.topChevron {
+#eventsContainer .topChevron {
     position:relative;
     background: var(--main-bg-color);
     height: 50px;
 }
-.topChevron::before {
+#eventsContainer .topChevron::before {
     content: '';
     position: absolute;
     bottom: 15ch;

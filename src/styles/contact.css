@@ -28,12 +28,12 @@
     z-index: 1;
     background-color: var(--main-bg-contrast);
 }
-.topChevron {
+#contactContainr .topChevron {
     position:relative;
     background: var(--main-bg-color);
     height: 50px;
 }
-.topChevron::before {
+#contactContainr .topChevron::before {
     content: '';
     position: absolute;
     bottom: 5ch;
