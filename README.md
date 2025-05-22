@@ -1,4 +1,9 @@
-# React + Vite
+# AEMMA Ottawa website
+
+Built with React+Vite. A bilingual, responsive website for my historical martial arts group. Built with React + Vite and styled using Tailwind CSS. Includes multilingual JSON-based content (React i18Next), an event system, dynamic modals, and responsive layouts.
+
+
+# React+Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
