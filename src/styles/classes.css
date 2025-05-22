@@ -1,0 +1,25 @@
+#classesContainer {
+    background-color: var(--steel-blue);
+    padding: 2vw 9vw;
+}
+#classesIntro {
+    padding: 15px 20px;
+    color: var(--main-bg-color);
+    /* border: 1px solid var(--main-bg-color);
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%; */
+}
+#classes {
+    background-color: var(--main-bg-contrast);
+    color: var(--main-bg-color);
+    margin: 0 20px;
+}
+#groupDevelopments {
+    background-color: var(--main-bg-contrast);
+    margin: 15px 20px;
+}
+@media only screen and (max-width: 768px) {
+    .classCard {
+        width: 100%;
+    }
+}

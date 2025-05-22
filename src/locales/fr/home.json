@@ -2,7 +2,7 @@
     "mapSectionTitle": "Où nous trouver",
     "hero": {
         "title": "Académie des arts martiaux médiévaux européens",
-        "subtitle": "Anima, Forza, Ingenio",
+        "subtitle": "Animo, Ingegnio, Forza, Destrezza",
         "ctaButton": "Rejoignez un cours aujord'hui"
     },
     "classSections": {
@@ -30,6 +30,10 @@
         {
             "heading": "Comment puis-je m'inscrire à AAMME Ottawa ?",
             "p1": "Inscrivez-vous à un cours d'admission dès aujourd'hui ! Consultez notre page Cours pour plus d’informations sur notre programme, notre horaire, nos tarifs et comment commencer."
+        },
+        {
+            "heading": "Quels armes nous utilisons ?",
+            "p1": "Notre focus primaire est l'epée sur une main, avec son sécondaires (dague, cape, et bouclier), l'épee en deux mains, armes long, poignards, et lutte."
         }
     ],
     "cards": [

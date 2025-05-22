@@ -4,6 +4,8 @@ import CalendarView from '../components/CalendarView';
 import { useParams } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
+import '../styles/events.css'
+
 export default function Events() {
     const { t } = useTranslation('events');
     const { eventId } = useParams(); // Get eventId from the URL
@@ -40,70 +42,78 @@ export default function Events() {
     const eventDetails = eventId ? rawEvents.find(event => event.id === eventId) : null;
 
     return (
-        <div className="max-w-4xl mx-auto px-4 py-12">
-            <h1 className="text-3xl font-bold mb-6">{t('title')}</h1>
+        <div id="eventsContainer">
+            <div id="eventsPlus">
+                <div>
+                    <h1 className="text-4xl font-semibold mb-4">{t('title')}</h1>
 
-            {/*
-                To add Calendar View component, add < CalendarView events=upcomingEvents / >
-            */}
+                    {/*
+                        To add Calendar View component, add < CalendarView events=upcomingEvents / >
+                    */}
 
-            {/* Today Events */}
-            {todayEvents.length > 0 && (
-                <div className="mb-12 p-6 border-l-4 border-yellow-400 bg-yellow-50 rounded shadow-md">
-                    <h2 className="text-3xl font-extrabold text-yellow-700 flex items-center gap-2 mb-4">
-                        <span role="img" aria-label="celebration">🎉</span>
-                        {t('titleToday')}
-                    </h2>
-                    {todayEvents.map((event, index) => (
-                        <EventCard
-                            key={event.id}
-                            event={event}
-                            highlight={event.id === eventId} // Highlight if the event matches the eventId
-                            ref={event.id === eventId ? eventRef : null} // Scroll into view if it's the current event
-                        />
-                    ))}
+                    {/* Today Events */}
+                    {todayEvents.length > 0 && (
+                        <div className="todayEvent borderGold mb-10 p-6 border-l-4 bg-yellow-50 rounded shadow-md">
+                            <h2 className="text-2xl text-yellow-700 flex items-center gap-2 mb-3">
+                                <span role="img" aria-label="celebration">🎉</span>
+                                {t('titleToday')}
+                            </h2>
+                            {todayEvents.map((event, index) => (
+                                <EventCard
+                                    key={event.id}
+                                    event={event}
+                                    highlight={event.id === eventId} // Highlight if the event matches the eventId
+                                    ref={event.id === eventId ? eventRef : null} // Scroll into view if it's the current event
+                                />
+                            ))}
+                        </div>
+                    )}
+
+                    {/* Event details for specific event */}
+                    {eventDetails && (
+                        <div ref={eventRef} className="mb-12 p-6 border-l-4 border-yellow-400 bg-yellow-50 rounded shadow-md">
+                            <h2 className="text-3xl text-yellow-700">{eventDetails.name}</h2>
+                            <p>{eventDetails.date}</p>
+                            <p>{eventDetails.location}</p>
+                            <p>{eventDetails.description}</p>
+                            {/* Add any additional event-specific content */}
+                        </div>
+                    )}
+
+                    {/* Upcoming Events */}
+                    <div id="upcomingEvents">
+                        <h2 className="text-3xl mb-3">{t('titleUpcoming')}</h2>
+                        {upcomingEvents.length > 0 ? (
+                            upcomingEvents.map((event, index) => (
+                                <EventCard
+                                    key={event.id}
+                                    event={event}
+                                    highlight={event.id === eventId} // Highlight if the event matches the eventId
+                                    ref={event.id === eventId ? eventRef : null} // Scroll into view if it's the current event
+                                    isUpcoming={true}
+                                />
+                            ))
+                        ) : (
+                            <p>No upcoming events at this time.</p>
+                        )}
+                    </div>
                 </div>
-            )}
-
-            {/* Event details for specific event */}
-            {eventDetails && (
-                <div ref={eventRef} className="mb-12 p-6 border-l-4 border-yellow-400 bg-yellow-50 rounded shadow-md">
-                    <h2 className="text-3xl font-extrabold text-yellow-700">{eventDetails.name}</h2>
-                    <p>{eventDetails.date}</p>
-                    <p>{eventDetails.location}</p>
-                    <p>{eventDetails.description}</p>
-                    {/* Add any additional event-specific content */}
-                </div>
-            )}
-
-            {/* Upcoming Events */}
-            <div>
-                <h2 className="text-2xl font-bold mb-8">{t('titleUpcoming')}</h2>
-                {upcomingEvents.length > 0 ? (
-                    upcomingEvents.map((event, index) => (
-                        <EventCard
-                            key={event.id}
-                            event={event}
-                            highlight={event.id === eventId} // Highlight if the event matches the eventId
-                            ref={event.id === eventId ? eventRef : null} // Scroll into view if it's the current event
-                            isUpcoming={true}
-                        />
-                    ))
-                ) : (
-                    <p>No upcoming events at this time.</p>
-                )}
             </div>
 
-            {/* Past Events */}
-            <div>
-                <h2 className="text-2xl font-bold mb-8">{t('titlePast')}</h2>
-                {pastEvents.length > 0 ? (
-                    pastEvents.map((event, index) => (
-                        <EventCard key={index} event={event} />
-                    ))
-                ) : (
-                    <p>No past events at this time.</p>
-                )}
+            <div id="eventsMinus">
+                <div className="topChevron"></div>
+                {/* Past Events */}
+                <div className="topCurved"></div>
+                <div id="pastEvents">
+                    <h2 className="text-3xl mb-3">{t('titlePast')}</h2>
+                    {pastEvents.length > 0 ? (
+                        pastEvents.map((event, index) => (
+                            <EventCard key={index} event={event} />
+                        ))
+                    ) : (
+                        <p>No past events at this time.</p>
+                    )}
+                </div>
             </div>
         </div>
     );

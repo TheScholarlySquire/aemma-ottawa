@@ -1,0 +1,42 @@
+:root {
+    --main-bg-contrast: #f1f1f1;
+    --main-bg-color: #113250;
+    --btn-bg-color: #2f6690;
+    --btn-hover-bg: #3a7ca5;
+    --btn-text: #f1f7f0;
+    --card-bg-color: #d9dcd6;
+    --card-title-color: #16425b;
+    --card-text-color: #464646;
+    --border-bronze: #c88726;
+    --border-silver: #809aba;
+    --border-gold: #ffbc42;
+    --steel-blue: #a0bac8;
+}
+main {
+    background-color: var(--main-bg-color);
+    font-family: "Roboto", sans-serif;
+}
+* button {
+    transition: 0.15s ease-in-out;
+}
+.borderGold {
+    border: 2px solid var(--border-gold);
+}
+#topNav {
+    background-color: var(--main-bg-color);
+}
+#topNav .navLink {
+    color: var(--btn-text);
+}
+.siteBtn {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text);
+    transition: 0.15s ease-in-out;
+}
+.siteBtn:hover {
+    background-color: var(--btn-hover-bg);
+}
+footer {
+    background-color: #113250;
+    color: var(--btn-text);
+}

@@ -5,7 +5,7 @@
     "mapSectionTitle": "Where to find us",
     "hero": {
         "title": "Academy of European Mediæval Martial Arts Ottawa",
-        "subtitle": "Anima, Forza, Ingenio",
+        "subtitle": "Animo, Ingegnio, Forza, Destrezza",
         "ctaButton": "Join a class today"
     },
     "classSections": {
@@ -33,6 +33,10 @@
         {
             "heading": "How can I join AEMMA Ottawa?",
             "p1": "Register for an intake class today! Take a look at our Classes page for more information on our curriculum, schedule, pricing, and how to get started."
+        },
+        {
+            "heading": "Which weapons do we study?",
+            "p1": "Our primary focus is the sword in one hand, along with its secondaries (dagger, cloak, buckler), sword in two hands, polearms, pugnale (dagger), and wrestling."
         }
     ],
     "cards": [

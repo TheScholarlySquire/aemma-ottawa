@@ -1,0 +1,88 @@
+#eventsContainer h1 {
+    color: var(--main-bg-color);
+}
+#eventsPlus {
+    padding: 2vw 9vw;
+    background-color: var(--main-bg-contrast);
+}
+#eventsMinus {
+    padding: 1vw 6vw;
+    background-color: var(--main-bg-color);
+}
+#upcomingEvents {
+    background-color: var(--main-bg-contrast);
+    margin-bottom: 15ch;
+}
+#upcomingEvents > div {
+    background-color: var(--card-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 2vw 3vw;
+}
+.gc-btn, .ics-btn {
+    border-radius: 5px;
+    padding: 1vw 2vw;
+    background-color: var(--main-bg-contrast);
+    color: var(--btn-bg-color);
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.15s ease-in-out;
+}
+.gc-btn:hover, .ics-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: #f9f9f5;
+}
+.gc-btn:active, .ics-btn:active {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    background-color: var(--card-bg-color);
+}
+.topCurved {
+    position: relative;
+    background-color: var(--main-bg-color);
+    height: 8vh;
+    transition: 0.15s ease-in-out;
+}
+.topCurved::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    background: var(--btn-bg-color);
+    height: 100%;
+}
+#pastEvents {
+    background-color: var(--btn-bg-color);
+    padding:10px 20px;
+    margin: 0 20px;
+    border-radius: 0 0 15px 15px;
+}
+#pastEvents h2 {
+    color: var(--btn-text);
+}
+#pastEvents > div {
+    background-color: #f1f1f1;
+}
+.topChevron {
+    position:relative;
+    background: var(--main-bg-color);
+    height: 50px;
+}
+.topChevron::before {
+    content: '';
+    position: absolute;
+    bottom: 15ch;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 100px 100vw;
+    border-color: transparent transparent var(--main-bg-color) transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+@media only screen and (min-width: 1000px) {
+    .topCurved {
+        height: 15vh;
+    }
+}

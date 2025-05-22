@@ -41,7 +41,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-6 max-w-xl mx-auto">
+        <form onSubmit={handleSubmit} id="contactForm" className="space-y-6 max-w-xl mx-auto">
             <div>
                 <label className="block text-sm font-medium text-gray-700">{t('name')}</label>
                 <input
@@ -77,7 +77,7 @@ export default function ContactForm() {
             </div>
             <button
                 type="submit"
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                className="siteBtn px-4 py-2 rounded hover:cursor-pointer transition"
             >
                 {t('sentMsg')}
             </button>

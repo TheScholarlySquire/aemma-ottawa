@@ -70,7 +70,7 @@ const EventCard = forwardRef(({ event, isUpcoming, highlight = false }, ref) => 
             ref={ref}
             className={`p-4 my-2 my-5 rounded shadow ${highlight ? 'bg-yellow-100 border-l-4 border-yellow-500' : 'bg-white'}`}
         >
-            <h3 className={`text-xl font-semibold ${highlight ? 'text-yellow-800' : 'text-gray-900'}`}>{name}</h3>
+            <h3 className={`text-2xl ${highlight ? 'text-yellow-800' : 'text-gray-900'}`}>{name}</h3>
             <p className="text-sm text-gray-600">{localDateTime}</p>
             <p className="text-gray-700">{location}</p>
             <p className="mt-2">{description}</p>
@@ -81,7 +81,7 @@ const EventCard = forwardRef(({ event, isUpcoming, highlight = false }, ref) => 
                         href={generateGoogleCalendarURL({ name, datetime, location, description })}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-blue-600 underline"
+                        className="gc-btn text-sm text-blue-600 underline"
                     >
                         {t('googleCalendar')}
                     </a>
@@ -91,7 +91,7 @@ const EventCard = forwardRef(({ event, isUpcoming, highlight = false }, ref) => 
                             e.preventDefault();
                             downloadICSFile({ name, datetime, location, description });
                         }}
-                        className="text-sm text-blue-600 underline"
+                        className="ics-btn text-sm text-blue-600 underline"
                     >
                         ICS
                     </a>

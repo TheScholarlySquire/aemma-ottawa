@@ -1,0 +1,51 @@
+#eventBanner {
+    margin: 30px 20px;
+}
+#aboutSection {
+    display: flex;
+    justify-content: center;
+}
+#aboutSection > div {
+    border: 2px solid var(--border-gold);
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 0 20px;
+}
+.aboutCard,
+#infoCards .infoCard {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+    border: 3px solid #fff;
+}
+.aboutCard h3,
+#infoCards .infoCard h3 {
+    color: var(--main-bg-color);
+}
+#intakeInfo {
+    background-color: var(--main-bg-contrast);
+}
+#infoCards {
+    padding: 30px 0 0 0;
+}
+.bottomChevron {
+    position:relative;
+    background: var(--main-bg-color);
+}
+.bottomChevron::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100vw 0 100vw;
+    border-color: var(--main-bg-contrast) transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+.embeddedMap {
+    margin: 125px 0 25px 0;
+}
+.embeddedMap h2 {
+    color: var(--btn-text);
+}

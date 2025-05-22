@@ -16,9 +16,9 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div id="sidebar" className="md:hidden">
       {/* Mobile header with toggle */}
-      <div className="flex items-center justify-between bg-gray-800 text-white px-4 py-3">
+      <div className="flex items-center justify-between bg-[#113250] text-white px-4 py-3">
         <span className="font-bold text-lg">{t('title')}</span>
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -28,14 +28,14 @@ export default function Sidebar() {
       {/* Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-30"
+          className="fixed inset-0 bg-black/60 z-30"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Sidebar panel */}
       <div
-            className={`fixed top-0 left-0 h-full w-64 bg-gray-900 text-white z-40 transform transition-transform duration-300 ease-in-out ${
+            className={`fixed top-0 left-0 h-full w-64 bg-[#113250] text-white z-40 transform transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -64,7 +64,7 @@ export default function Sidebar() {
         <div className="p-4 border-t border-gray-700 flex justify-center space-x-2">
           <button
             onClick={() => i18n.changeLanguage('en')}
-            className={`px-3 py-1 text-sm rounded ${
+            className={`px-3 py-1 text-sm rounded hover:cursor-pointer ${
               i18n.language === 'en'
                 ? 'bg-blue-100 text-blue-800'
                 : 'text-gray-300 hover:bg-gray-700'
@@ -74,7 +74,7 @@ export default function Sidebar() {
           </button>
           <button
             onClick={() => i18n.changeLanguage('fr')}
-            className={`px-3 py-1 text-sm rounded ${
+            className={`px-3 py-1 text-sm rounded hover:cursor-pointer ${
               i18n.language === 'fr'
                 ? 'bg-blue-100 text-blue-800'
                 : 'text-gray-300 hover:bg-gray-700'

@@ -9,7 +9,7 @@ export default function AboutSection() {
 
 
     return (
-        <section className="py-12 bg-white">
+        <section id="aboutSection">
             <div className="max-w-5xl mx-auto px-4">
                 <div className="grid gap-6 grid-rows-2 md:grid-cols-3 sm:grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] justify-items-center">
                     {aboutCards.map((aboutCard, index) => {
@@ -17,7 +17,7 @@ export default function AboutSection() {
                         return (
                             <div
                                 key={index}
-                                className={`bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition`}
+                                className={`aboutCard p-6 rounded-2xl shadow hover:shadow-lg transition`}
                             >
                                 <h3 className="text-xl font-semibold mb-2 text-center">{aboutCard.heading}</h3>
                                 <p className="text-gray-600">{aboutCard.p1}</p>

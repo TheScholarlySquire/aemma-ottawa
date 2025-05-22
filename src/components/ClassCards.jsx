@@ -1,6 +1,6 @@
 export default function ClassCards({ lvl, type, time, description, signupUrl, signupBtn, onSignupClick }) {
     return (
-        <div className="bg-white shadow-lg md:w-[30%] sm:w-100 rounded-2xl p-4 flex flex-col justify-between">
+        <div className="classCard bg-white shadow-lg md:w-[30%] rounded-2xl p-4 flex flex-col justify-between">
             <div className="text-center">
                 <h3 className="text-xl font-semibold">{type}</h3>
                 <p className="text-blue-600 font-medium mb-2">{time}</p>
@@ -11,7 +11,7 @@ export default function ClassCards({ lvl, type, time, description, signupUrl, si
                     {onSignupClick ? (
                         <button
                             onClick={onSignupClick}
-                            className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition hover:cursor-pointer"
+                            className="siteBtn inline-block px-6 py-2 rounded hover:cursor-pointer"
                         >
                             {signupBtn}
                         </button>

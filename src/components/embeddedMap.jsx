@@ -4,9 +4,9 @@ export default function Home() {
     const { t: tHome } = useTranslation('home');
 
     return (
-        <section className="bg-white py-12 px-4">
+        <section className="embeddedMap">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-black mb-6 text-center">
+                <h2 className="text-2xl mb-6 text-center">
                     {tHome('mapSectionTitle') || 'Where to Find Us'}
                 </h2>
                 <div className="relative aspect-square w-full h-60 rounded-xl overflow-hidden shadow-lg group">
@@ -17,7 +17,7 @@ export default function Home() {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition duration-300 pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-[#113250]/30 group-hover:bg-transparent transition duration-300 pointer-events-none"></div>
                 </div>
             </div>
         </section>

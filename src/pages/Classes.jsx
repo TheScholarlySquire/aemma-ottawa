@@ -4,6 +4,8 @@ import ClassCards from '../components/ClassCards'
 import ScholarCard from '../components/ScholarCard'
 import SignUpModal from '../components/SignUpModal'
 
+import '../styles/classes.css'
+
 export default function Classes() {
     const { t } = useTranslation('classes');
     const courses = t('courseList', { returnObjects: true });
@@ -13,10 +15,10 @@ export default function Classes() {
 
     return (
     <>
-        <div className="max-w-4xl mx-auto px-4 py-12">
+        <div id="classesContainer">
             <div id="classesIntro">
                 <h1 className="text-3xl font-bold mb-6">{t('classesPageTitle')}</h1>
-                <p className="text-gray-700 text-sm">{t('classesPageIntro')}</p>
+                <p className="text-sm">{t('classesPageIntro')}</p>
             </div>
 
             <div id="classes" className="my-5 rounded-md p-5">
@@ -39,7 +41,7 @@ export default function Classes() {
                 </div>
             </div>
 
-            <div className="my-5 rounded-md p-5">
+            <div id="groupDevelopments" className="rounded-md p-5">
                 <h2 className="text-2xl font-semibold mb-4">{t('internalEvents')}</h2>
                 <div id="scholars">
                     <div>

@@ -25,7 +25,7 @@ export default function EventBanner({ events }) {
     if (eventsToday.length === 0 && eventsSoon.length === 0) return null;
 
     return (
-        <div className="mb-8">
+        <div id="eventBanner" className="mb-8">
             {/* Render today's events */}
             {eventsToday.map((event) => (
                 <Link key={event.id} to={`/events/${event.id}`}>

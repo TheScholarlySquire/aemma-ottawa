@@ -16,7 +16,7 @@ export default function HeroBanner() {
     const { t } = useTranslation('home');
 
     return (
-        <section className="relative h-[500px] mb-8 overflow-hidden rounded-lg shadow-md">
+        <section id="heroBanner" className="relative h-[500px] overflow-hidden shadow-md">
             {/* Background Carousel */}
             <Swiper
                 modules={[Autoplay]}
@@ -39,10 +39,10 @@ export default function HeroBanner() {
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/30 z-10 flex flex-col items-center justify-center text-center text-white px-4">
                 <h1 className="text-4xl font-bold mb-4 drop-shadow-md">{t('hero.title')}</h1>
-                <p className="text-lg mb-6 drop-shadow-md">{t('hero.subtitle')}</p>
+                <p className="text-lg mb-6 drop-shadow-md">Animo, Ingegno, Forza, Destrezza</p>
                 <Link
                     to="/classes"
-                    className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition drop-shadow-md"
+                    className="siteBtn px-6 py-2 rounded hover:bg-blue-800 transition drop-shadow-md"
                     >
                     {t('hero.ctaButton')}
                 </Link>
