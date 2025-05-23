@@ -67,7 +67,7 @@
 #eventsContainer .topChevron {
     position:relative;
     background: var(--main-bg-color);
-    height: 50px;
+    height: 25px;
 }
 #eventsContainer .topChevron::before {
     content: '';
@@ -76,7 +76,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 100vw 100px 100vw;
+    border-width: 0 50vw 100px 50vw;
     border-color: transparent transparent var(--main-bg-color) transparent;
     left: 50%;
     transform: translateX(-50%) translateY(100%);
@@ -84,5 +84,15 @@
 @media only screen and (min-width: 1000px) {
     .topCurved {
         height: 15vh;
+    }
+}
+@media only screen and (min-width: 1490px) {
+    #eventsContainer .topChevron::before {
+        bottom: calc(15ch + 5px);
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #eventsContainer .topChevron {
+        height: 30px;
     }
 }
