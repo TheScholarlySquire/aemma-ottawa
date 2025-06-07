@@ -10,7 +10,7 @@ export default function AboutSection() {
 
     return (
         <section id="aboutSection">
-            <div className="max-w-5xl mx-auto px-4">
+            <div className="max-w-5xl mx-auto my-8 px-4">
                 <div className="grid gap-6 grid-rows-2 md:grid-cols-3 sm:grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] justify-items-center">
                     {aboutCards.map((aboutCard, index) => {
 

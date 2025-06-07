@@ -1,17 +1,40 @@
 # AEMMA Ottawa website
 
-Built with React+Vite. A bilingual, responsive website for my historical martial arts group. Built with React + Vite and styled using Tailwind CSS. Includes multilingual JSON-based content (React i18Next), an event system, dynamic modals, and responsive layouts.
+## Description
+This is the official website for AEMMA Ottawa — a historical European martial arts (HEMA) group based in Ottawa, Canada. The site showcases information about the club, upcoming events, class schedules, contact information, and more.
 
+## Live URL
+[https:aemma-ottawa.org](https:aemma-ottawa.org)
 
-# React+Vite
+## Features
+- Multilingual support (English / French)
+- Responsive design with Tailwind CSS
+- Interactive modal for class sign-up
+- Upcoming events banner
+- Scroll-based layout with collapsible sidebar navigation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack & Key Dependencies
 
-Currently, two official plugins are available:
+| Tool/Library       | Why it's used |
+|--------------------|----------------|
+| **React + Vite**   | Fast, modern React app with minimal config |
+| **React Router**   | Page navigation |
+| **Tailwind CSS**   | Utility-first responsive styling |
+| **i18next**        | Language translations |
+| **Headless UI**    | Accessible modal components |
+| **Lucide-react**   | Lightweight icon set |
+| **gh-pages**       | Easy GitHub Pages deployment |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm (v9+)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+git clone https://github.com/TheScholarlySquire/aemma-ottawa.git
+cd aemma-ottawa
+npm install
+npm run dev
