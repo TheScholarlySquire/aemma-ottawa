@@ -1,12 +1,12 @@
 {
     "classesPageTitle": "Informations sur les courses",
-    "classesPageIntro1": "Voici une introduction qui présente le programme de base et ce à quoi les étudiants peuvent s'attendre à chaque niveau de cours. Elle n'a pas besoin d'être longue, mais devrait probablement donner un aperçu de ce à quoi les élèves peuvent s'attendre, en particulier les non-HEMAistes et les autres normies.",
-    "classesPageIntro2": "In addition, students will also be introduced to other contemporary systems of fencing, Florentine (Anonimo Riccardiano) and Neapolitan (Marc’Antonio Pagano) in particular.",
+    "classesPageIntro1": "La lutte, la dague et l’épée à une main constituent la base de notre programme et influencent tout ce que nous faisons, quel que soit le(s) arme(s) utilisée(s). Les cours d’introduction/débutant visent à développer la maîtrise de ces trois disciplines. Au fur et à mesure de leur progression, les élèves seront initiés à des actions plus complexes, à des tactiques variées et à d’autres armes :",
+    "classesPageIntro2": "Les élèves seront également initiés à d’autres systèmes d’escrime contemporains, notamment les traditions florentine (Anonimo Riccardiano) et napolitaine (Marc’Antonio Pagano).",
     "classesPageIntroList": {
-        "li1": "Sword in one hand along with its secondaries: dagger, cloak, buckler/targa, rotella, second sword",
-        "li2": "Polearms: partisan, spear, bill, pike, pollaxe, halberd, glaive",
-        "li3": "Spadone (the big sword)",
-        "li4": "Mismatched weapons"
+        "li1": "Épée à une main accompagnée de ses armes secondaires : dague, manteau, bouclier/bouclier plat (targa), rondache (rotella), seconde épée",
+        "li2": "Armes d’hast : pertuisane, lance, vouge, pique, hache d’armes, hallebarde, glaive",
+        "li3": "Spadone (la grande épée)",
+        "li4": "Armes dépareillées"
     },
     "classesTitle": "Courses",
     "internalEvents": "Développements du groupe",
