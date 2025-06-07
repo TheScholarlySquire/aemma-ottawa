@@ -8,6 +8,6 @@ export default defineConfig(({ mode }) => {
             react(),
             tailwindcss(),
         ],
-        base: mode === 'production' ? '/aemma-ottawa/' : '/',
+        base: '/',
     };
 });
