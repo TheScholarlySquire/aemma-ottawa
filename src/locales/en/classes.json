@@ -1,6 +1,13 @@
 {
     "classesPageTitle": "Class Info",
-    "classesPageIntro": "Here is some intro text that will go over the basic curriculum and what students can expect at each class level. It doesn't have to be long, but should probably give a low-level overview of what people can expect, especially non-HEMAists and other normies.",
+    "classesPageIntro1": "Wrestling, dagger and sword in one hand are the foundation of our curriculum and inform everything that we do, regardless of the weapon(s) in hand. The intake/beginner classes will focus on developing proficiency in these three skills, and as students progress, they will be introduced to more complex actions, tactics, and additional weapons:",
+    "classesPageIntro2": "In addition, students will also be introduced to other contemporary systems of fencing, Florentine (Anonimo Riccardiano) and Neapolitan (Marc’Antonio Pagano) in particular.",
+    "classesPageIntroList": {
+        "li1": "Sword in one hand along with its secondaries: dagger, cloak, buckler/targa, rotella, second sword",
+        "li2": "Polearms: partisan, spear, bill, pike, pollaxe, halberd, glaive",
+        "li3": "Spadone (the big sword)",
+        "li4": "Mismatched weapons"
+    },
     "classesTitle": "Classes",
     "internalEvents": "Group developments",
     "modal": {
@@ -15,14 +22,6 @@
     "courseList": [
         {
             "lvl": 0,
-            "type": "Intake",
-            "modalTitle": "Class Sign-Up - Intake",
-            "time": "18:00 - 19:30",
-            "description": "$20 and we provide loaner equipment!",
-            "signupBtn": "Sign up"
-        },
-        {
-            "lvl": 1,
             "type": "Beginner",
             "modalTitle": "Class Sign-Up - Beginner",
             "time": "18:00 - 19:30",
@@ -30,10 +29,18 @@
             "signupBtn": "Sign up"
         },
         {
+            "lvl": 1,
+            "type": "Intermediate",
+            "modalTitle": "Class Sign-Up - Intermediate",
+            "time": "18:00 - 19:30",
+            "description": "Here we look at more complex actions, secondary weapons, and other systems.",
+            "signupBtn": "Sign up"
+        },
+        {
             "lvl": 2,
             "type": "Advanced",
             "time": "19:30 - 21:30",
-            "description": "Advanced classes expanding into the theory and deeper practice of the martial art"
+            "description": "In advanced classes, we dig deep into the material and pressure test through fencing."
         }
     ],
     "scholars": [

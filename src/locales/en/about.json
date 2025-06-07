@@ -14,7 +14,7 @@
     },
     "gio": {
         "title": "Giovanni Dall'Agocchie",
-        "text": "Giovanni Dall'Agocchie was a 16th-century Italian fencing master from Bologna. In 1572, he published 'Dell'Arte di Scrimia' ('The Art of Fencing'), a comprehensive manual detailing swordsmanship techniques and principles. His work is a cornerstone of the Bolognese school of fencing and continues to influence modern HEMA practitioners."
+        "text": "Giovanni Dall'Agocchie was a 16th-century Italian fencing master from Bologna. In 1572, he published 'Dell'Arte di Scrimia' ('The Art of Fencing'), a comprehensive treatise detailing swordsmanship techniques and principles. His work is a cornerstone of the Bolognese school of fencing and continues to influence modern HEMA practitioners."
     },
     "ranks": [
         {
@@ -27,7 +27,7 @@
         },
         {
             "name": "Free Scholar",
-            "desc": "Free Scholar requires a thorough understanding and demonstration of Dall'Agocchie's entire system, from unarmoured wrestling through to fighting in a fully 15th century suit of armour. This rank also permits the Free Scholar to open their own Chapter."
+            "desc": "Free Scholar requires a thorough understanding of the entirety of the Bolognese martial tradition and the ability to demonstrate the art skilfully, from defending against dagger attacks to fighting with a wide range of weapons and their secondaries."
         },
         {
             "name": "Provost",
@@ -37,8 +37,8 @@
     "team": [
         {
             "name": "Beau",
-            "title": "Provost",
-            "bio": "[filler text]",
+            "title": "Free Scholar",
+            "bio": "Beau Brock began his lifelong pursuit of historical fencing in 2006 while he was a graduate student at UBC. Upon moving to Toronto in 2008, he joined AEMMA where he studied Fiore dei Liberi, becoming a free scholar in November 2010. Since then, he has focused all his efforts on the martial traditions of 16th century Italy, with a particular emphasis on the Bolognese approach as laid out by Giovanni Dall’Agocchie and his peers (Marozzo, Manciolino, and the Anonimo). He has taught workshops in Canada and the US on his interpretation of the Bolognese tradition.",
             "image": ""
         },
         {

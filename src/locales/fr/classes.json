@@ -1,6 +1,13 @@
 {
     "classesPageTitle": "Informations sur les courses",
-    "classesPageIntro": "Voici une introduction qui présente le programme de base et ce à quoi les étudiants peuvent s'attendre à chaque niveau de cours. Elle n'a pas besoin d'être longue, mais devrait probablement donner un aperçu de ce à quoi les élèves peuvent s'attendre, en particulier les non-HEMAistes et les autres normies.",
+    "classesPageIntro1": "Voici une introduction qui présente le programme de base et ce à quoi les étudiants peuvent s'attendre à chaque niveau de cours. Elle n'a pas besoin d'être longue, mais devrait probablement donner un aperçu de ce à quoi les élèves peuvent s'attendre, en particulier les non-HEMAistes et les autres normies.",
+    "classesPageIntro2": "In addition, students will also be introduced to other contemporary systems of fencing, Florentine (Anonimo Riccardiano) and Neapolitan (Marc’Antonio Pagano) in particular.",
+    "classesPageIntroList": {
+        "li1": "Sword in one hand along with its secondaries: dagger, cloak, buckler/targa, rotella, second sword",
+        "li2": "Polearms: partisan, spear, bill, pike, pollaxe, halberd, glaive",
+        "li3": "Spadone (the big sword)",
+        "li4": "Mismatched weapons"
+    },
     "classesTitle": "Courses",
     "internalEvents": "Développements du groupe",
     "modal": {

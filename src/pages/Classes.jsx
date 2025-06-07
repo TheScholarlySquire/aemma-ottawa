@@ -8,6 +8,7 @@ import '../styles/classes.css'
 
 export default function Classes() {
     const { t } = useTranslation('classes');
+    const introList = t('classesPageIntroList', { returnObjects: true });
     const courses = t('courseList', { returnObjects: true });
     const scholars = t('scholars', { returnObjects: true });
     const [modalOpen, setModalOpen] = useState(false);
@@ -18,7 +19,14 @@ export default function Classes() {
         <div id="classesContainer">
             <div id="classesIntro">
                 <h1 className="text-3xl font-bold mb-6">{t('classesPageTitle')}</h1>
-                <p className="text-sm">{t('classesPageIntro')}</p>
+                <p className="text-sm">{t('classesPageIntro1')}</p>
+                <ul className="text-sm list-disc m-4">
+                    <li>{introList.li1}</li>
+                    <li>{introList.li2}</li>
+                    <li>{introList.li3}</li>
+                    <li>{introList.li4}</li>
+                </ul>
+                <p className="text-sm">{t('classesPageIntro2')}</p>
             </div>
 
             <div id="classes" className="my-5 rounded-md p-5">
