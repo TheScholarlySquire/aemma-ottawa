@@ -46,32 +46,34 @@ export default function Home() {
                     <div className="absolute inset-0 bg-black/30 z-10"></div>
 
                     {/* Content */}
-                    <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-                        <h1 className="text-4xl font-bold mb-4">{tHome('classSections.intakeHeader')}</h1>
-                        <button
-                            onClick={() => setModalOpen(true)}
-                            className="siteBtn inline-block px-6 py-2 rounded hover:bg-blue-800 transition hover:cursor-pointer"
-                        >
-                            {intakeCourse.signupBtn}
-                        </button>
+                    {/*
+                        <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
+                            <h1 className="text-4xl font-bold mb-4">{tHome('classSections.intakeHeader')}</h1>
+                            <button
+                                onClick={() => setModalOpen(true)}
+                                className="siteBtn inline-block px-6 py-2 rounded hover:bg-blue-800 transition hover:cursor-pointer"
+                            >
+                                {intakeCourse.signupBtn}
+                            </button>
 
-                        {/*
                             <Link
                                 to="/classes"
                                 className="inline-block bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
                             >
                                 {tHome('classSections.intakeBtn')}
                             </Link>
-                        */}
 
-                        <p className="text-lg mt-4">{tHome('classSections.nextIntake')} [mm-dd-yyyy]</p>
-                    </div>
+                            <p className="text-lg mt-4">{tHome('classSections.nextIntake')} [mm-dd-yyyy]</p>
+                        </div>
+                    */}
                 </section>
+                {/*
                 <SignUpModal
                     isOpen={modalOpen}
                     onClose={() => setModalOpen(false)}
                     selectedCourseIndex={0}
                 />
+                */}
                 <InfoCards />
                 <div className="bottomChevron"></div>
             </div>
