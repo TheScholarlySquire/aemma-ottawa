@@ -8,25 +8,18 @@
     "googleCalendar": "Add to Google Calendar",
     "eventList": [
         {
-            "id":           "public-demo",
-            "name":         "Public Demonstration",
-            "datetime":     "2025-06-15T18:00:00Z",
-            "location":     "Major's Hill Park, Ottawa",
-            "description":  "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
+            "id":           "italian-week-2025-1",
+            "name":         "Italian Fencing Demonstration",
+            "datetime":     "2025-06-08T14:00:00Z",
+            "location":     "412 Preston Street, Ottawa",
+            "description":  "Join us for a live demonstration of Historical European Martial Arts (HEMA) during the Italian Week Festival!"
         },
         {
-            "id":           "public-demo",
-            "name":         "Public Demonstration",
-            "datetime":     "2025-05-21T18:00:00Z",
-            "location":     "Major's Hill Park, Ottawa",
-            "description":  "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
-        },
-        {
-            "id":           "public-demo",
-            "name":         "Public Demonstration",
-            "datetime":     "2025-05-25T18:00:00Z",
-            "location":     "Major's Hill Park, Ottawa",
-            "description":  "Join us for a live demonstration of historical European martial arts during the Ottawa Summer Heritage Festival."
+            "id":           "italian-week-2025-0",
+            "name":         "Italian Fencing Demonstration",
+            "datetime":     "2025-06-07T17:00:00Z",
+            "location":     "412 Preston Street, Ottawa",
+            "description":  "Join us for a live demonstration of Historical European Martial Arts (HEMA) during the Italian Week Festival!"
         },
         {
             "id":           "surviving-duel-1",
