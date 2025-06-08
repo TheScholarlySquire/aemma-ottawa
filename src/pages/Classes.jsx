@@ -27,6 +27,7 @@ export default function Classes() {
                     <li>{introList.li4}</li>
                 </ul>
                 <p className="text-sm">{t('classesPageIntro2')}</p>
+                <p className="text-sm">{t('classesPageIntro3')}</p>
             </div>
 
             <div id="classes" className="my-5 rounded-md p-5">
