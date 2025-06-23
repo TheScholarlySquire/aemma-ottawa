@@ -1,4 +1,4 @@
-export default function ProfileCards({ name, title, bio, image}) {
+export default function ProfileCards({ name, title, bio, image, pronoun}) {
     return (
         <div className="profileCard shadow-lg w-full text-center">
             <img
@@ -6,10 +6,11 @@ export default function ProfileCards({ name, title, bio, image}) {
                 alt={name}
                 className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4"
             />
-            <div className="w-full">
+            <div className="w-full h-full">
                 <h3 className="text-xl font-semibold">{name}</h3>
-                <p className="font-medium mb-2">{title}</p>
-                <p className="text-sm">{bio}</p>
+                <p className="font-medium">{title}</p>
+                {!!pronoun && <p className="font-sm">({pronoun})</p>}
+                <p className="text-sm mt-2">{bio}</p>
             </div>
         </div>
     );

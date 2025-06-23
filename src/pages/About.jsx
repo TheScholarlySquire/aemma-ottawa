@@ -70,6 +70,7 @@ export default function About() {
                                 title={team.title}
                                 bio={team.bio}
                                 image={team.image || null}
+                                pronoun={team.pronoun || null}
                             />
                         ))}
                     </div>
