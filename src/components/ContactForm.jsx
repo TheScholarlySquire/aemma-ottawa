@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import emailjs from '@emailjs/browser'
 
 export default function ContactForm() {
@@ -24,7 +24,7 @@ export default function ContactForm() {
         e.preventDefault();
 
         emailjs.send(
-            "service_nbp8fpd", //EmailJS service ID
+            "service_nbp8fpd", //EmailJS service ID nbp8fpd
             "template_h7ne5tb", //Template ID
             formData,
             'gynnxssIw1L6xhHTT', //EmailJS public key
@@ -32,11 +32,15 @@ export default function ContactForm() {
         .then(() => {
             setSubmitted(true);
             setFormData({ name: '', email: '', message: '' });
-            setStatus({ submitted: true, error: false, message: 'Thank you! Your message has been sent.' });
+            setStatus({ submitted: true, error: false, message: t('formSuccess') });
         })
         .catch((error) => {
             console.error('Email sending failed:', error);
-            setStatus({ submitted: false, error: true, message: 'Oops! Something went wrong. Please try again later.' });
+            setStatus({
+                submitted: false,
+                error: true,
+                message: 'formFailure'
+            });
         });
     };
 
@@ -84,7 +88,13 @@ export default function ContactForm() {
 
             {status.message && (
                 <p className={`mt-2 text-sm ${status.error ? 'text-red-600' : 'text-green-600'}`}>
-                    {status.message}
+                {status.message === 'formFailure' ? (
+                    <Trans i18nKey="formFailure" ns="contact">
+                        Oops! Something went wrong. Please try again later, or feel free to email us at <a href="mailto:ottawa@aemma.org" className="underline text-blue-600">ottawa@aemma.org</a>.
+                    </Trans>
+                ) : (
+                    status.message
+                )}
                 </p>
             )}
         </form>

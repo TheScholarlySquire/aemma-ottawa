@@ -7,7 +7,13 @@
     "titlePast": "Événements passés",
     "googleCalendar": "Ajouter à Google Calendar",
     "eventList": [
-
+        {
+            "id":           "bytown-symposium-2025-0",
+            "name":         "Bytown Ottawa Sword Symposium 2025",
+            "datetime":     "2025-08-23T12:00:00Z",
+            "location":     "1701 Woodroffe Ave, Ottawa",
+            "description":  "L'AAMME Ottawa, l'OHFS et la BAHFF vous invitent au premier Symposium annuel d'escrime historique à Ottawa ! Joignez-vous à nous pour deux jours d'ateliers, de combats et de divertissements parmi 24 ateliers portant sur une variété d'armes."
+        },
         {
             "id":           "italian-week-2025-1",
             "name":         "Démonstration d'escrime italienne",

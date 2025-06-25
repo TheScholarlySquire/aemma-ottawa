@@ -8,6 +8,7 @@ import eventsEn from './locales/en/events.json'
 import classesEn from './locales/en/classes.json'
 import contactEn from './locales/en/contact.json'
 import navEn from './locales/en/nav.json'
+import faqEn from './locales/en/faq.json'
 
 import homeFr from './locales/fr/home.json'
 import aboutFr from './locales/fr/about.json'
@@ -15,6 +16,7 @@ import eventsFr from './locales/fr/events.json'
 import classesFr from './locales/fr/classes.json'
 import contactFr from './locales/fr/contact.json'
 import navFr from './locales/fr/nav.json'
+import faqFr from './locales/fr/faq.json'
 
 // Define your translations here
 const resources = {
@@ -25,6 +27,7 @@ const resources = {
         contact: contactEn,
         classes: classesEn,
         nav: navEn,
+        faq: faqEn,
     },
     fr: {
         home: homeFr,
@@ -33,6 +36,7 @@ const resources = {
         contact: contactFr,
         classes: classesFr,
         nav: navFr,
+        faq: faqFr,
     },
 };
 

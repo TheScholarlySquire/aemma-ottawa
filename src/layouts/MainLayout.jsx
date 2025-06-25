@@ -17,7 +17,7 @@ export default function MainLayout() {
                 <header className="bg-gray-100 shadow-md hidden md:block">
                     <nav id="topNav" className="flex justify-between items-center px-6 py-4 border-b">
                         <Link to="/" className="navLink text-xl font-bold">
-                            {t('title')}
+                            {t('title')}<img src="../src/assets/AEMMA-logo.png" style={{ width:'35px', height:'35px', display:'inline-block', marginLeft: '10px' }}/>
                         </Link>
                         <div className="flex items-center space-x-4">
                             <Link to="/" className="navLink hover:underline">{t('home')}</Link>
@@ -25,6 +25,7 @@ export default function MainLayout() {
                             <Link to="/events" className="navLink hover:underline">{t('events')}</Link>
                             <Link to="/classes" className="navLink hover:underline">{t('classes')}</Link>
                             <Link to="/contact" className="navLink hover:underline">{t('contact')}</Link>
+                            <Link to="/faq" className="navLink hover:underline">{t('faq')}</Link>
 
                             {/* Language Switcher */}
                             <div className="inline-flex rounded-full border overflow-hidden">

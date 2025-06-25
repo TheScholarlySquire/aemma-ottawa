@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 
 export default function AboutSection() {
     const { t } = useTranslation('home');
@@ -20,7 +20,16 @@ export default function AboutSection() {
                                 className={`aboutCard p-6 rounded-2xl shadow hover:shadow-lg transition`}
                             >
                                 <h3 className="text-xl font-semibold mb-2 text-center">{aboutCard.heading}</h3>
-                                <p className="text-gray-600">{aboutCard.p1}</p>
+                                <p className="text-gray-600">
+                                    <Trans
+                                        i18nKey={`aboutCards.${index}.p1`}
+                                        t={t}
+                                        components={{
+                                            1: <a href="https://g.co/kgs/uAQTPHH" className="text-blue-600 underline hover:text-blue-800 hover:cursor-pointer" />,
+                                            2: <a href="#/classes" className="text-blue-600 underline hover:text-blue-800 hover:cursor-pointer" />
+                                        }}
+                                    />
+                                </p>
                             </div>
                         );
                     })}

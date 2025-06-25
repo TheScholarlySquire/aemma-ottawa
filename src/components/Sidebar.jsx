@@ -9,6 +9,7 @@ const navItems = [
   { name: 'events', path: '/events' },
   { name: 'classes', path: '/classes' },
   { name: 'contact', path: '/contact' },
+  { name: 'faq', path: '/faq' },
 ];
 
 export default function Sidebar() {
@@ -19,7 +20,7 @@ export default function Sidebar() {
     <div id="sidebar" className="md:hidden">
       {/* Mobile header with toggle */}
       <div className="flex items-center justify-between bg-[#113250] text-white px-4 py-3">
-        <span className="font-bold text-lg">{t('title')}</span>
+        <span className="font-bold text-lg">{t('title')}<img src="../src/assets/AEMMA-logo.png" style={{ width:'35px', height:'35px', display:'inline-block', marginLeft: '10px' }}/></span>
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -40,7 +41,7 @@ export default function Sidebar() {
         }`}
       >
         <div className="p-4 font-bold text-xl border-b border-gray-700">
-          {t('title')}
+          {t('title')}<img src="../src/assets/AEMMA-logo.png" style={{ width:'35px', height:'35px', display:'inline-block', marginLeft: '10px' }}/>
         </div>
         <ul className="space-y-2 p-4">
           {navItems.map((item) => (

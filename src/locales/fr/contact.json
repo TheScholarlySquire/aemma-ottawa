@@ -31,5 +31,7 @@
             "phone": "",
             "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11359.391144593561!2d-65.76581097278273!3d44.62058693908638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca81d1279871d07%3A0xb006d6725a1128bc!2s2%20Mount%20St%2C%20Digby%2C%20NS%20B0V%201A0!5e0!3m2!1sen!2sca!4v1746800473707!5m2!1sen!2sca"
         }
-    ]
+    ],
+    "formSuccess": "Merci ! Votre message a été envoyé.",
+    "formFailure": "Oups ! Un problème est survenu. Veuillez réessayer ultérieurement ou nous contacter via votre application de messagerie préférée à <1>ottawa@aemma.org</1>."
 }

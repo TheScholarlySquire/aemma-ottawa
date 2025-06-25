@@ -1,0 +1,5 @@
+#faqContainer {
+    padding: 30px 9vw;
+    background-color: var(--main-bg-contrast);
+    position: relative;
+}
