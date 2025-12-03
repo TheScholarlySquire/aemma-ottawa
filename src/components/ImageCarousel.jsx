@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const images = [
-    { src: './img/group1.jpg', alt: 'Group event' },
+    { src: './img/group3.jpg', alt: 'Group event' },
     { src: './img/b1.jpg', alt: 'Historical drills in action' },
     { src: './img/bc1.jpg', alt: 'Training with sidesword' },
     { src: './img/cs1.jpg', alt: 'Fencing' },
