@@ -35,7 +35,7 @@ export default function Home() {
             {hasRelevantEvents && <EventBanner events={allEvents} />}
             <AboutSection />
             <div id="intakeInfo">
-                <section id="intakeBanner" class="relative w-full">
+                <section id="intakeBanner" className="relative w-full">
                     <img src="./img/group2.jpg" alt=""/>
 
                     {/* Content */}
