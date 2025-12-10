@@ -30,7 +30,7 @@ export default function HeroBanner() {
                         <img
                             src={img.src}
                             alt={img.alt}
-                            className={"w-full h-full object-cover " + img.className}
+                            className={"w-full h-full object-cover"}
                         />
                     </SwiperSlide>
                 ))}
