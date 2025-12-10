@@ -50,8 +50,12 @@ export default function MainLayout() {
                 </main>
 
                 {/* Footer */}
-                <footer className="bg-gray-200 text-center text-sm text-gray-600 py-4">
-                    © {new Date().getFullYear()} {t('title')} — {t('footer')}
+                <footer className="bg-gray-200 text-sm text-gray-600 py-8 px-[9vw]">
+                    <div className="container flex flex-wrap mx-auto gap-6 items-center " style={{justifyContent: "center"}}>
+                        <a href="https://www.instagram.com/aemma_ottawa/" className="p-[5px]"><span className="hidden">{t('follow')} Instagram</span><img className=" aspect-square w-[29px]" src="./img/icon_ig.png" alt="Instagram"/></a>
+                        <a href="https://www.facebook.com/AEMMAOttawa/" className="p-[5px]"><span className="hidden">{t('follow')} Facebook</span><img className=" aspect-square w-[29px]" src="./img/icon_fb.png" alt="Facebook"/></a>
+                        <span className="w-full flex-[1 0 100%] text-center md:flex-1 md:w-[auto] md:text-right">© {new Date().getFullYear()} {t('title')} — {t('footer')}</span>
+                    </div>
                 </footer>
             </div>
         </div>
