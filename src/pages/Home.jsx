@@ -36,7 +36,7 @@ export default function Home() {
             <AboutSection />
             <div id="intakeInfo">
                 <section id="intakeBanner" className="relative w-full">
-                    <img src="./img/group2.jpg" alt=""/>
+                    <img src="./img/group2.jpg" className="object-top object-fit" alt=""/>
 
                     {/* Content */}
                     {/*
