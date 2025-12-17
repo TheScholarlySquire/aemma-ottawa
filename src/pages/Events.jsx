@@ -41,6 +41,18 @@ export default function Events() {
     // If an eventId is provided, show that specific event's details
     const eventDetails = eventId ? rawEvents.find(event => event.id === eventId) : null;
 
+    //multiline event description helper function
+    function renderParagraphs(textOrArray) {
+        const paragraphs = Array.isArray(textOrArray)
+        ? textOrArray.flatMap(p => p.split(/\n{2,}/))
+        : textOrArray.split(/\n{2,}/);
+
+      return paragraphs
+        .filter(p => p.trim() !== '')
+        .map((p, i) => <p key={i} className="mb-3">{p.trim()}</p>);
+    }
+
+
     return (
         <div id="eventsContainer">
             <div id="eventsPlus">
@@ -75,8 +87,7 @@ export default function Events() {
                             <h2 className="text-3xl text-yellow-700">{eventDetails.name}</h2>
                             <p>{eventDetails.date}</p>
                             <p>{eventDetails.location}</p>
-                            <p>{eventDetails.description}</p>
-                            {/* Add any additional event-specific content */}
+                            {renderParagraphs(eventDetails.description)}
                         </div>
                     )}
 
@@ -94,7 +105,7 @@ export default function Events() {
                                 />
                             ))
                         ) : (
-                            <p>No upcoming events at this time.</p>
+                            <p>{t('upcomingEventsNull')}</p>
                         )}
                     </div>
                 </div>
@@ -111,7 +122,7 @@ export default function Events() {
                             <EventCard key={index} event={event} />
                         ))
                     ) : (
-                        <p>No past events at this time.</p>
+                        <p>{t('pastEventsNull')}</p>
                     )}
                 </div>
             </div>

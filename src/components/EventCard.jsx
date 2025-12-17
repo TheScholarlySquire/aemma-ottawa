@@ -73,7 +73,15 @@ const EventCard = forwardRef(({ event, isUpcoming, highlight = false }, ref) => 
             <h3 className={`text-2xl ${highlight ? 'text-yellow-800' : 'text-gray-900'}`}>{name}</h3>
             <p className="text-sm text-gray-600">{localDateTime}</p>
             <p className="text-gray-700">{location}</p>
-            <p className="mt-2">{description}</p>
+            {Array.isArray(description) ? (
+                description.map((para, index) => (
+                    <p key={index} className="mb-2 whitespace-pre-line">
+                        {para}
+                    </p>
+                ))
+            ) : (
+                <p className="whitespace-pre-line">{description}</p>
+            )}
 
             {isUpcoming && (
                 <div className="mt-4 space-x-2">

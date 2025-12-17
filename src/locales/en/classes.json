@@ -46,16 +46,23 @@
     ],
     "scholars": [
         {
+            "id":           "max-scholar",
+            "name":         "Scholar test - Max (Ottawa)",
+            "datetime":     "2025-11-21T18:00:00",
+            "location":     "1606 Fisher Ave, Ottawa ON",
+            "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts will be testing its third Scholar candidate in November."
+        },
+        {
             "id":           "cass-scholar",
             "name":         "Scholar test - Cass (Ottawa)",
-            "datetime":     "2024-09-21T15:00:00Z",
+            "datetime":     "2024-09-21T11:00:00",
             "location":     "1606 Fisher Ave, Ottawa ON",
             "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Cass successfully passed their scholar tests in front of 3 Scholars, 2 Free Scholars, and 1 Provost. Their tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. They demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
         },
         {
             "id":           "shane-scholar",
             "name":         "Scholar test - Shane (Ottawa)",
-            "datetime":     "2024-09-21T17:00:00Z",
+            "datetime":     "2024-09-21T13:00:00",
             "location":     "1606 Fisher Ave, Ottawa ON",
             "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Shane successfully passed his scholar tests in front of 4 Scholars, 2 Free Scholars, and 1 Provost. His tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. He demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
         }

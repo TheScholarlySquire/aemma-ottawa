@@ -2,11 +2,25 @@
     "title": "Événements",
     "titleUpcoming": "Événements à venir",
     "titleToday": "Aujord'hui !",
+    "upcomingEventsNull": "Aucun événement à venir pour le moment.",
+    "pastEventsNull": "Aucun événement passé.",
     "eventTodayBanner": "Événement d'aujourd'hui : {eventTitle}",
     "eventSoonBanner": "Ne manquez pas l'événement à venir dans {count, plural, one {1 jour} other {{count} jours}}: {eventTitle}!",
     "titlePast": "Événements passés",
     "googleCalendar": "Ajouter à Google Calendar",
     "eventList": [
+        {
+            "id":           "abrazzare-2025-0",
+            "name":         "Abrazzare",
+            "datetime":     "2025-11-23T17:00:00",
+            "location":     "1606 Fisher Ave, Ottawa",
+            "description":  [
+                "Les Prevosts Aaron Bolarinho et David Murphy feront vibrer nos frères et sœurs de l'AAMME d'Ottawa.",
+                "La journée sera divisée en deux séminaires de deux heures chacun.",
+                "Lors du premier séminaire, Aaron présentera au groupe le système de frappe d'Anthony LaViola, érudit libre, destiné aux étudiants de Fiore. Nous examinerons les exercices de base avec les pads et le flux de frappe, et chercherons à les intégrer harmonieusement à notre Abrazare.",
+                "Lors du deuxième séminaire, Murph initiera le groupe à l'art de la hache. Il passera en revue les coupes et les jeux du livre de Fiore et, ce faisant, transmettra son amour de la hache aux participants du séminaire."
+            ]
+        },
         {
             "id":           "bytown-symposium-2025-0",
             "name":         "Bytown Ottawa Sword Symposium 2025",
@@ -17,21 +31,28 @@
         {
             "id":           "italian-week-2025-1",
             "name":         "Démonstration d'escrime italienne",
-            "datetime":     "2025-06-08T14:00:00Z",
+            "datetime":     "2025-06-08T10:00:00",
             "location":     "412 Preston Street, Ottawa",
             "description":  "Rejoignez-nous pour un demonstration des Arts Martiaux Hitoriques European (AMHE) pendant le Festival italien d'Ottawa!"
         },
         {
             "id":           "italian-week-2025-0",
             "name":         "Démonstration d'escrime italienne",
-            "datetime":     "2025-06-07T17:00:00Z",
+            "datetime":     "2025-06-07T13:00:00",
             "location":     "412 Preston Street, Ottawa",
             "description":  "Rejoignez-nous pour un demonstration des Arts Martiaux Hitoriques European (AMHE) pendant le Festival italien d'Ottawa!"
         },
         {
+            "id":           "sword-dagger-intro-0",
+            "name":         "Introduction to sword and dagger",
+            "datetime":     "2024-11-23T13:00:00",
+            "location":     "1606 Fisher Ave, Ottawa",
+            "description":  "Cet atelier a couvert les fondamentaux de l'escrime à l'épée et à la dague (de type pugnale bolognaise), en commençant par comment se tenir dans les gardes, comment se défendre et comment provoquer."
+        },
+        {
             "id":           "surviving-duel-1",
             "name":         "Survivre à un duel en 30 jours",
-            "datetime":     "2024-08-17T15:00:00Z",
+            "datetime":     "2024-08-17T11:00:00",
             "location":     "1606 Fisher Ave, Ottawa ON",
             "description":  "Ce cours d'introduction de quatre heures commence par des exercices de jeu de jambes de plus en plus complexes, les bases du système bolognais, avant d'aborder trois gardes : la longue ligne droite, la porta di ferro droite et la garde d'alicorne, ainsi que les angles d'attaque. Il continue ensuite par la défense contre toutes les attaques pour vous permettre de sortir indemne d'un duel."
         },

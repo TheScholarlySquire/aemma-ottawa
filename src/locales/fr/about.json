@@ -1,65 +1,66 @@
 {
-    "aemma": {
-        "title": "Étudie les arts martiaux médiévaux historiques européens depuis 1998",
-        "intro1": "L'AAMME n'est pas « un simple club AMHE ». Nous étudions, enseignons et combattons depuis mai 1998. Nous suivons les règles, en nous basant sur des manuscrits historiques. Notre objectif est de comprendre comment cela se faisait réellement.",
-        "intro2": "Notre programme est enraciné dans les enseignements de maîtres d'armes renommés, mettant en valeur des techniques et des philosophies qui ont traversé les siècles.",
-        "mission": "Notre mission",
-        "missionDesc": "La mission de l'AAMME est de ressusciter, de rechercher, d'étudier, de pratiquer et d'instruire les techniques de combat, les philosophies et les principes des artistes martiaux médiévaux européens accomplis, et d'atteindre un état compatible avec celui d'un combattant médiéval, tant sur le plan technologique qu'idéal.",
-        "rankingTitle": "Système de classement",
-        "ourTeam": "Notre equipe",
-        "cocTitle": "Code de conduite",
-        "cocLink": "https://drive.google.com/file/d/1Hz3CQHkULfceY009M7E7RWXZgiUsAJ0j/view",
-        "cocDesc": "L'étude d'un art martial peut être une activité dangereuse et implique d'entrer en contact avec les autres d'une manière très différente de notre vie quotidienne. Cela exige confiance, respect, consentement et une volonté de laisser son ego à la porte. Tous les membres de l'AAMME sont tenus de lire, de comprendre et de respecter le <1>Code de conduite</1>."
+  "aemma": {
+    "title": "Étudie les arts martiaux médiévaux historiques européens depuis 1998",
+    "intro1": "L'AAMME n'est pas « un simple club AMHE ». Nous étudions, enseignons et combattons depuis mai 1998. Nous suivons les règles, en nous basant sur des manuscrits historiques. Notre objectif est de comprendre comment cela se faisait réellement.",
+    "intro2": "Notre programme est enraciné dans les enseignements de maîtres d'armes renommés, mettant en valeur des techniques et des philosophies qui ont traversé les siècles.",
+    "mission": "Notre mission",
+    "missionDesc": "La mission de l'AAMME est de ressusciter, de rechercher, d'étudier, de pratiquer et d'instruire les techniques de combat, les philosophies et les principes des artistes martiaux médiévaux européens accomplis, et d'atteindre un état compatible avec celui d'un combattant médiéval, tant sur le plan technologique qu'idéal.",
+    "rankingTitle": "Système de classement",
+    "ourTeam": "Notre equipe",
+    "cocTitle": "Code de conduite",
+    "cocLink": "https://drive.google.com/file/d/1Hz3CQHkULfceY009M7E7RWXZgiUsAJ0j/view",
+    "cocDesc": "L'étude d'un art martial peut être une activité dangereuse et implique d'entrer en contact avec les autres d'une manière très différente de notre vie quotidienne. Cela exige confiance, respect, consentement et une volonté de laisser son ego à la porte. Tous les membres de l'AAMME sont tenus de lire, de comprendre et de respecter le <1>Code de conduite</1>."
+  },
+  "gio": {
+    "title": "Giovanni Dall'Agocchie",
+    "text": "Giovanni Dall'Agocchie était un maître d'escrime italien du XVIe siècle originaire de Bologne. En 1572, il a publié 'Dell'Arte di Scrimia' ('L'Art de l'Escrime'), un manuel complet détaillant les techniques et principes de l'escrime. Son œuvre est une pierre angulaire de l'école bolonaise d'escrime et continue d'influencer les pratiquants modernes de HEMA."
+  },
+  "ranks": [
+    {
+      "name": "Recrue",
+      "desc": "Le grade de recrue est attribué à tous les étudiants qui poursuivent leurs études après avoir terminé la classe d'admission. Ces étudiants apprennent l'abrazare (lutte), le daga (poignard) et le spada (épée de côté)."
     },
-    "gio": {
-        "title": "Giovanni Dall'Agocchie",
-        "text": "Giovanni Dall'Agocchie était un maître d'escrime italien du XVIe siècle originaire de Bologne. En 1572, il a publié 'Dell'Arte di Scrimia' ('L'Art de l'Escrime'), un manuel complet détaillant les techniques et principes de l'escrime. Son œuvre est une pierre angulaire de l'école bolonaise d'escrime et continue d'influencer les pratiquants modernes de HEMA."
+    {
+      "name": "Érudit",
+      "desc": "Le grade d'Érudit est décerné après un examen oral et une démonstration physique des bases de l'armizare, y compris l'escrime libre. Il faut généralement un à deux ans pour atteindre ce grade."
     },
-    "ranks": [
-        {
-            "name": "Recrue",
-            "desc": "Le grade de recrue est attribué à tous les étudiants qui poursuivent leurs études après avoir terminé la classe d'admission. Ces étudiants apprennent l'abrazare (lutte), le daga (poignard) et le spada (épée de côté)."
-        },
-        {
-            "name": "Érudit",
-            "desc": "Le grade d'Érudit est décerné après un examen oral et une démonstration physique des bases de l'armizare, y compris l'escrime libre. Il faut généralement un à deux ans pour atteindre ce grade."
-        },
-        {
-            "name": "Érudit libre",
-            "desc": "L'Érudit libre exige une compréhension et une démonstration approfondies de l'ensemble du système de Dall'Agocchie, de la lutte sans armure au combat en armure complète du XVe siècle. Ce grade permet également à l'Érudit libre d'ouvrir son propre chapitre." },
-        {
-            "name": "Provost",
-            "desc": "Provost est le rang atteint lorsqu'un Érudit Libre a été l'instructeur principal d'un étudiant, du statut de Recrue à celui d'Érudit Libre."
-        }
-    ],
-    "team": [
-        {
-            "name": "Beau",
-            "title": "Érudit libre",
-            "pronoun": "il/lui",
-            "bio": "Beau Brock a commencé sa longue quête d'escrime historique en 2006, alors qu'il était étudiant aux cycles supérieurs à l'UBC. Après son arrivée à Toronto en 2008, il s'est joint à l'AAMME où il a étudié la Fiore dei Liberi, devenant ainsi membre libre en novembre 2010. Depuis, il se consacre entièrement aux traditions martiales de l'Italie du XVIe siècle, avec un accent particulier sur l'approche bolognaise telle que présentée par Giovanni Dall'Agocchie et ses pairs (Marozzo, Manciolino et l'Anonimo). Il a animé des ateliers au Canada et aux États-Unis sur son interprétation de la tradition bolognaise.",
-            "image": ""
-        },
-        {
-            "name": "Cass",
-            "title": "érudit",
-            "pronoun": "iel",
-            "bio": "Cass Hannah a commencé l'escrime lors d'un camp d'été à l'âge de 9 ans, consolidant ainsi une passion de toujours pour le maniement de l'épée. Iel ont rejoint l'AAMME à l'automne 2022, se consacrant rapidement à l'étude et devenant le premier à défier et à atteindre le rang d'Érudit grâce à l'étude de la tradition bolognaise sous la tutelle de Beau.",
-            "image": ""
-        },
-        {
-            "name": "Shane",
-            "title": "érudit",
-            "pronoun": "il/lui",
-            "bio": "",
-            "image": ""
-        },
-        {
-            "name": "Max",
-            "title": "érudit",
-            "pronoun": "il/lui",
-            "bio": "Max Nossevitch est un passionné de longue date du Moyen Âge, qui a commencé à étudier le manuscrit I.33 en 2011 alors qu’il était étudiant de premier cycle à l’Université de Toronto. Il y a organisé un atelier d’escrime avec Beau par l’intermédiaire de la Medieval Studies Undergraduate Society et a pratiqué le buhurt au sein d’une équipe qui allait devenir l’équipe nationale canadienne, bien qu’il ait dû arrêter à la suite d’une blessure. Il a ensuite dirigé un groupe de reconstitution médiévale axé sur les textes et l’imprimerie du XVe siècle, collectionnant des fac-similés de traités d’escrime historiques. Après avoir déménagé à Ottawa en 2017, il a découvert que Beau y avait fondé un chapitre de l’AAMME, dont il est membre depuis 2019.",
-            "image": ""
-        }
-    ]
+    {
+      "name": "Érudit libre",
+      "desc": "L'Érudit libre exige une compréhension et une démonstration approfondies de l'ensemble du système de Dall'Agocchie, de la lutte sans armure au combat en armure complète du XVe siècle. Ce grade permet également à l'Érudit libre d'ouvrir son propre chapitre."
+    },
+    {
+      "name": "Provost",
+      "desc": "Provost est le rang atteint lorsqu'un Érudit Libre a été l'instructeur principal d'un étudiant, du statut de Recrue à celui d'Érudit Libre."
+    }
+  ],
+  "team": [
+    {
+      "name": "Beau",
+      "title": "Érudit libre",
+      "pronoun": "il/lui",
+      "bio": "Beau Brock a commencé sa longue quête d'escrime historique en 2006, alors qu'il était étudiant aux cycles supérieurs à l'UBC. Après son arrivée à Toronto en 2008, il s'est joint à l'AAMME où il a étudié la Fiore dei Liberi, devenant ainsi membre libre en novembre 2010. Depuis, il se consacre entièrement aux traditions martiales de l'Italie du XVIe siècle, avec un accent particulier sur l'approche bolognaise telle que présentée par Giovanni Dall'Agocchie et ses pairs (Marozzo, Manciolino et l'Anonimo). Il a animé des ateliers au Canada et aux États-Unis sur son interprétation de la tradition bolognaise.",
+      "image": ""
+    },
+    {
+      "name": "Cass",
+      "title": "érudit",
+      "pronoun": "iel",
+      "bio": "Cass Hannah a commencé l'escrime lors d'un camp d'été à l'âge de 9 ans, consolidant ainsi une passion de toujours pour le maniement de l'épée. Iel ont rejoint l'AAMME à l'automne 2022, se consacrant rapidement à l'étude et devenant le premier à défier et à atteindre le rang d'Érudit grâce à l'étude de la tradition bolognaise sous la tutelle de Beau.",
+      "image": ""
+    },
+    {
+      "name": "Shane",
+      "title": "érudit",
+      "pronoun": "il/lui",
+      "bio": "",
+      "image": ""
+    },
+    {
+      "name": "Max",
+      "title": "érudit et poursuivant",
+      "pronoun": "il/lui",
+      "bio": "Max Nossevitch est un passionné de longue date du Moyen Âge, qui a commencé à étudier le manuscrit I.33 en 2011 alors qu’il était étudiant de premier cycle à l’Université de Toronto. Il y a organisé un atelier d’escrime avec Beau par l’intermédiaire de la Medieval Studies Undergraduate Society et a pratiqué le buhurt au sein d’une équipe qui allait devenir l’équipe nationale canadienne, bien qu’il ait dû arrêter à la suite d’une blessure. Il a ensuite dirigé un groupe de reconstitution médiévale axé sur les textes et l’imprimerie du XVe siècle, collectionnant des fac-similés de traités d’escrime historiques. Après avoir déménagé à Ottawa en 2017, il a découvert que Beau y avait fondé un chapitre de l’AAMME, dont il est membre depuis 2019.",
+      "image": ""
+    }
+  ]
 }
