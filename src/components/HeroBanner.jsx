@@ -5,17 +5,9 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const images = [
-  { src: "./img/group3.JPG", alt: "Group event", className: "object-top" },
-  {
-    src: "./img/b1.jpg",
-    alt: "Historical drills in action",
-    className: "object-[0px_-50px]",
-  },
-  {
-    src: "./img/bc1.jpg",
-    alt: "Training with sidesword",
-    className: "object-[0px_-100px]",
-  },
+  { src: "./img/group3.jpg", alt: "Group event" },
+  { src: "./img/b1.jpg", alt: "Historical drills in action" },
+  { src: "./img/bc1.jpg", alt: "Training with sidesword" },
   { src: "./img/cs1.jpg", alt: "Fencing" },
   { src: "./img/mc1.jpg", alt: "Fencing" },
 ];
