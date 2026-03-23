@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next'
-import FaqCards from '../components/faqCards'
+import FaqCards from '../components/FaqCards'
 
 import '../styles/faq.css'
 
