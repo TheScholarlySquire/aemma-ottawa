@@ -1,70 +1,94 @@
 {
-    "classesPageTitle": "Informations sur les courses",
-    "classesPageIntro1": "La lutte, la dague et l’épée à une main constituent la base de notre programme et influencent tout ce que nous faisons, quel que soit le(s) arme(s) utilisée(s). Les cours d’introduction/débutant visent à développer la maîtrise de ces trois disciplines. Au fur et à mesure de leur progression, les élèves seront initiés à des actions plus complexes, à des tactiques variées et à d’autres armes :",
-    "classesPageIntro2": "Les élèves seront également initiés à d’autres systèmes d’escrime contemporains, notamment les traditions florentine (Anonimo Riccardiano) et napolitaine (Marc’Antonio Pagano).",
-    "classesPageIntro3": "Les cours sont destinés aux 16 ans ou plus.",
-    "classesPageIntroList": {
-        "li1": "Épée à une main accompagnée de ses armes secondaires : dague, manteau, bouclier/bouclier plat (targa), rondache (rotella), seconde épée",
-        "li2": "Armes d’hast : pertuisane, lance, vouge, pique, hache d’armes, hallebarde, glaive",
-        "li3": "Spadone (la grande épée)",
-        "li4": "Armes dépareillées"
-    },
-    "classesTitle": "Courses - Lundis et mercredis",
-    "internalEvents": "Développements du groupe",
-    "modal": {
-        "nameTitle": "Nom",
-        "emailTitle": "Courriel",
-        "textTitle": "Avez-vous de l'expérience des arts martiaux ?",
-        "textField": "Veuillez décrire votre expérience",
-        "textYes": "Oui",
-        "textNo": "Non",
-        "submitBtn": "Soummetre"
-    },
-    "courseList": [
-        {
-            "lvl": 0,
-            "type": "Recrue",
-            "modalTitle": "Inscrivez - Recrue",
-            "time": "18:00 - 19:30",
-            "description": "20 $ et nous fournissons du matériel de prêt",
-            "signupBtn": "Inscrivez"
-        },
-        {
-            "lvl": 1,
-            "type": "Débutant",
-            "modalTitle": "Inscrivez - Débutant",
-            "time": "18:00 - 19:30",
-            "description": "Cours pour débutants couvrant le jeu de jambes, les gardes, le mouvement, et les bases.",
-            "signupBtn": "Inscrivez"
-        },
-        {
-            "lvl": 2,
-            "type": "Avancé",
-            "time": "19:30 - 21:30",
-            "description": "Cours avancés explorant la théorie et la pratique approfondie de l’art martial."
-        }
+  "classesPageTitle": "Informations sur les courses",
+  "classesPageIntro": [
+    "Nous proposons actuellement des cours deux fois par semaine au 1606 Fisher Ave, les lundis et mercredis. L'abonnement mensuel est de 80 $ pour les cours réguliers (8 cours par mois, plus des événements ponctuels et des cours supplémentaires à la carte), ouverts à tous à partir de 16 ans.",
+    "Le programme d'initiation comprend 8 cours au même tarif de 80 $, répartis sur 4 semaines. Ce programme est conçu pour familiariser les élèves avec les bases de notre discipline. Après avoir suivi le programme d'initiation, les élèves peuvent choisir de poursuivre avec nos cours réguliers, divisés en trois niveaux : Fondamentaux, Intermédiaire et Avancé. Chaque niveau s'appuie sur le précédent, permettant aux élèves d'approfondir leur compréhension et leur maîtrise de cet art.",
+    "La lutte, le maniement du poignard et de l'épée à une main constituent le fondement de notre discipline et influencent toutes nos pratiques, quelle que soit l'arme utilisée. Les cours d'initiation/débutants se concentreront sur le développement de la maîtrise de ces trois compétences. Au fur et à mesure de leur progression, les élèves seront initiés à des actions, des tactiques et des techniques plus complexes. armes :"
+  ],
+  "classesPageIntroList": [
+    "Épée à une main et ses armes secondaires : dague, cape, bouclier/targa, rotella, seconde épée",
+    "Armes d'hast : partisan, lance, hallebarde, pique, hache d'armes, hallebarde, glaive",
+    "Spadone (la grande épée)",
+    "Armes disparates"
+  ],
+  "classesTitle": "Courses - Lundis et mercredis",
+  "internalEvents": "Développements de l'Académie",
+  "modal": {
+    "nameTitle": "Nom",
+    "emailTitle": "Courriel",
+    "textTitle": "Avez-vous de l'expérience des arts martiaux ?",
+    "hearAboutUsTitle": "Comment avez-vous entendu parler de nous ?",
+    "optionalLabel": "optionnel",
+    "textField": "Veuillez décrire votre expérience",
+    "textYes": "Oui",
+    "textNo": "Non",
+    "hearAboutUsPlaceholder": "- Sélectionnez une option -",
+    "hearAboutUsOptions": [
+      { "value": "social_media", "label": "Réseaux sociaux" },
+      { "value": "word_of_mouth", "label": "Bouche à oreille" },
+      { "value": "event", "label": "Événement" },
+      { "value": "bike_cafe", "label": "Bike Cafe" },
+      { "value": "flyer", "label": "Flyer ou affiche" },
+      { "value": "other", "label": "Autre" }
     ],
-    "scholars": [
-        {
-            "id":           "max-scholar",
-            "name":         "Test d'érudit - Max (Ottawa)",
-            "datetime":     "2025-11-21T18:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens testera son troisième candidat érudit en novembre."
-        },
-        {
-            "id":           "cass-scholar",
-            "name":         "Test d'érudit - Cass (Ottawa)",
-            "datetime":     "2024-09-21T11:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille ses deux premiers érudits. Cass a réussi ses tests d'érudit devant trois érudits, deux érudits libres et un prévôt. Leurs tests portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Ils ont démontré leur connaissance de la théorie, leur exécution des principes et des jeux, et ont pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
-        },
-        {
-            "id":           "shane-scholar",
-            "name":         "Test d'érudit - Shane (Ottawa)",
-            "datetime":     "2024-09-21T13:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille ses deux premiers érudits. Shane a réussi ses tests d'érudit devant quatre érudits, deux érudits libres et un prévôt. Ses tests portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Il a démontré sa connaissance de la théorie, son exécution des principes et des jeux, et a pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
-        }
-    ]
+    "submitBtn": "Soumettre",
+    "cohortDateLabel": "Dates de la cohorte :",
+    "successTitle": "Vous êtes inscrit(e) !",
+    "successMessage": "Nous vous contacterons bientôt au sujet de votre cohorte.",
+    "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
+    "closeBtn": "Fermer"
+  },
+  "courseList": [
+    {
+      "lvl": 0,
+      "type": "admission",
+      "modalTitle": "Inscrivez - admission",
+      "time": "18:00 - 19:30",
+      "description": "Une introduction aux compétences fondamentales de l'escrime, y compris le jeu de jambes, les gardes, les coupes, et les défenses.",
+      "signupBtn": "Inscrivez"
+    },
+    {
+      "lvl": 1,
+      "type": "Fondamentaux",
+      "modalTitle": "Inscrivez - Recrue",
+      "time": "18:00 - 19:00",
+      "description": "Ici, nous approfondissons le jeu de jambes, les gardes et les défenses, ainsi que des actions plus complexes.",
+      "signupBtn": "Inscrivez"
+    },
+    {
+      "lvl": 2,
+      "type": "Avancé",
+      "time": "19:00 - 20:30",
+      "description": "Les élèves de niveau intermédiaire perfectionnent leurs compétences dans des techniques plus avancées et s'initient à d'autres armes."
+    },
+    {
+      "lvl": 3,
+      "type": "Avancé et escrime libre",
+      "time": "20:30 - 21:30",
+      "description": "Dans cette partie, nous allons examiner en détail les matériaux et les tests de pression à travers la clôture."
+    }
+  ],
+  "scholars": [
+    {
+      "id": "max-scholar",
+      "name": "Test d'érudit - Max (Ottawa)",
+      "datetime": "2025-11-21T18:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille son troisième érudit. Max a réussi son test d'érudit devant quatre érudits, un érudit libre, et un prévôt. Son test portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Il a démontré sa connaissance de la théorie, son exécution des principes et des jeux, et a pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
+    },
+    {
+      "id": "shane-scholar",
+      "name": "Test d'érudit - Shane (Ottawa)",
+      "datetime": "2024-09-21T13:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille ses deux premiers érudits. Shane a réussi ses tests d'érudit devant quatre érudits, deux érudits libres et un prévôt. Ses tests portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Il a démontré sa connaissance de la théorie, son exécution des principes et des jeux, et a pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
+    },
+    {
+      "id": "cass-scholar",
+      "name": "Test d'érudit - Cass (Ottawa)",
+      "datetime": "2024-09-21T11:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "La section d'Ottawa de l'Académie des arts martiaux médiévaux européens accueille ses deux premiers érudits. Cass a réussi ses tests d'érudit devant trois érudits, deux érudits libres et un prévôt. Leurs tests portaient sur l'art de la Fiore dei Liberi et celui de la tradition bolonaise, principalement tirés du manuscrit de Dal'Agocchie. Ils ont démontré leur connaissance de la théorie, leur exécution des principes et des jeux, et ont pratiqué l'escrime libre avec des épées d'armement à la satisfaction de tous les participants."
+    }
+  ]
 }

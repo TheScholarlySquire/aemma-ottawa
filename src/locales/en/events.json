@@ -1,67 +1,156 @@
 {
-    "title": "Events",
-    "titleUpcoming": "Upcoming events",
-    "titleToday": "Today!",
-    "upcomingEventsNull": "No upcoming events at this time.",
-    "pastEventsNull": "No past events.",
-    "eventTodayBanner": "Happening today: {eventTitle}",
-    "eventSoonBanner": "Don't miss the upcoming event in {count, plural, one {1 day} other {{count} days}}: {eventTitle}!",
-    "titlePast": "Past events",
-    "googleCalendar": "Add to Google Calendar",
-    "eventList": [
-        {
-            "id":           "abrazzare-2025-0",
-            "name":         "Abrazzare seminar",
-            "datetime":     "2025-11-23T17:00:00",
-            "location":     "1606 Fisher Ave, Ottawa",
-            "description":  [
-                "Provosts Aaron Bolarinho and David Murphy are bringing the anger & the axe to our AEMMA Ottawa brothers and sisters.",
-                "The day will be divided into two seminars, each two hours.",
-                "In the first seminar, Aaron will be introducing the group to Free Scholar Anthony LaViola's striking system for Fioreists. We will look at the basic pad drill and striking flow, and look towards integrating it seemlessly with our Abrazare.",
-                "In the second seminar, Murph will be introducing the group to the art of the Axe. He will go over the cuts and plays in Fiore's book, and insodoing pass along his love of the Axe to seminar attendees."
-            ]
-        },
-        {
-            "id":           "bytown-symposium-2025-0",
-            "name":         "Bytown Ottawa Sword Symposium 2025",
-            "datetime":     "2025-08-23T8:00:00",
-            "location":     "1701 Woodroffe Ave, Ottawa",
-            "description":  "AEMMA Ottawa, OHFS, BAHFF invite you to the first annual Historical Fencing Symposium in Ottawa! Join us for two days of workshops, sparring, and merriment among 24 workshops covering a variety of weapon sets."
-        },
-        {
-            "id":           "italian-week-2025-1",
-            "name":         "Italian Fencing Demonstration",
-            "datetime":     "2025-06-08T10:00:00",
-            "location":     "412 Preston Street, Ottawa",
-            "description":  "Join us for a live demonstration of Historical European Martial Arts (HEMA) during the Italian Week Festival!"
-        },
-        {
-            "id":           "italian-week-2025-0",
-            "name":         "Italian Fencing Demonstration",
-            "datetime":     "2025-06-07T13:00:00",
-            "location":     "412 Preston Street, Ottawa",
-            "description":  "Join us for a live demonstration of Historical European Martial Arts (HEMA) during the Italian Week Festival!"
-        },
-        {
-            "id":           "sword-dagger-intro-0",
-            "name":         "Introduction to sword and dagger",
-            "datetime":     "2024-11-23T13:00:00",
-            "location":     "1606 Fisher Ave, Ottawa",
-            "description":  "This workshop covered the fundamentals of fencing with a sword and dagger (of the pugnale Bolognese type), starting with how to stand in the guards, how to defend, and how to provoke."
-        },
-        {
-            "id":           "surviving-duel-1",
-            "name":         "Surviving a Duel in 30 days",
-            "datetime":     "2024-08-17T11:00:00",
-            "location":     "1606 Fisher Ave, Ottawa",
-            "description":  "This four-hour introductory course works from the ground up, starting with increasingly complex footwork drills, the building blocks of the Bolognese system, before going through three guards - code lunga stretta, porta di ferro stretta, and guardia d'alicorno - and the angles of attack. From there it continues through how to defend against all attacks so you can make it through a duel in one piece."
-        },
-        {
-            "id":           "kirby-1",
-            "name":         "Control the Blade, Control the Bout",
-            "datetime":     "2023-11-11T18:00:00Z",
-            "location":     "St. Mark's Anglican Church, Ottawa",
-            "description":  "In this workshop, Maestro Jared Kirby demonstrated various ways to control the adversary's blade to produce the desired outcome."
-        }
-    ]
+  "title": "Events",
+  "titleUpcoming": "Upcoming events",
+  "titleToday": "Today!",
+  "upcomingEventsNull": "No upcoming events at this time.",
+  "pastEventsNull": "No past events.",
+  "eventTodayBanner": "Happening today: {eventTitle}",
+  "eventSoonBanner": "Don't miss the upcoming event in {count, plural, one {1 day} other {{count} days}}: {eventTitle}!",
+  "titlePast": "Past events",
+  "googleCalendar": "Add to Google Calendar",
+  "eventList": [
+    {
+      "id": "italian-week-2026",
+      "name": "Italian Week 2026",
+      "datetime": "2026-06-20T10:00:00",
+      "endDateTime": "2026-06-21T17:00:00",
+      "location": "Little Italy, Preston Street",
+      "description": [
+        "AEMMA Ottawa will be returning to Ottawa's Italian Week in 2026 with live demonstrations of Historical Italian Martial Arts, as well as some short introductory classes right there on the spot!",
+        "Come say hi and pick up a sword! Or pick a champion to settle a minor grievance. We'll be there all weekend, so drop by!"
+      ]
+    },
+    {
+      "id": "boss-2026",
+      "name": "Bytown Ottawa Sword Symposium 2026",
+      "datetime": "2026-08-22T08:00:00",
+      "endDateTime": "2026-08-23T19:30:00",
+      "location": "1701 Woodroffe Ave, Ottawa",
+      "description": [
+        "Join us at BOSS 2026, Ottawa's major Historical Fencing Symposium!",
+        "Experience two days of workshops, sparring, and merriment."
+      ]
+    },
+    {
+      "id": "intake-062026",
+      "name": "Intake - June 2026",
+      "datetime": "2026-06-08T18:00:00",
+      "endDatetime": "2026-06-10T19:30:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "The June intake is here! If you are interested in learning the art of swordplay, or if you know someone who is, this is the perfect opportunity to get started.",
+        "The June intake program runs on June 8 and 10 (Monday and Wednesday) at 1606 Fisher Ave, from 6:00PM to 7:30PM.",
+        "During the intake, we will go over the fundamentals and introduce you to our school and community. Whether you're a complete beginner or have some experience with martial arts, we welcome you to join us for this exciting program!"
+      ]
+    },
+    {
+      "id": "cts-062026",
+      "name": "Cut. Thrust. Smash! — June",
+      "datetime": "2026-06-13T11:00:00",
+      "endDatetime": "2026-06-13T15:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Cut. Thrust. Smash! is back with a vengeance. In 2026 AEMMA Ottawa will be hosting this event every month, and all are welcome. Fence with whom you want with what you want; the only rules are:",
+        "- Don't break your partner, as you won't get another one",
+        "- Everyone leaves on good terms at the end of the event — leave your egos at the door.",
+        "From 11 until 3 the floor will be open for free fencing, after which we will head out for some food and drink.",
+        "As with all fencing events, it is free for AEMMA Ottawa students, and $10 for visitors from other schools."
+      ]
+    },
+    {
+      "id": "cts-042026",
+      "name": "Cut. Thrust. Smash! — April",
+      "datetime": "2026-04-25T11:00:00",
+      "endDatetime": "2026-04-25T15:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Cut. Thrust. Smash! is back with a vengeance. In 2026 AEMMA Ottawa will be hosting this event every month, and all are welcome. Fence with whom you want with what you want; the only rules are:",
+        "- Don't break your partner, as you won't get another one",
+        "- Everyone leaves on good terms at the end of the event — leave your egos at the door.",
+        "From 11 until 3 the floor will be open for free fencing, after which we will head out for some food and drink.",
+        "As with all fencing events, it is free for AEMMA Ottawa students, and $10 for visitors from other schools."
+      ]
+    },
+    {
+      "id": "cts-022026",
+      "name": "Cut. Thrust. Smash! — February",
+      "datetime": "2026-02-07T11:00:00",
+      "endDatetime": "2026-02-27T19:30:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Cut. Thrust. Smash! is back with a vengeance. In 2026 AEMMA Ottawa will be hosting this event every month, and all are welcome. Fence with whom you want with what you want; the only rules are:",
+        "- Don't break your partner, as you won't get another one",
+        "- Everyone leaves on good terms at the end of the event — leave your egos at the door.",
+        "From 11 until 3 the floor will be open for free fencing, after which we will head out for some food and drink.",
+        "As with all fencing events, it is free for AEMMA Ottawa students, and $10 for visitors from other schools."
+      ]
+    },
+    {
+      "id": "start-year-2026",
+      "name": "Beginning of year fencing and feasting",
+      "datetime": "2026-01-10T11:00:00",
+      "endDatetime": "2026-01-10T15:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "It's time for the beginning of year party for AEMMA Ottawa! Last year was a great year for our school, with new students, the third scholar test, a very successful appearance at Italian Week, and a steady offering of workshops, so there is much to celebrate.",
+        "From 11 to 3, the floor will be open for free fencing à la Cut, Thrust, Smash!, after which we will feast, potluck-style. As we get closer to the party date, we will coordinate the offerings so there will be something (and then some) for everyone.",
+        "As with all fencing events, it is free for AEMMA Ottawa students, and $10 for visitors from other schools. The 'cost' of admission to the party afterwards is bringing a dish.",
+        "See you all there!"
+      ]
+    },
+    {
+      "id": "abrazzare-2025-0",
+      "name": "Abrazzare seminar",
+      "datetime": "2025-11-23T17:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Provosts Aaron Bolarinho and David Murphy are bringing the anger & the axe to our AEMMA Ottawa brothers and sisters.",
+        "The day will be divided into two seminars, each two hours.",
+        "In the first seminar, Aaron will be introducing the group to Free Scholar Anthony LaViola's striking system for Fioreists. We will look at the basic pad drill and striking flow, and look towards integrating it seemlessly with our Abrazare.",
+        "In the second seminar, Murph will be introducing the group to the art of the Axe. He will go over the cuts and plays in Fiore's book, and insodoing pass along his love of the Axe to seminar attendees."
+      ]
+    },
+    {
+      "id": "boss-2025",
+      "name": "Bytown Ottawa Sword Symposium 2025",
+      "datetime": "2025-08-23T08:00:00",
+      "location": "1701 Woodroffe Ave, Ottawa",
+      "description": "AEMMA Ottawa, OHFS, BAHFF invite you to the first annual Historical Fencing Symposium in Ottawa! Join us for two days of workshops, sparring, and merriment among 24 workshops covering a variety of weapon sets."
+    },
+    {
+      "id": "italian-week-2025-1",
+      "name": "Italian Fencing Demonstration",
+      "datetime": "2025-06-08T10:00:00",
+      "location": "412 Preston Street, Ottawa",
+      "description": "Join us for a live demonstration of Historical European Martial Arts (HEMA) during the Italian Week Festival!"
+    },
+    {
+      "id": "italian-week-2025-0",
+      "name": "Italian Fencing Demonstration",
+      "datetime": "2025-06-07T13:00:00",
+      "location": "412 Preston Street, Ottawa",
+      "description": "Join us for a live demonstration of Historical European Martial Arts (HEMA) during the Italian Week Festival!"
+    },
+    {
+      "id": "sword-dagger-intro-0",
+      "name": "Introduction to sword and dagger",
+      "datetime": "2024-11-23T13:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": "This workshop covered the fundamentals of fencing with a sword and dagger (of the pugnale Bolognese type), starting with how to stand in the guards, how to defend, and how to provoke."
+    },
+    {
+      "id": "surviving-duel-1",
+      "name": "Surviving a Duel in 30 days",
+      "datetime": "2024-08-17T11:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": "This four-hour introductory course works from the ground up, starting with increasingly complex footwork drills, the building blocks of the Bolognese system, before going through three guards - code lunga stretta, porta di ferro stretta, and guardia d'alicorno - and the angles of attack. From there it continues through how to defend against all attacks so you can make it through a duel in one piece."
+    },
+    {
+      "id": "kirby-1",
+      "name": "Control the Blade, Control the Bout",
+      "datetime": "2023-11-11T18:00:00Z",
+      "location": "St. Mark's Anglican Church, Ottawa",
+      "description": "In this workshop, Maestro Jared Kirby demonstrated various ways to control the adversary's blade to produce the desired outcome."
+    }
+  ]
 }

@@ -1,56 +1,57 @@
 {
-    "mapSectionTitle": "Où nous trouver",
-    "hero": {
-        "title": "Académie des arts martiaux médiévaux européens",
-        "subtitle": "Animo, Ingegnio, Forza, Destrezza",
-        "ctaButton": "Rejoignez un cours aujord'hui"
+  "mapSectionTitle": "Où nous trouver",
+  "hero": {
+    "title": "Académie des arts martiaux médiévaux européens",
+    "subtitle": "Animo, Ingegnio, Forza, Destrezza",
+    "ctaButton": "Rejoignez un cours aujord'hui"
+  },
+  "classSections": {
+    "intakeHeader": "Rejoignez AAMME Ottawa avec notre cours d'admission à 40 $",
+    "intakeSubHeader": "Deux cours d'une heure et demie pour apprendre les fondamentaux des arts martiaux italiens historiques. C'est le moyen idéal de vous familiariser avec notre école et de vérifier si elle vous convient avant de vous engager pour un abonnement complet. Consultez la <3>page des cours</3> pour plus d'informations.",
+    "intakeBtn": "Rejoignez-nous maintenant",
+    "nextIntake": "Prochain cours d'admission Ottawa :"
+  },
+  "aboutCards": [
+    {
+      "heading": "Qu'est-ce que l'AAMME?",
+      "p1": "L'Académie des arts martiaux médiévaux européens (AAMME) est une école d'arts martiaux médiévaux européens historiques présente partout au Canada. Nous enseignons l'escrime médiévale depuis 25 ans."
     },
-    "classSections": {
-        "intakeHeader": "Rejoignez AEMMA Ottawa avec notre cours d'admission à 20 $",
-        "intakeBtn": "Rejoignez-nous maintenant",
-        "nextIntake": "Prochain cours d'admission Ottawa :"
+    {
+      "heading": "Quels cours l'AAMME d'Ottawa offre-t-elle ?",
+      "p1": "Les lundis et mercredis, notre section d'Ottawa s'engage à promouvoir la formation, l'enseignement et la préservation du patrimoine martial et des riches traditions des arts martiaux européens historiques (AMHE), en mettant l'accent sur l'épée de côté bolognaise du XVIe siècle."
     },
-    "aboutCards": [
-        {
-            "heading": "Qu'est-ce que l'AAMME?",
-            "p1": "L'Académie des arts martiaux médiévaux européens (AAMME) est une école d'arts martiaux médiévaux européens historiques présente partout au Canada. Nous enseignons l'escrime médiévale depuis 25 ans."
-        },
-        {
-            "heading": "Quels cours l'AAMME d'Ottawa offre-t-elle ?",
-            "p1": "Les lundis et mercredis, notre section d'Ottawa s'engage à promouvoir la formation, l'enseignement et la préservation du patrimoine martial et des riches traditions des arts martiaux européens historiques (AMHE), en mettant l'accent sur l'épée de côté bolognaise du XVIe siècle."
-        },
-        {
-            "heading": "Quelles sources historiques AAMME utilise-t-elle ?",
-            "p1": "AAMME Ottawa base ses cours sur des manuscrits de véritables maîtres du combat tels que Fiore dei Liberi, Giovanni Dall’Agocchie, Marozzo, et al.."
-        },
-        {
-            "heading": "Où se trouve AAMME Ottawa ?",
-            "p1": "AAMME Ottawa est située au <1>1606, avenue Fisher</1>, à Nepean, juste à l'ouest de Mooney's Bay."
-        },
-        {
-            "heading": "Comment puis-je m'inscrire à AAMME Ottawa ?",
-            "p1": "Consultez notre <2>page Cours</2> pour plus d’informations sur notre programme, notre horaire, nos tarifs et comment commencer. Les cours sont destinés aux 16 ans ou plus."
-        },
-        {
-            "heading": "Quels armes nous utilisons ?",
-            "p1": "Notre focus primaire est l'epée sur une main, avec son sécondaires (dague, cape, et bouclier), l'épee en deux mains, armes long, poignards, et lutte."
-        }
-    ],
-    "cards": [
-        {
-            "icon": "⚔️",
-            "title": "Entraînement",
-            "text": "Nous étudions et appliquons des techniques historiques issues de manuscrits authentiques."
-        },
-        {
-            "icon": "📜",
-            "title": "Histoire riche",
-            "text": "Nos méthodes sont enracinées dans les traditions martiales des XVe et XVIe siècles."
-        },
-        {
-            "icon": "🏳️‍🌈",
-            "title": "Communauté solidaire et inclusive",
-            "text": "Nous accueillons des artistes martiaux de tous niveaux et horizons."
-        }
-    ]
+    {
+      "heading": "Quelles sources historiques AAMME utilise-t-elle ?",
+      "p1": "AAMME Ottawa base ses cours sur des manuscrits de véritables maîtres du combat tels que Fiore dei Liberi, Giovanni Dall’Agocchie, Marozzo, et al.."
+    },
+    {
+      "heading": "Où se trouve AAMME Ottawa ?",
+      "p1": "AAMME Ottawa est située au <1>1606, avenue Fisher</1>, à Nepean, juste à l'ouest de Mooney's Bay."
+    },
+    {
+      "heading": "Comment puis-je m'inscrire à AAMME Ottawa ?",
+      "p1": "Consultez notre <2>page Cours</2> pour plus d’informations sur notre programme, notre horaire, nos tarifs et comment commencer. Les cours sont destinés aux 16 ans ou plus."
+    },
+    {
+      "heading": "Quels armes nous utilisons ?",
+      "p1": "Notre focus primaire est l'epée sur une main, avec son sécondaires (dague, cape, et bouclier), l'épee en deux mains, armes long, poignards, et lutte."
+    }
+  ],
+  "cards": [
+    {
+      "icon": "⚔️",
+      "title": "Entraînement",
+      "text": "Nous étudions et appliquons des techniques historiques issues de manuscrits authentiques."
+    },
+    {
+      "icon": "📜",
+      "title": "Histoire riche",
+      "text": "Nos méthodes sont enracinées dans les traditions martiales des XVe et XVIe siècles."
+    },
+    {
+      "icon": "🏳️‍🌈",
+      "title": "Communauté solidaire et inclusive",
+      "text": "Nous accueillons des artistes martiaux de tous niveaux et horizons."
+    }
+  ]
 }

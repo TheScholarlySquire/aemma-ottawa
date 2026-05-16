@@ -1,26 +1,37 @@
-import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { name: 'home', path: '/' },
-  { name: 'about', path: '/about' },
-  { name: 'events', path: '/events' },
-  { name: 'classes', path: '/classes' },
-  { name: 'contact', path: '/contact' },
-  { name: 'faq', path: '/faq' },
+  { name: "home", path: "/" },
+  { name: "about", path: "/about" },
+  { name: "events", path: "/events" },
+  { name: "classes", path: "/classes" },
+  { name: "contact", path: "/contact" },
+  { name: "faq", path: "/faq" },
 ];
 
 export default function Sidebar() {
-  const { t, i18n } = useTranslation('nav');
+  const { t, i18n } = useTranslation("nav");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div id="sidebar" className="md:hidden">
       {/* Mobile header with toggle */}
       <div className="flex items-center justify-between bg-[#113250] text-white px-4 py-3">
-        <span className="font-bold text-lg">{t('title')}<img src="./img/AEMMA-logo.png" style={{ width:'35px', height:'35px', display:'inline-block', marginLeft: '10px' }}/></span>
+        <span className="font-bold text-lg">
+          {t("title")}
+          <img
+            src="./img/AEMMA-Ottawa-logo.png"
+            style={{
+              width: "35px",
+              height: "35px",
+              display: "inline-block",
+              marginLeft: "10px",
+            }}
+          />
+        </span>
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -36,12 +47,21 @@ export default function Sidebar() {
 
       {/* Sidebar panel */}
       <div
-            className={`fixed top-0 left-0 h-full w-64 bg-[#113250] text-white z-40 transform transition-transform duration-300 ease-in-out ${
-            isOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed top-0 left-0 h-full w-64 bg-[#113250] text-white z-40 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="p-4 font-bold text-xl border-b border-gray-700">
-          {t('title')}<img src="./img/AEMMA-logo.png" style={{ width:'35px', height:'35px', display:'inline-block', marginLeft: '10px' }}/>
+          {t("title")}
+          <img
+            src="./img/AEMMA-Ottawa-logo.png"
+            style={{
+              width: "35px",
+              height: "35px",
+              display: "inline-block",
+              marginLeft: "10px",
+            }}
+          />
         </div>
         <ul className="space-y-2 p-4">
           {navItems.map((item) => (
@@ -50,7 +70,7 @@ export default function Sidebar() {
                 to={item.path}
                 className={({ isActive }) =>
                   `block px-3 py-2 rounded hover:bg-gray-700 ${
-                    isActive ? 'bg-gray-800 font-semibold' : ''
+                    isActive ? "bg-gray-800 font-semibold" : ""
                   }`
                 }
                 onClick={() => setIsOpen(false)}
@@ -64,21 +84,21 @@ export default function Sidebar() {
         {/* Language Switcher */}
         <div className="p-4 border-t border-gray-700 flex justify-center space-x-2">
           <button
-            onClick={() => i18n.changeLanguage('en')}
+            onClick={() => i18n.changeLanguage("en")}
             className={`px-3 py-1 text-sm rounded hover:cursor-pointer ${
-              i18n.language === 'en'
-                ? 'bg-blue-100 text-blue-800'
-                : 'text-gray-300 hover:bg-gray-700'
+              i18n.language === "en"
+                ? "bg-blue-100 text-blue-800"
+                : "text-gray-300 hover:bg-gray-700"
             }`}
           >
             EN
           </button>
           <button
-            onClick={() => i18n.changeLanguage('fr')}
+            onClick={() => i18n.changeLanguage("fr")}
             className={`px-3 py-1 text-sm rounded hover:cursor-pointer ${
-              i18n.language === 'fr'
-                ? 'bg-blue-100 text-blue-800'
-                : 'text-gray-300 hover:bg-gray-700'
+              i18n.language === "fr"
+                ? "bg-blue-100 text-blue-800"
+                : "text-gray-300 hover:bg-gray-700"
             }`}
           >
             FR

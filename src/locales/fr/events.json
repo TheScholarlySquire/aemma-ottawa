@@ -1,67 +1,156 @@
 {
-    "title": "Événements",
-    "titleUpcoming": "Événements à venir",
-    "titleToday": "Aujord'hui !",
-    "upcomingEventsNull": "Aucun événement à venir pour le moment.",
-    "pastEventsNull": "Aucun événement passé.",
-    "eventTodayBanner": "Événement d'aujourd'hui : {eventTitle}",
-    "eventSoonBanner": "Ne manquez pas l'événement à venir dans {count, plural, one {1 jour} other {{count} jours}}: {eventTitle}!",
-    "titlePast": "Événements passés",
-    "googleCalendar": "Ajouter à Google Calendar",
-    "eventList": [
-        {
-            "id":           "abrazzare-2025-0",
-            "name":         "Abrazzare",
-            "datetime":     "2025-11-23T17:00:00",
-            "location":     "1606 Fisher Ave, Ottawa",
-            "description":  [
-                "Les Prevosts Aaron Bolarinho et David Murphy feront vibrer nos frères et sœurs de l'AAMME d'Ottawa.",
-                "La journée sera divisée en deux séminaires de deux heures chacun.",
-                "Lors du premier séminaire, Aaron présentera au groupe le système de frappe d'Anthony LaViola, érudit libre, destiné aux étudiants de Fiore. Nous examinerons les exercices de base avec les pads et le flux de frappe, et chercherons à les intégrer harmonieusement à notre Abrazare.",
-                "Lors du deuxième séminaire, Murph initiera le groupe à l'art de la hache. Il passera en revue les coupes et les jeux du livre de Fiore et, ce faisant, transmettra son amour de la hache aux participants du séminaire."
-            ]
-        },
-        {
-            "id":           "bytown-symposium-2025-0",
-            "name":         "Bytown Ottawa Sword Symposium 2025",
-            "datetime":     "2025-08-23T12:00:00Z",
-            "location":     "1701 Woodroffe Ave, Ottawa",
-            "description":  "L'AAMME Ottawa, l'OHFS et la BAHFF vous invitent au premier Symposium annuel d'escrime historique à Ottawa ! Joignez-vous à nous pour deux jours d'ateliers, de combats et de divertissements parmi 24 ateliers portant sur une variété d'armes."
-        },
-        {
-            "id":           "italian-week-2025-1",
-            "name":         "Démonstration d'escrime italienne",
-            "datetime":     "2025-06-08T10:00:00",
-            "location":     "412 Preston Street, Ottawa",
-            "description":  "Rejoignez-nous pour un demonstration des Arts Martiaux Hitoriques European (AMHE) pendant le Festival italien d'Ottawa!"
-        },
-        {
-            "id":           "italian-week-2025-0",
-            "name":         "Démonstration d'escrime italienne",
-            "datetime":     "2025-06-07T13:00:00",
-            "location":     "412 Preston Street, Ottawa",
-            "description":  "Rejoignez-nous pour un demonstration des Arts Martiaux Hitoriques European (AMHE) pendant le Festival italien d'Ottawa!"
-        },
-        {
-            "id":           "sword-dagger-intro-0",
-            "name":         "Introduction to sword and dagger",
-            "datetime":     "2024-11-23T13:00:00",
-            "location":     "1606 Fisher Ave, Ottawa",
-            "description":  "Cet atelier a couvert les fondamentaux de l'escrime à l'épée et à la dague (de type pugnale bolognaise), en commençant par comment se tenir dans les gardes, comment se défendre et comment provoquer."
-        },
-        {
-            "id":           "surviving-duel-1",
-            "name":         "Survivre à un duel en 30 jours",
-            "datetime":     "2024-08-17T11:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "Ce cours d'introduction de quatre heures commence par des exercices de jeu de jambes de plus en plus complexes, les bases du système bolognais, avant d'aborder trois gardes : la longue ligne droite, la porta di ferro droite et la garde d'alicorne, ainsi que les angles d'attaque. Il continue ensuite par la défense contre toutes les attaques pour vous permettre de sortir indemne d'un duel."
-        },
-        {
-            "id":           "kirby-1",
-            "name":         "Contrôlez la lame, contrôlez le combat",
-            "datetime":     "2023-11-11T18:00:00Z",
-            "location":     "St. Mark's Anglican Church, Ottawa",
-            "description":  "Dans cet atelier, le Maestro Jared Kirby a démontré différentes manières de contrôler la lame de l'adversaire pour produire le résultat souhaité."
-        }
-    ]
+  "title": "Événements",
+  "titleUpcoming": "Événements à venir",
+  "titleToday": "Aujord'hui !",
+  "upcomingEventsNull": "Aucun événement à venir pour le moment.",
+  "pastEventsNull": "Aucun événement passé.",
+  "eventTodayBanner": "Événement d'aujourd'hui : {eventTitle}",
+  "eventSoonBanner": "Ne manquez pas l'événement à venir dans {count, plural, one {1 jour} other {{count} jours}}: {eventTitle}!",
+  "titlePast": "Événements passés",
+  "googleCalendar": "Ajouter à Google Calendar",
+  "eventList": [
+    {
+      "id": "italian-week-2026",
+      "name": "Semaine italienne 2026",
+      "datetime": "2026-06-20T10:00:00",
+      "endDateTime": "2026-06-21T17:00:00",
+      "location": "Petite Italie, rue Preston",
+      "description": [
+        "AEMMA Ottawa sera de retour à la Semaine italienne d'Ottawa en 2026 avec des démonstrations en direct d'arts martiaux italiens historiques, ainsi que des cours d'initiation sur place !",
+        "Venez nous saluer et prendre une épée ! Ou choisissez un champion pour régler un petit différend. Nous serons là tout le week-end, alors passez nous voir !"
+      ]
+    },
+    {
+      "id": "boss-2026",
+      "name": "Bytown Ottawa symposium sur l'épée 2026",
+      "datetime": "2026-08-22T08:00:00Z",
+      "endDateTime": "2026-08-23T19:30:00Z",
+      "location": "1701 Woodroffe Ave, Ottawa",
+      "description": [
+        "Rejoignez-nous au BOSS 2026, le grand symposium d'escrime historique d'Ottawa !",
+        "Vivez deux jours d'ateliers, de combats et de divertissements."
+      ]
+    },
+    {
+      "id": "intake-062026",
+      "name": "Cours d'admission - juin 2026",
+      "datetime": "2026-06-08T18:00:00",
+      "endDatetime": "2026-06-10T19:30:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Le programme d'admission de juin est là ! Si vous êtes intéressé par l'apprentissage de l'art du combat à l'épée, ou si vous connaissez quelqu'un qui l'est, c'est l'occasion idéale de commencer.",
+        "Le programme d'admission de juin se déroule les 8 et 10 juin (lundi et mercredi) au 1606 Fisher Ave, de 18h00 à 19h30.",
+        "Lors de l'admission, nous passerons en revue les fondamentaux et vous présenterons notre école et notre communauté. Que vous soyez un débutant complet ou que vous ayez une certaine expérience des arts martiaux, nous vous invitons à vous joindre à nous pour ce programme passionnant !"
+      ]
+    },
+    {
+      "id": "cts-062026",
+      "name": "Couper. Estoc. Briser ! — juin",
+      "datetime": "2026-06-13T11:00:00",
+      "endDatetime": "2026-06-13T15:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "« Couper. Estoc. Briser ! » est de retour en force. En 2026, AAMME Ottawa organisera cet événement chaque mois, et tout le monde est le bienvenu. Affrontez qui vous voulez, avec ce que vous voulez ; les seules règles sont :",
+        "- Ne blessez pas votre partenaire, car vous n'en aurez pas d'autre.",
+        "- Tout le monde repart en bons termes à la fin de l'événement — laissez votre ego à la porte.",
+        "De 11 h à 15 h, le tatami sera ouvert à tous pour l'escrime libre, après quoi nous irons prendre manger et boire.",
+        "Comme pour tous les événements d'escrime, c'est gratuit pour les élèves d'AAMME Ottawa et 10 $ pour les visiteurs d'autres écoles."
+      ]
+    },
+    {
+      "id": "cts-042026",
+      "name": "Couper. Estoc. Briser ! — avril",
+      "datetime": "2026-04-25T11:00:00",
+      "endDatetime": "2026-04-25T15:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "« Couper. Estoc. Briser ! » est de retour en force. En 2026, AAMME Ottawa organisera cet événement chaque mois, et tout le monde est le bienvenu. Affrontez qui vous voulez, avec ce que vous voulez ; les seules règles sont :",
+        "- Ne blessez pas votre partenaire, car vous n'en aurez pas d'autre.",
+        "- Tout le monde repart en bons termes à la fin de l'événement — laissez votre ego à la porte.",
+        "De 11 h à 15 h, le tatami sera ouvert à tous pour l'escrime libre, après quoi nous irons prendre manger et boire.",
+        "Comme pour tous les événements d'escrime, c'est gratuit pour les élèves d'AAMME Ottawa et 10 $ pour les visiteurs d'autres écoles."
+      ]
+    },
+    {
+      "id": "cts-022026",
+      "name": "Couper. Estoc. Briser !— février",
+      "datetime": "2026-02-07T11:00:00",
+      "endDatetime": "2026-02-07T19:30:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "« Couper. Estoc. Briser ! » est de retour en force. En 2026, AAMME Ottawa organisera cet événement chaque mois, et tout le monde est le bienvenu. Affrontez qui vous voulez, avec ce que vous voulez ; les seules règles sont :",
+        "- Ne blessez pas votre partenaire, car vous n'en aurez pas d'autre.",
+        "- Tout le monde repart en bons termes à la fin de l'événement — laissez votre ego à la porte.",
+        "De 11 h à 15 h, le tatami sera ouvert à tous pour l'escrime libre, après quoi nous irons prendre manger et boire.",
+        "Comme pour tous les événements d'escrime, c'est gratuit pour les élèves d'AAMME Ottawa et 10 $ pour les visiteurs d'autres écoles."
+      ]
+    },
+    {
+      "id": "start-year-2026",
+      "name": "Escrime et festin de rentrée",
+      "datetime": "2026-01-10T11:00:00",
+      "endDatetime": "2026-01-10T15:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "C'est le moment de fêter la rentrée à AAMME Ottawa ! L'année dernière a été formidable pour notre école : de nouveaux élèves, le troisième examen d'érudit, une participation très réussie à la Semaine italienne et un programme d'ateliers bien rempli. Il y a donc de quoi se réjouir !",
+        "De 11 h à 15 h, l'escrime sera accessible à tous (à la style 'Cut, Thrust, Smash!'). Ensuite, chacun apportera un plat pour le festin. À mesure que la date approche, nous adapterons le menu afin que chacun puisse trouver son bonheur.",
+        "Comme pour tous les événements d'escrime, c'est gratuit pour les élèves d'AAMME Ottawa et 10 $ pour les visiteurs d'autres écoles. Pour participer au festin, il vous suffit d'apporter un plat.",
+        "On se voit là-bas !"
+      ]
+    },
+    {
+      "id": "abrazzare-2025-0",
+      "name": "Abrazzare",
+      "datetime": "2025-11-23T17:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Les Prevosts Aaron Bolarinho et David Murphy feront vibrer nos frères et sœurs de l'AAMME d'Ottawa.",
+        "La journée sera divisée en deux séminaires de deux heures chacun.",
+        "Lors du premier séminaire, Aaron présentera au groupe le système de frappe d'Anthony LaViola, érudit libre, destiné aux étudiants de Fiore. Nous examinerons les exercices de base avec les pads et le flux de frappe, et chercherons à les intégrer harmonieusement à notre Abrazare.",
+        "Lors du deuxième séminaire, Murph initiera le groupe à l'art de la hache. Il passera en revue les coupes et les jeux du livre de Fiore et, ce faisant, transmettra son amour de la hache aux participants du séminaire."
+      ]
+    },
+    {
+      "id": "boss-2025",
+      "name": "Bytown Ottawa symposium sur l'épée 2025",
+      "datetime": "2025-08-23T08:00:00Z",
+      "location": "1701 Woodroffe Ave, Ottawa",
+      "description": "L'AAMME Ottawa, l'OHFS et la BAHFF vous invitent au premier Symposium annuel d'escrime historique à Ottawa ! Joignez-vous à nous pour deux jours d'ateliers, de combats et de divertissements parmi 24 ateliers portant sur une variété d'armes."
+    },
+    {
+      "id": "italian-week-2025-1",
+      "name": "Démonstration d'escrime italienne",
+      "datetime": "2025-06-08T10:00:00",
+      "location": "412 Preston Street, Ottawa",
+      "description": "Rejoignez-nous pour un demonstration des Arts Martiaux Hitoriques European (AMHE) pendant le Festival italien d'Ottawa!"
+    },
+    {
+      "id": "italian-week-2025-0",
+      "name": "Démonstration d'escrime italienne",
+      "datetime": "2025-06-07T13:00:00",
+      "location": "412 Preston Street, Ottawa",
+      "description": "Rejoignez-nous pour un demonstration des Arts Martiaux Hitoriques European (AMHE) pendant le Festival italien d'Ottawa!"
+    },
+    {
+      "id": "sword-dagger-intro-0",
+      "name": "Introduction to sword and dagger",
+      "datetime": "2024-11-23T13:00:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": "Cet atelier a couvert les fondamentaux de l'escrime à l'épée et à la dague (de type pugnale bolognaise), en commençant par comment se tenir dans les gardes, comment se défendre et comment provoquer."
+    },
+    {
+      "id": "surviving-duel-1",
+      "name": "Survivre à un duel en 30 jours",
+      "datetime": "2024-08-17T11:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "Ce cours d'introduction de quatre heures commence par des exercices de jeu de jambes de plus en plus complexes, les bases du système bolognais, avant d'aborder trois gardes : la longue ligne droite, la porta di ferro droite et la garde d'alicorne, ainsi que les angles d'attaque. Il continue ensuite par la défense contre toutes les attaques pour vous permettre de sortir indemne d'un duel."
+    },
+    {
+      "id": "kirby-1",
+      "name": "Contrôlez la lame, contrôlez le combat",
+      "datetime": "2023-11-11T18:00:00Z",
+      "location": "St. Mark's Anglican Church, Ottawa",
+      "description": "Dans cet atelier, le Maestro Jared Kirby a démontré différentes manières de contrôler la lame de l'adversaire pour produire le résultat souhaité."
+    }
+  ]
 }

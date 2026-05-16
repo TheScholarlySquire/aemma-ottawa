@@ -1,70 +1,94 @@
 {
-    "classesPageTitle": "Class Info",
-    "classesPageIntro1": "Wrestling, dagger and sword in one hand are the foundation of our curriculum and inform everything that we do, regardless of the weapon(s) in hand. The intake/beginner classes will focus on developing proficiency in these three skills, and as students progress, they will be introduced to more complex actions, tactics, and additional weapons:",
-    "classesPageIntro2": "In addition, students will also be introduced to other contemporary systems of fencing, Florentine (Anonimo Riccardiano) and Neapolitan (Marc’Antonio Pagano) in particular.",
-    "classesPageIntro3": "Classes are 16 years old and up.",
-    "classesPageIntroList": {
-        "li1": "Sword in one hand along with its secondaries: dagger, cloak, buckler/targa, rotella, second sword",
-        "li2": "Polearms: partisan, spear, bill, pike, pollaxe, halberd, glaive",
-        "li3": "Spadone (the big sword)",
-        "li4": "Mismatched weapons"
-    },
-    "classesTitle": "Classes - Mondays and Wednesdays",
-    "internalEvents": "Group developments",
-    "modal": {
-        "nameTitle": "Name",
-        "emailTitle": "Email",
-        "textTitle": "Do you have any martial arts experience?",
-        "textField": "Please describe your experience",
-        "textYes": "Yes",
-        "textNo": "No",
-        "submitBtn": "Submit"
-    },
-    "courseList": [
-        {
-            "lvl": 0,
-            "type": "Beginner",
-            "modalTitle": "Class Sign-Up - Beginner",
-            "time": "18:00 - 19:30",
-            "description": "Beginner classes diving into footwork, guards, movement, and the other essentials.",
-            "signupBtn": "Sign up"
-        },
-        {
-            "lvl": 1,
-            "type": "Intermediate",
-            "modalTitle": "Class Sign-Up - Intermediate",
-            "time": "18:00 - 19:30",
-            "description": "Here we look at more complex actions, secondary weapons, and other systems.",
-            "signupBtn": "Sign up"
-        },
-        {
-            "lvl": 2,
-            "type": "Advanced",
-            "time": "19:30 - 21:30",
-            "description": "In advanced classes, we dig deep into the material and pressure test through fencing."
-        }
+  "classesPageTitle": "Class Info",
+  "classesPageIntro": [
+    "We currently run classes twice per week at 1606 Fisher Ave, on Mondays and Wednesdays. Monthly fees are $80 for regular classes (8 per month, plus occasional events and supplementary irregular classes), open to everyone aged 16+.",
+    "The intake program is a set of two 1.5-hour long classes that take place on the first Monday and Wednesday of each month. The program is designed to introduce students to the foundational skills of our curriculum. After completing the intake program, students are welcome to join our regular classes, which are divided into three levels: Fundamentals, Intermediate, and Advanced. Each level builds upon the previous one, allowing students to deepen their understanding and proficiency in the art.",
+    "Wrestling, dagger and sword in one hand are the foundation of our curriculum and inform everything that we do, regardless of the weapon(s) in hand. The beginner classes will focus on developing proficiency in these three skills, and as students progress, they will be introduced to more complex actions, tactics, and additional weapons:"
+  ],
+  "classesPageIntroList": [
+    "Sword in one hand along with its secondaries: dagger, cloak, buckler/targa, rotella, second sword",
+    "Polearms: partisan, spear, bill, pike, pollaxe, halberd, glaive",
+    "Spadone (the big sword)",
+    "Mismatched weapons"
+  ],
+  "classesTitle": "Classes - Mondays and Wednesdays",
+  "internalEvents": "Academy developments",
+  "modal": {
+    "nameTitle": "Name",
+    "emailTitle": "Email",
+    "textTitle": "Do you have any martial arts experience?",
+    "hearAboutUsTitle": "How did you hear about us?",
+    "optionalLabel": "optional",
+    "textField": "Please describe your experience",
+    "textYes": "Yes",
+    "textNo": "No",
+    "hearAboutUsPlaceholder": "- Select an option -",
+    "hearAboutUsOptions": [
+      { "value": "social_media", "label": "Social media" },
+      { "value": "word_of_mouth", "label": "Word of mouth" },
+      { "value": "event", "label": "Event" },
+      { "value": "bike_cafe", "label": "Bike Cafe" },
+      { "value": "flyer", "label": "Flyer or Poster" },
+      { "value": "other", "label": "Other" }
     ],
-    "scholars": [
-        {
-            "id":           "max-scholar",
-            "name":         "Scholar test - Max (Ottawa)",
-            "datetime":     "2025-11-21T18:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts will be testing its third Scholar candidate in November."
-        },
-        {
-            "id":           "cass-scholar",
-            "name":         "Scholar test - Cass (Ottawa)",
-            "datetime":     "2024-09-21T11:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Cass successfully passed their scholar tests in front of 3 Scholars, 2 Free Scholars, and 1 Provost. Their tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. They demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
-        },
-        {
-            "id":           "shane-scholar",
-            "name":         "Scholar test - Shane (Ottawa)",
-            "datetime":     "2024-09-21T13:00:00",
-            "location":     "1606 Fisher Ave, Ottawa ON",
-            "description":  "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Shane successfully passed his scholar tests in front of 4 Scholars, 2 Free Scholars, and 1 Provost. His tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. He demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
-        }
-    ]
+    "submitBtn": "Submit",
+    "cohortDateLabel": "Cohort dates:",
+    "successTitle": "You're signed up!",
+    "successMessage": "We'll be in touch soon about your cohort.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "closeBtn": "Close"
+  },
+  "courseList": [
+    {
+      "lvl": 0,
+      "type": "Intake",
+      "modalTitle": "Class sign-up - Intake",
+      "time": "18:00 - 19:30",
+      "description": "An introduction to foundational swordsmanship skills, including footwork, guards, cuts, and defences.",
+      "signupBtn": "Sign up"
+    },
+    {
+      "lvl": 1,
+      "type": "Fundamentals",
+      "modalTitle": "Class sign-up - Recruit",
+      "time": "18:00 - 19:00",
+      "description": "Here we dive deeper into footwork, guards and defenses, and more complex actions.",
+      "signupBtn": "Sign up"
+    },
+    {
+      "lvl": 2,
+      "type": "Intermediate",
+      "time": "19:00 - 20:30",
+      "description": "Intermediate students hone their skills in more advanced techniques and venture into other weapons."
+    },
+    {
+      "lvl": 3,
+      "type": "Advanced and Free Fencing",
+      "time": "20:30 - 21:30",
+      "description": "In this portion, we dig deep into the material and pressure test through fencing."
+    }
+  ],
+  "scholars": [
+    {
+      "id": "max-scholar",
+      "name": "Scholar test - Max (Ottawa)",
+      "datetime": "2025-11-21T18:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its third Scholar into its ranks. Max successfully passed their scholar test in front of 4 Scholars, 1 Free Scholar, and 1 Provost. Their test covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. They demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
+    },
+    {
+      "id": "shane-scholar",
+      "name": "Scholar test - Shane (Ottawa)",
+      "datetime": "2024-09-21T13:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Shane successfully passed his scholar tests in front of 4 Scholars, 2 Free Scholars, and 1 Provost. His tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. He demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
+    },
+    {
+      "id": "cass-scholar",
+      "name": "Scholar test - Cass (Ottawa)",
+      "datetime": "2024-09-21T11:00:00",
+      "location": "1606 Fisher Ave, Ottawa ON",
+      "description": "The Ottawa Chapter of the Academy of European Medieval Martial Arts welcomes its first two Scholars into its ranks. Cass successfully passed their scholar tests in front of 3 Scholars, 2 Free Scholars, and 1 Provost. Their tests covered the Art of Fiore dei Liberi and that of the Bolognese tradition, primarily from Dal'Agocchie's manuscript. They demonstrated their knowledge of theory, their execution of the principles and plays, and free fenced with arming swords to the satisfaction of all present."
+    }
+  ]
 }

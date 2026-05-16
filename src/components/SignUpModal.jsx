@@ -1,126 +1,298 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next'
-import { Dialog } from '@headlessui/react';
-import { X } from 'lucide-react';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Dialog } from "@headlessui/react";
+import { X, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { supabase } from "../lib/supabaseClient";
 
-export default function SignUpModal({ isOpen, onClose, selectedCourseIndex }) {
-    const { t } = useTranslation('classes');
-    const courses = t('courseList', { returnObjects: true });
-    const modals = t('modal', { returnObjects: true });
+export default function SignUpModal({
+  isOpen,
+  onClose,
+  selectedCourseIndex,
+  startDate,
+  endDate,
+}) {
+  const { t, i18n } = useTranslation("classes");
+  const locale = i18n.language === "fr" ? "fr-CA" : "en-CA";
 
-    const selectedCourse = selectedCourseIndex != null ? courses[selectedCourseIndex] : null;
-    const modalTitle = selectedCourse?.modalTitle || t('courseList.modalTitle', 'Class Sign-Up');
+  const courses = t("courseList", { returnObjects: true });
+  const modals = t("modal", { returnObjects: true });
 
+  const selectedCourse =
+    selectedCourseIndex != null ? courses[selectedCourseIndex] : null;
+  const modalTitle =
+    selectedCourse?.modalTitle || t("courseList.modalTitle", "Class sign-up");
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        hasExperience: false,
-        experienceDetails: '',
+  const hearAboutUsOptions = t("modal.hearAboutUsOptions", {
+    returnObjects: true,
+    defaultValue: [],
+  });
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    hasExperience: false,
+    experienceDetails: "",
+    hearAboutUs: "",
+  });
+
+  const [status, setStatus] = useState("idle"); // 'idle' | 'loading' | 'success' | 'error'
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleClose = () => {
+    setFormData({
+      name: "",
+      email: "",
+      hasExperience: false,
+      experienceDetails: "",
+      hearAboutUs: "",
+    });
+    setStatus("idle");
+    setErrorMessage("");
+    onClose();
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    const { error } = await supabase.from("signups").insert({
+      name: formData.name,
+      email: formData.email,
+      has_experience: formData.hasExperience,
+      experience_details: formData.hasExperience
+        ? formData.experienceDetails
+        : null,
+      cohort_start_date: startDate,
+      cohort_end_date: endDate,
+      language: i18n.language,
+      hear_about_us: formData.hearAboutUs || null,
     });
 
-    const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-        setFormData((prev) => ({
-            ...prev,
-            [name]: type === 'checkbox' ? checked : value,
-        }));
-    };
+    if (error) {
+      console.error("Supabase error:", error);
+      setErrorMessage(
+        modals.errorMessage || "Something went wrong. Please try again."
+      );
+      setStatus("error");
+    } else {
+      setStatus("success");
+    }
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form submitted:', formData);
-        onClose();
-    };
+  const formattedStartDate = startDate
+    ? new Date(startDate + "T00:00:00").toLocaleDateString(locale, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : null;
 
-    return (
-        <Dialog open={isOpen} onClose={onClose} className="fixed z-50 inset-0 overflow-y-auto">
-            <div className="flex items-center justify-center min-h-screen px-4">
-                <div className="fixed inset-0 bg-black/50 backdrop-blur-sm transition transition-discrete duration-300" aria-hidden="true" />
+  const formattedEndDate = endDate
+    ? new Date(endDate + "T00:00:00").toLocaleDateString(locale, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : null;
 
-                <div className="relative bg-white rounded-lg shadow-lg w-full max-w-md mx-auto z-50 p-6">
-                    <div className="flex justify-between items-center mb-4">
-                        <Dialog.Title className="text-lg font-bold">{modalTitle}</Dialog.Title>
-                        <button onClick={onClose}>
-                            <X className="w-5 h-5 text-gray-500 hover:text-gray-700 hover:cursor-pointer" />
-                        </button>
-                    </div>
+  const formattedDateRange =
+    formattedStartDate && formattedEndDate
+      ? `${formattedStartDate} & ${formattedEndDate}`
+      : formattedStartDate ?? null;
 
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                        <div>
-                            <label className="block font-medium">{modals.nameTitle}</label>
-                            <input
-                                type="text"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                                className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
-                            />
-                        </div>
+  return (
+    <Dialog
+      open={isOpen}
+      onClose={handleClose}
+      className="fixed z-50 inset-0 overflow-y-auto"
+    >
+      <div className="flex items-center justify-center min-h-screen px-4">
+        <div
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm transition transition-discrete duration-300"
+          aria-hidden="true"
+          onClick={handleClose}
+        />
 
-                        <div>
-                            <label className="block font-medium">{modals.emailTitle}</label>
-                            <input
-                                type="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                                className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
-                            />
-                        </div>
+        <div className="relative bg-white rounded-lg shadow-lg w-full max-w-md mx-auto z-50 p-6">
+          <div className="flex justify-between items-center mb-4">
+            <Dialog.Title className="text-lg font-bold">
+              {modalTitle}
+            </Dialog.Title>
+            <button onClick={handleClose} aria-label="Close">
+              <X className="w-5 h-5 text-gray-500 hover:text-gray-700 hover:cursor-pointer" />
+            </button>
+          </div>
 
-                        <div>
-                            <label className="block font-medium mb-1">{modals.textTitle}</label>
-                            <div className="flex gap-4">
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="hasExperience"
-                                        value="yes"
-                                        checked={formData.hasExperience === true}
-                                        onChange={() => setFormData((prev) => ({ ...prev, hasExperience: true }))}
-                                    />
-                                    <span className="ml-2">{modals.textYes}</span>
-                                </label>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="hasExperience"
-                                        value="no"
-                                        checked={formData.hasExperience === false}
-                                        onChange={() => setFormData((prev) => ({ ...prev, hasExperience: false, experienceDetails: '' }))}
-                                    />
-                                    <span className="ml-2">{modals.textNo}</span>
-                                </label>
-                            </div>
-                        </div>
+          {/* Cohort date range display */}
+          {formattedDateRange && status !== "success" && (
+            <p className="text-sm text-blue-700 bg-blue-50 border border-blue-200 rounded px-3 py-2 mb-4">
+              {modals.cohortDateLabel || "Cohort dates:"}{" "}
+              <strong>{formattedDateRange}</strong>
+            </p>
+          )}
 
-                        {formData.hasExperience && (
-                            <div>
-                                <label className="block font-medium">{modals.textField}</label>
-                                <textarea
-                                    name="experienceDetails"
-                                    value={formData.experienceDetails}
-                                    onChange={handleChange}
-                                    className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
-                                    rows={3}
-                                />
-                            </div>
-                        )}
-
-                        <div className="text-right">
-                            <button
-                                type="submit"
-                                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:cursor-pointer"
-                            >
-                                {modals.submitBtn}
-                            </button>
-                        </div>
-                    </form>
-                </div>
+          {/* Success state */}
+          {status === "success" ? (
+            <div className="flex flex-col items-center text-center py-6 gap-3">
+              <CheckCircle className="w-12 h-12 text-green-500" />
+              <p className="text-lg font-semibold text-gray-800">
+                {modals.successTitle || "You're signed up!"}
+              </p>
+              <p className="text-sm text-gray-500">
+                {modals.successMessage ||
+                  `We'll be in touch about the ${formattedDateRange} cohort.`}{" "}
+              </p>
+              <button
+                onClick={handleClose}
+                className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:cursor-pointer"
+              >
+                {modals.closeBtn || "Close"}
+              </button>
             </div>
-        </Dialog>
-    );
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label className="block font-medium">{modals.nameTitle}</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  disabled={status === "loading"}
+                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
+                />
+              </div>
+
+              <div>
+                <label className="block font-medium">{modals.emailTitle}</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  disabled={status === "loading"}
+                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
+                />
+              </div>
+
+              <div>
+                <label className="block font-medium mb-1">
+                  {modals.textTitle}
+                </label>
+                <div className="flex gap-4">
+                  <label className="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasExperience"
+                      value="yes"
+                      checked={formData.hasExperience === true}
+                      onChange={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          hasExperience: true,
+                        }))
+                      }
+                      disabled={status === "loading"}
+                    />
+                    <span className="ml-2">{modals.textYes}</span>
+                  </label>
+                  <label className="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasExperience"
+                      value="no"
+                      checked={formData.hasExperience === false}
+                      onChange={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          hasExperience: false,
+                          experienceDetails: "",
+                        }))
+                      }
+                      disabled={status === "loading"}
+                    />
+                    <span className="ml-2">{modals.textNo}</span>
+                  </label>
+                </div>
+              </div>
+
+              {formData.hasExperience && (
+                <div>
+                  <label className="block font-medium">
+                    {modals.textField}
+                  </label>
+                  <textarea
+                    name="experienceDetails"
+                    value={formData.experienceDetails}
+                    onChange={handleChange}
+                    disabled={status === "loading"}
+                    className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
+                    rows={3}
+                  />
+                </div>
+              )}
+
+              <div>
+                <label className="block font-medium mb-1">
+                  {modals.hearAboutUsTitle}
+                  <span className="ml-1 text-sm font-normal text-gray-400">
+                    ({modals.optionalLabel || "optional"})
+                  </span>
+                </label>
+                <select
+                  name="hearAboutUs"
+                  value={formData.hearAboutUs}
+                  onChange={handleChange}
+                  disabled={status === "loading"}
+                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-white disabled:opacity-50"
+                >
+                  <option value="">
+                    {modals.hearAboutUsOptionsPlaceholder ||
+                      "— Select an option —"}
+                  </option>
+                  {Array.isArray(hearAboutUsOptions) &&
+                    hearAboutUsOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                </select>
+              </div>
+
+              {status === "error" && (
+                <div className="flex items-center gap-2 text-red-600 text-sm bg-red-50 border border-red-200 rounded px-3 py-2">
+                  <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                  <span>{errorMessage}</span>
+                </div>
+              )}
+
+              <div className="text-right">
+                <button
+                  type="submit"
+                  disabled={status === "loading"}
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {status === "loading" && (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  )}
+                  {modals.submitBtn}
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
+    </Dialog>
+  );
 }
