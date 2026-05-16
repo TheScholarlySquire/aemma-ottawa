@@ -35,12 +35,6 @@ export default function Home() {
   const start = new Date(intakeConfig.startDate + "T00:00:00");
   const end = new Date(intakeConfig.endDate + "T00:00:00");
 
-  // If both dates share the same month and year, collapse the range:
-  //   EN: "September 6 – 20, 2025"
-  //   FR: "6 – 20 septembre 2025"
-  // Otherwise show both dates in full:
-  //   EN: "August 30 – September 6, 2025"
-  //   FR: "30 août – 6 septembre 2025"
   const sameMonthAndYear =
     start.getFullYear() === end.getFullYear() &&
     start.getMonth() === end.getMonth();
@@ -94,11 +88,19 @@ export default function Home() {
       <AboutSection />
       <div id="intakeInfo">
         <section id="intakeBanner" className="relative w-full">
-          <div className="absolute z-20 flex flex-col items-center justify-center h-full w-full text-center text-white px-4">
-            <h1 className="text-4xl font-bold">
+          <img
+            src="./img/group3.jpg"
+            className="absolute inset-0 w-full h-full object-cover object-top"
+            alt=""
+          />
+
+          <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+
+          <div className="relative z-20 flex flex-col items-center justify-center w-full text-center text-white px-6 py-16">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
               {tHome("classSections.intakeHeader")}
             </h1>
-            <h3 className="text-xl mb-4 w-[75%]">
+            <h3 className="text-base sm:text-lg md:text-xl mb-4 w-full sm:w-[85%] md:w-[75%]">
               <Trans
                 i18nKey="classSections.intakeSubHeader"
                 ns="home"
@@ -107,9 +109,7 @@ export default function Home() {
                     <a
                       href="#/classes"
                       className="text-blue-200 underline hover:text-blue-100 hover:cursor-pointer transition duration-300 ease-in-out"
-                    >
-                      {tHome("classSections.intakeSubHeader")}
-                    </a>
+                    />
                   ),
                 }}
               />
@@ -120,18 +120,12 @@ export default function Home() {
             >
               {intakeCourse.signupBtn}
             </button>
-            <p className="text-lg mt-4">
+            <p className="text-base md:text-lg mt-4">
               {tHome("classSections.nextIntake")} {formattedDateRange}
             </p>
           </div>
-          <img
-            src="./img/group3.jpg"
-            className="relative inset-0 object-top object-fit"
-            alt=""
-          />
         </section>
 
-        {/* Pass both dates as separate props */}
         <SignUpModal
           isOpen={modalOpen}
           onClose={() => setModalOpen(false)}

@@ -22,7 +22,7 @@ export default function MainLayout() {
             <Link to="/" className="navLink text-xl font-bold">
               {t("title")}
               <img
-                src="./img/AEMMA-Ottawa-logo.PNG"
+                src="./img/AEMMA-Ottawa-logo.png"
                 style={{
                   width: "45px",
                   height: "45px",
