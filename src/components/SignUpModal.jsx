@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Dialog } from "@headlessui/react";
-import { X, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { X, AlertCircle, Loader2 } from "lucide-react";
 import { supabase } from "../lib/supabaseClient";
 
 export default function SignUpModal({
@@ -35,7 +35,7 @@ export default function SignUpModal({
     hearAboutUs: "",
   });
 
-  const [status, setStatus] = useState("idle"); // 'idle' | 'loading' | 'success' | 'error'
+  const [status, setStatus] = useState("idle"); // 'idle' | 'loading' | 'error'
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
@@ -64,27 +64,39 @@ export default function SignUpModal({
     setStatus("loading");
     setErrorMessage("");
 
-    const { error } = await supabase.from("signups").insert({
-      name: formData.name,
-      email: formData.email,
-      has_experience: formData.hasExperience,
-      experience_details: formData.hasExperience
-        ? formData.experienceDetails
-        : null,
-      cohort_start_date: startDate,
-      cohort_end_date: endDate,
-      language: i18n.language,
-      hear_about_us: formData.hearAboutUs || null,
-    });
+    try {
+      // Call the Edge Function — it creates the Stripe session and inserts
+      // a pending signup row in Supabase before returning the redirect URL
+      const { data, error } = await supabase.functions.invoke(
+        "create-checkout-session",
+        {
+          body: {
+            name: formData.name,
+            email: formData.email,
+            hasExperience: formData.hasExperience,
+            experienceDetails: formData.hasExperience
+              ? formData.experienceDetails
+              : null,
+            hearAboutUs: formData.hearAboutUs || null,
+            startDate,
+            endDate,
+            language: i18n.language,
+          },
+        },
+      );
 
-    if (error) {
-      console.error("Supabase error:", error);
+      if (error || !data?.url) {
+        throw new Error(error?.message || "No checkout URL returned");
+      }
+
+      // Hand off to Stripe's hosted checkout page
+      window.location.href = data.url;
+    } catch (err) {
+      console.error("Checkout error:", err);
       setErrorMessage(
-        modals.errorMessage || "Something went wrong. Please try again."
+        modals.errorMessage || "Something went wrong. Please try again.",
       );
       setStatus("error");
-    } else {
-      setStatus("success");
     }
   };
 
@@ -107,7 +119,7 @@ export default function SignUpModal({
   const formattedDateRange =
     formattedStartDate && formattedEndDate
       ? `${formattedStartDate} & ${formattedEndDate}`
-      : formattedStartDate ?? null;
+      : (formattedStartDate ?? null);
 
   return (
     <Dialog
@@ -133,164 +145,144 @@ export default function SignUpModal({
           </div>
 
           {/* Cohort date range display */}
-          {formattedDateRange && status !== "success" && (
+          {formattedDateRange && (
             <p className="text-sm text-blue-700 bg-blue-50 border border-blue-200 rounded px-3 py-2 mb-4">
               {modals.cohortDateLabel || "Cohort dates:"}{" "}
               <strong>{formattedDateRange}</strong>
             </p>
           )}
 
-          {/* Success state */}
-          {status === "success" ? (
-            <div className="flex flex-col items-center text-center py-6 gap-3">
-              <CheckCircle className="w-12 h-12 text-green-500" />
-              <p className="text-lg font-semibold text-gray-800">
-                {modals.successTitle || "You're signed up!"}
-              </p>
-              <p className="text-sm text-gray-500">
-                {modals.successMessage ||
-                  `We'll be in touch about the ${formattedDateRange} cohort.`}{" "}
-              </p>
-              <button
-                onClick={handleClose}
-                className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:cursor-pointer"
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block font-medium">{modals.nameTitle}</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                disabled={status === "loading"}
+                className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
+              />
+            </div>
+
+            <div>
+              <label className="block font-medium">{modals.emailTitle}</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                disabled={status === "loading"}
+                className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
+              />
+            </div>
+
+            <div>
+              <label className="block font-medium mb-1">
+                {modals.textTitle}
+              </label>
+              <div className="flex gap-4">
+                <label className="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="hasExperience"
+                    value="yes"
+                    checked={formData.hasExperience === true}
+                    onChange={() =>
+                      setFormData((prev) => ({ ...prev, hasExperience: true }))
+                    }
+                    disabled={status === "loading"}
+                  />
+                  <span className="ml-2">{modals.textYes}</span>
+                </label>
+                <label className="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="hasExperience"
+                    value="no"
+                    checked={formData.hasExperience === false}
+                    onChange={() =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        hasExperience: false,
+                        experienceDetails: "",
+                      }))
+                    }
+                    disabled={status === "loading"}
+                  />
+                  <span className="ml-2">{modals.textNo}</span>
+                </label>
+              </div>
+            </div>
+
+            {formData.hasExperience && (
+              <div>
+                <label className="block font-medium">{modals.textField}</label>
+                <textarea
+                  name="experienceDetails"
+                  value={formData.experienceDetails}
+                  onChange={handleChange}
+                  disabled={status === "loading"}
+                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
+                  rows={3}
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="block font-medium mb-1">
+                {modals.hearAboutUsTitle}
+                <span className="ml-1 text-sm font-normal text-gray-400">
+                  ({modals.optionalLabel || t("modal.optionalLabel")})
+                </span>
+              </label>
+              <select
+                name="hearAboutUs"
+                value={formData.hearAboutUs}
+                onChange={handleChange}
+                disabled={status === "loading"}
+                className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-white disabled:opacity-50"
               >
-                {modals.closeBtn || "Close"}
+                <option value="">
+                  {modals.hearAboutUsOptionsPlaceholder ||
+                    t("modal.optionSelect")}
+                </option>
+                {Array.isArray(hearAboutUsOptions) &&
+                  hearAboutUsOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+              </select>
+            </div>
+
+            {status === "error" && (
+              <div className="flex items-center gap-2 text-red-600 text-sm bg-red-50 border border-red-200 rounded px-3 py-2">
+                <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                <span>{errorMessage}</span>
+              </div>
+            )}
+
+            {/* Remind the user a payment step is coming */}
+            <p className="text-xs text-gray-400 text-center">
+              {modals.paymentNotice || t("modal.stripeRedirect")}
+            </p>
+
+            <div className="text-right">
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {status === "loading" && (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                )}
+                {modals.submitBtn}
               </button>
             </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block font-medium">{modals.nameTitle}</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  disabled={status === "loading"}
-                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
-                />
-              </div>
-
-              <div>
-                <label className="block font-medium">{modals.emailTitle}</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  disabled={status === "loading"}
-                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
-                />
-              </div>
-
-              <div>
-                <label className="block font-medium mb-1">
-                  {modals.textTitle}
-                </label>
-                <div className="flex gap-4">
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="hasExperience"
-                      value="yes"
-                      checked={formData.hasExperience === true}
-                      onChange={() =>
-                        setFormData((prev) => ({
-                          ...prev,
-                          hasExperience: true,
-                        }))
-                      }
-                      disabled={status === "loading"}
-                    />
-                    <span className="ml-2">{modals.textYes}</span>
-                  </label>
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="hasExperience"
-                      value="no"
-                      checked={formData.hasExperience === false}
-                      onChange={() =>
-                        setFormData((prev) => ({
-                          ...prev,
-                          hasExperience: false,
-                          experienceDetails: "",
-                        }))
-                      }
-                      disabled={status === "loading"}
-                    />
-                    <span className="ml-2">{modals.textNo}</span>
-                  </label>
-                </div>
-              </div>
-
-              {formData.hasExperience && (
-                <div>
-                  <label className="block font-medium">
-                    {modals.textField}
-                  </label>
-                  <textarea
-                    name="experienceDetails"
-                    value={formData.experienceDetails}
-                    onChange={handleChange}
-                    disabled={status === "loading"}
-                    className="w-full border border-gray-300 rounded px-3 py-2 mt-1 disabled:opacity-50"
-                    rows={3}
-                  />
-                </div>
-              )}
-
-              <div>
-                <label className="block font-medium mb-1">
-                  {modals.hearAboutUsTitle}
-                  <span className="ml-1 text-sm font-normal text-gray-400">
-                    ({modals.optionalLabel || "optional"})
-                  </span>
-                </label>
-                <select
-                  name="hearAboutUs"
-                  value={formData.hearAboutUs}
-                  onChange={handleChange}
-                  disabled={status === "loading"}
-                  className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-white disabled:opacity-50"
-                >
-                  <option value="">
-                    {modals.hearAboutUsOptionsPlaceholder ||
-                      "— Select an option —"}
-                  </option>
-                  {Array.isArray(hearAboutUsOptions) &&
-                    hearAboutUsOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                </select>
-              </div>
-
-              {status === "error" && (
-                <div className="flex items-center gap-2 text-red-600 text-sm bg-red-50 border border-red-200 rounded px-3 py-2">
-                  <AlertCircle className="w-4 h-4 flex-shrink-0" />
-                  <span>{errorMessage}</span>
-                </div>
-              )}
-
-              <div className="text-right">
-                <button
-                  type="submit"
-                  disabled={status === "loading"}
-                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
-                >
-                  {status === "loading" && (
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                  )}
-                  {modals.submitBtn}
-                </button>
-              </div>
-            </form>
-          )}
+          </form>
         </div>
       </div>
     </Dialog>

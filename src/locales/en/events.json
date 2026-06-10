@@ -10,6 +10,30 @@
   "googleCalendar": "Add to Google Calendar",
   "eventList": [
     {
+      "id": "evenings-zibi-092026",
+      "name": "Evenings at Zibi — September 2026",
+      "datetime": "2026-09-12T17:00:00",
+      "endDateTime": "2026-09-12T22:00:00",
+      "location": "310 Miwate Private, Ottawa",
+      "description": [
+        "AEMMA Ottawa is collaborating with Urban Art Collective to bring the fighting arts of Renaissance Italy to life in the heart of the capital.",
+        "Watch skilled practitioners demonstrate abrazzare (grappling), dagger, and swordplay. Then try it for yourself! Introductory classes run throughout the evening, so come try it out!",
+        "And if you have a grievance that the modern legal system symply cannot address, pick a champion to settle it for you. We'll be there all evening, so drop by!"
+      ]
+    },
+    {
+      "id": "evenings-zibi-072026",
+      "name": "Evenings at Zibi — July 2026",
+      "datetime": "2026-07-25T17:00:00",
+      "endDateTime": "2026-07-25T22:00:00",
+      "location": "310 Miwate Private, Ottawa",
+      "description": [
+        "AEMMA Ottawa is collaborating with Urban Art Collective to bring the fighting arts of Renaissance Italy to life in the heart of the capital.",
+        "Watch skilled practitioners demonstrate abrazzare (grappling), dagger, and swordplay. Then try it for yourself! Introductory classes run throughout the evening, so come try it out!",
+        "And if you have a grievance that the modern legal system symply cannot address, pick a champion to settle it for you. We'll be there all evening, so drop by!"
+      ]
+    },
+    {
       "id": "italian-week-2026",
       "name": "Italian Week 2026",
       "datetime": "2026-06-20T10:00:00",
@@ -45,16 +69,12 @@
     },
     {
       "id": "cts-062026",
-      "name": "Cut. Thrust. Smash! — June",
+      "name": "Cut. Thrust. Smash! — June - CANCELED",
       "datetime": "2026-06-13T11:00:00",
       "endDatetime": "2026-06-13T15:00:00",
       "location": "1606 Fisher Ave, Ottawa",
       "description": [
-        "Cut. Thrust. Smash! is back with a vengeance. In 2026 AEMMA Ottawa will be hosting this event every month, and all are welcome. Fence with whom you want with what you want; the only rules are:",
-        "- Don't break your partner, as you won't get another one",
-        "- Everyone leaves on good terms at the end of the event — leave your egos at the door.",
-        "From 11 until 3 the floor will be open for free fencing, after which we will head out for some food and drink.",
-        "As with all fencing events, it is free for AEMMA Ottawa students, and $10 for visitors from other schools."
+        "Cut. Thrust. Smash! in June has beeen canceled. We apologize for any inconvenience this may cause and hope to see you at the next one in July!"
       ]
     },
     {

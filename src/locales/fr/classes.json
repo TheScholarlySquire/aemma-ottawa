@@ -36,7 +36,9 @@
     "successTitle": "Vous êtes inscrit(e) !",
     "successMessage": "Nous vous contacterons bientôt au sujet de votre cohorte.",
     "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
-    "closeBtn": "Fermer"
+    "closeBtn": "Fermer",
+    "optionSelect": "— Sélectionnez une option —",
+    "stripeRedirect": "Vous serez redirigé vers le paiement sécurisé de Stripe pour compléter votre paiement de 40 $ CAD."
   },
   "courseList": [
     {

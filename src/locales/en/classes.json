@@ -36,7 +36,12 @@
     "successTitle": "You're signed up!",
     "successMessage": "We'll be in touch soon about your cohort.",
     "errorMessage": "Something went wrong. Please try again.",
-    "closeBtn": "Close"
+    "closeBtn": "Close",
+    "optionSelect": "— Select an option —",
+    "stripeRedirect": "You'll be taken to Stripe's secure checkout to complete your $40 CAD payment."
+  },
+  "signup": {
+
   },
   "courseList": [
     {
