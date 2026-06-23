@@ -34,6 +34,18 @@
       ]
     },
     {
+      "id": "intake-072026",
+      "name": "Cours d'admission - juillet 2026",
+      "datetime": "2026-07-06T18:00:00",
+      "endDatetime": "2026-07-08T19:30:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "Le programme d'admission de juillet est ici ! Si vous êtes intéressé par l'apprentissage de l'art de l'escrime, ou si vous connaissez quelqu'un qui l'est, c'est l'occasion idéale de commencer.",
+        "Le programme d'admission de juillet se déroule les 6 et 8 juillet (lundi et mercredi) au 1606 Fisher Ave, de 18h00 à 19h30.",
+        "Au cours de l'admission, nous passerons en revue les fondamentaux et vous présenterons notre école et notre communauté. Que vous soyez un débutant complet ou que vous ayez une certaine expérience des arts martiaux, nous vous invitons à vous joindre à nous pour ce programme passionnant !"
+      ]
+    },
+    {
       "id": "italian-week-2026",
       "name": "Semaine italienne 2026",
       "datetime": "2026-06-20T10:00:00",
@@ -57,7 +69,7 @@
     },
     {
       "id": "intake-062026",
-      "name": "Cours d'admission - juin 2026 - ANNULÉ",
+      "name": "Cours d'admission - juin 2026",
       "datetime": "2026-06-08T18:00:00",
       "endDatetime": "2026-06-10T19:30:00",
       "location": "1606 Fisher Ave, Ottawa",
@@ -66,17 +78,13 @@
       ]
     },
     {
-      "id": "cts-062026",
+      "id": "cts-062026 - ANNULÉ",
       "name": "Couper. Estoc. Briser ! — juin",
       "datetime": "2026-06-13T11:00:00",
       "endDatetime": "2026-06-13T15:00:00",
       "location": "1606 Fisher Ave, Ottawa",
       "description": [
-        "« Couper. Estoc. Briser ! » est de retour en force. En 2026, AAMME Ottawa organisera cet événement chaque mois, et tout le monde est le bienvenu. Affrontez qui vous voulez, avec ce que vous voulez ; les seules règles sont :",
-        "- Ne blessez pas votre partenaire, car vous n'en aurez pas d'autre.",
-        "- Tout le monde repart en bons termes à la fin de l'événement — laissez votre ego à la porte.",
-        "De 11 h à 15 h, le tatami sera ouvert à tous pour l'escrime libre, après quoi nous irons prendre manger et boire.",
-        "Comme pour tous les événements d'escrime, c'est gratuit pour les élèves d'AAMME Ottawa et 10 $ pour les visiteurs d'autres écoles."
+        "« Couper. Estoc. Briser ! » en juin est annulé. Nous nous excusons pour tout inconvénient que cela pourrait causer et espérons vous voir au prochain en juillet !"
       ]
     },
     {
