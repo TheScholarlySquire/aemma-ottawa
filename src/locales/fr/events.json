@@ -46,6 +46,19 @@
       ]
     },
     {
+      "id": "kats",
+      "name": "Chevaliers de la symphonie",
+      "datetime": "2026-06-27T19:00:00",
+      "endDateTime": "2026-06-27T21:00:00",
+      "location": "290 Lisgar Street, Ottawa",
+      "description": [
+        "AAMME Ottawa collabore avec l'Orchestre Pop d'Ottawa pour monter sur scène, avec une performance unique alliant musique et arts martiaux lors du spectacle du soir de Chevaliers de la symphonie !",
+        "Arrêtez-vous au Village de la Renaissance à l'extérieur de la salle de concert et soutenez l'Orchestre Pops d'Ottawa et AAMME Ottawa dans leur volonté de donner vie aux arts au cœur de la capitale.",
+        "Utilisez le code promo WENCH10 pour bénéficier de 10 % de réduction sur les billets de Chevaliers de la symphonie !",
+        "L'entrée au Village de la Renaissance et au Marché est gratuite et ouverte au public ; aucun billet de concert n'est requis."
+      ]
+    },
+    {
       "id": "italian-week-2026",
       "name": "Semaine italienne 2026",
       "datetime": "2026-06-20T10:00:00",
