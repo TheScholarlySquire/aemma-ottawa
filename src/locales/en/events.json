@@ -10,6 +10,30 @@
   "googleCalendar": "Add to Google Calendar",
   "eventList": [
     {
+      "id": "wow-2026",
+      "name": "Warriors of Wisdom 2026",
+      "datetime": "2026-10-24T08:00:00",
+      "endDateTime": "2026-10-25T17:00:00",
+      "location": "779 HWY 15, Kingston ON, K7L 4V3",
+      "description": [
+        "Beau and Cass have been invited to instruct two workshops at Ironwood Sword School's annual symposium, Warriors of Wisdom 2026",
+        "Join Cass at 10:00am on October 24 for Angelo Viggiani's 'Perfect Defense'.",
+        "Join Beau at 1:30pm on October 25 for an introduction to Marrozzo's cloak and dagger."
+      ]
+    },
+    {
+      "id": "intake-112026",
+      "name": "Intake - November 2026",
+      "datetime": "2026-11-02T18:00:00",
+      "endDatetime": "2026-11-04T19:30:00",
+      "location": "1606 Fisher Ave, Ottawa",
+      "description": [
+        "The November intake is here! If you are interested in learning the art of swordplay, or if you know someone who is, this is the perfect opportunity to get started.",
+        "The November intake program runs on November 6 and 8 (Monday and Wednesday) at 1606 Fisher Ave, from 6:00PM to 7:30PM.",
+        "During the intake, we will go over the fundamentals and introduce you to our school and community. Whether you're a complete beginner or have some experience with martial arts, we welcome you to join us for this exciting program!"
+      ]
+    },
+    {
       "id": "evenings-zibi-092026",
       "name": "Evenings at Zibi — September 2026",
       "datetime": "2026-09-12T17:00:00",
